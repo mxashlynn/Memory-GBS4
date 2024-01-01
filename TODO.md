@@ -1,6 +1,7 @@
 # Memory 🐍🎴👭
 
 ## 🛠 Current
+- Decide on rules.
 
 
 ## 📋 Next
