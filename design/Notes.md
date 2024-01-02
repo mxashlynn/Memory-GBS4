@@ -23,8 +23,8 @@ Super Mario 3 Rules:
 ## Cards & Rules
 
 - Glyph Set
-    - 15 Card Types
-    - 30 Cards Total
+    - 6 Card Types
+    - 20 Cards Total
     - Pairs:
         - 󿑖  Light      x2
         - 󿑕  Dark       x2
@@ -41,16 +41,22 @@ Super Mario 3 Rules:
         - 󿐲  Thunder    x2
         - 󿒾 Aether     x2
         - 󿔞 Chaos      x2
-- Monstergirl Partner Set
-    - 15 Card Types
-    - 30 Cards Total
+- Monstergirl Set
+    - 14 Card Types
+    - 28 Cards Total
     - Pairs:
-        - 🐐 Baphomet   & 🐔 Sophia
-        - 💀 Tibby      & 🦇 Josette
-        - 🐍  Stheno     &  🌱 Alraune
-        - 🐍  Stheno     & 🐟 Kuliltu
-        - 🧹 Never      & 🌌 Cosmina
-        - 🧹 Never      & 🍄  Grisette
-        - 🧹 Never      & 💧  Gwaelin
-        - 🧹 Never      & 🌿 Shannon
-        - 🧹 Never      & 🔩  Roslyn
+        - 💀 Tibby
+        - 🦇 Josette
+        - 🐍  Stheno
+        - 🌱  Alraune
+        - 🐟 Kuliltu
+        - 🧹 Never
+        - 🌌 Cosmina
+        - 🍄  Grisette
+        - 💧  Gwaelin
+        - 🌿 Shannon
+        - 🔩  Roslyn
+        - 👻 Maria
+        - 👓 Mirna
+        - 😈 Rin Rin
+        - 🐈 Lucy
