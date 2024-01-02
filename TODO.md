@@ -1,7 +1,7 @@
 # Memory 🐍🎴👭
 
 ## 🛠 Current
-- Decide on rules.
+- Create graphics.
 
 
 ## 📋 Next
