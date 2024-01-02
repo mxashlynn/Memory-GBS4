@@ -10,7 +10,15 @@ Super Mario 3 Rules:
     - 2 10 coins
     - 2 20 coins
     - 2 1ups
-- layout is 3 rows of 6
+
+## Layout
+
+- 5x4 = 20 cards
+
+|🃏|🃏|🃏|🃏|🃏|
+|🃏|🃏|🃏|🃏|🃏|
+|🃏|🃏|🃏|🃏|🃏|
+|🃏|🃏|🃏|🃏|🃏|
 
 ## Cards & Rules
 
