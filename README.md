@@ -1,8 +1,8 @@
-# Memory 🐍🎴👭
+# Memory ✨🎴🌈
 
-A monstergirl matching game for Game Boy.
+A card matching game for Game Boy.
 
-![very gay](https://img.shields.io/badge/very-gay-ac276c?style=plastic)
+![very simple](https://img.shields.io/badge/very-simple-753D19?style=plastic)
 
 
 ## Goals 🦐🀄📓

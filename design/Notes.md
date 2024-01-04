@@ -1,4 +1,4 @@
-# Memory 🐍🎴👭
+# Memory ✨🎴🌈
 
 ## Layout
 
@@ -17,10 +17,10 @@
 - 10 Card Types
     - 20 Cards Total
 - Pairs & Sets:
-    - Moon🌙        x2
-    - Sun🌞         x2
+    - Moon🌙        x4
+    - Sun🌞         x4
+    - Stars✨        x4
     - Rainbow🌈     x2
     - Aurora🌌      x2
-    - Stars✨        x4
-    - Candle🕯      x4
-    - Crystal💎     x4
+    - Planet🪐       x2
+    - Lightning⚡    x2
