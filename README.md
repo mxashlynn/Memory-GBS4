@@ -2,7 +2,7 @@
 
 A card matching game for Game Boy.
 
-![very simple](https://img.shields.io/badge/very-simple-753D19?style=plastic)
+![very simple](https://img.shields.io/badge/very-simple-FFEACE?style=plastic)
 
 
 ## Goals 🦐🀄📓
