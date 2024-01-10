@@ -20,7 +20,7 @@
     - Moon🌙        x4
     - Sun🌞         x4
     - Stars✨        x4
-    - Rainbow🌈     x2
-    - Aurora🌌      x2
     - Planet🪐       x2
+    - Aurora🌌      x2
+    - Rainbow🌈     x2
     - Lightning⚡    x2
