@@ -938,7 +938,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 100,
+        "worldScrollX": 1,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": true,
