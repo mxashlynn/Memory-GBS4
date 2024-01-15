@@ -14,7 +14,7 @@
 
 ## Cards
 
-- 10 Card Types
+- 7 Card Types
     - 20 Cards Total
 - Pairs & Sets:
     - Moon🌙        x4
