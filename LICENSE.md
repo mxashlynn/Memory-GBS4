@@ -21,14 +21,14 @@ DEFINITIONS
 "Software" refers to the set of files released by Paige
 Ashlynn under this license in the Memory repository.
 This includes code, scripts, documentation, graphics,
-gmae text, music and sounds, tile maps, and all other
+game text, music and sounds, tile maps, and all other
 associated files.
 
 "Original Version" refers to the collection of Software
 components as distributed by Paige Ashlynn.
 
 "Modified Version" refers to any derivative made by adding
-to, deleting, or substituting in part or in whole any of
+to, deleting from, or substituting in part or in whole any of
 the components of the Original Version, by changing formats
 or by porting the Software to a new environment.
 
