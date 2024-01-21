@@ -1,7 +1,7 @@
 # Memory ✨🎴🌈
 
 ## 🛠 Current
-- Create graphics.
+- 
 
 
 ## 📋 Next
