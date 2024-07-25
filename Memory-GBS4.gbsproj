@@ -6,16 +6,37 @@
     "scenes": [],
     "backgrounds": [
         {
-            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
-            "name": "placeholder",
-            "symbol": "bg_placeholder",
+            "id": "0f54b484-5f9d-45b5-b007-b9d165e091f8",
+            "name": "playfield",
+            "symbol": "bg_playfield",
             "width": 20,
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "placeholder.png",
-            "tileColors": [],
-            "autoColor": false
+            "filename": "playfield.png",
+            "tileColors": []
+        },
+        {
+            "id": "641f990f-a5e8-4c7d-b72c-7490f5af6007",
+            "name": "tile_patterns",
+            "symbol": "bg_tile_patterns",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "tile_patterns.png",
+            "tileColors": []
+        },
+        {
+            "id": "a16c1bc5-3697-4c23-a9f0-a66b3bdeb16f",
+            "name": "title_screen",
+            "symbol": "bg_title_screen",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "title_screen.png",
+            "tileColors": []
         }
     ],
     "spriteSheets": [
@@ -838,20 +859,20 @@
     "sounds": [],
     "fonts": [
         {
-            "id": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
-            "name": "GBS Mono",
-            "symbol": "font_gbs_mono",
+            "id": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",
+            "name": "Omelette 8x8 Mono",
+            "symbol": "font_omelette_8x8_mono",
             "width": 128,
             "height": 112,
-            "filename": "gbs-mono.png"
+            "filename": "Omelette_8x8_Mono.png"
         },
         {
-            "id": "8ed435d9-51cb-44e7-8b0d-ca85e63ca427",
-            "name": "GBS Variable Width",
-            "symbol": "font_gbs_variable_width",
+            "id": "aab37523-b779-4eda-a436-9e3b2529bb8c",
+            "name": "Omelette 8x8 Variable",
+            "symbol": "font_omelette_8x8_variable",
             "width": 128,
             "height": 112,
-            "filename": "gbs-var.png"
+            "filename": "Omelette_8x8_Variable.png"
         }
     ],
     "avatars": [],
