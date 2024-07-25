@@ -1,4 +1,6 @@
 [Bb]uild
 [Rr]eference
+assets/music
+assets/sounds
 *.bak
 ~*
