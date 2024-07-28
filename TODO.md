@@ -1,13 +1,13 @@
 # Memory ✨🎴🌈
 
-## 🛠 Current
-- 
+## 🗺 Later
 
 
 ## 📋 Next
+- 
 
 
-## 🗺 Later
+## 🛠 Current
 
 
 ## ✓ Done
