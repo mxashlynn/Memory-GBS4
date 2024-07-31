@@ -2,7 +2,6 @@
 
 ## 🗺 Later
 - Play Music
-- Store cards in array
 - Start a new game whenever playfield is loaded
 - At start of new game:
     - Randomize card array
@@ -42,12 +41,13 @@
         - End Game
 
 ## 📋 Next
-- Wait on Title Screen till Button Pressed
+- Store cards in array
 
 
 ## 🛠 Current
-- Create a scene stating the rules
+- Wait on Title Screen till Button Pressed
 
 
 ## ✓ Done
+- Create a scene stating the rules
 
