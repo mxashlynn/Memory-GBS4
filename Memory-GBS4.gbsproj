@@ -3,7 +3,52 @@
     "author": "Paige Ashlynn",
     "_version": "4.0.0",
     "_release": "4",
-    "scenes": [],
+    "scenes": [
+        {
+            "name": "Playfield",
+            "backgroundId": "0f54b484-5f9d-45b5-b007-b9d165e091f8",
+            "tilesetId": "",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818",
+            "symbol": "scene_1",
+            "x": 528,
+            "y": 128,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        },
+        {
+            "name": "Title Screen",
+            "backgroundId": "a16c1bc5-3697-4c23-a9f0-a66b3bdeb16f",
+            "tilesetId": "",
+            "width": 20,
+            "height": 18,
+            "type": "LOGO",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "95f04c6c-4bec-4f2a-825c-f06f1b629559",
+            "symbol": "scene_2",
+            "x": 272,
+            "y": 128,
+            "actors": [],
+            "triggers": [],
+            "script": [],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
+        }
+    ],
     "backgrounds": [
         {
             "id": "0f54b484-5f9d-45b5-b007-b9d165e091f8",
@@ -14,7 +59,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "playfield.png",
-            "tileColors": []
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "641f990f-a5e8-4c7d-b72c-7490f5af6007",
@@ -25,7 +71,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "tile_patterns.png",
-            "tileColors": []
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "a16c1bc5-3697-4c23-a9f0-a66b3bdeb16f",
@@ -36,7 +83,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "title_screen.png",
-            "tileColors": []
+            "tileColors": [],
+            "autoColor": false
         }
     ],
     "spriteSheets": [
@@ -848,15 +896,23 @@
     "customEvents": [],
     "music": [
         {
-            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
-            "name": "template",
-            "symbol": "song_template",
-            "filename": "template.mod",
+            "id": "43afca87-c9e7-43c5-8012-4d77b0b9fa46",
+            "name": "commission",
+            "symbol": "song_commission",
+            "filename": "commission.uge",
             "settings": {},
-            "type": "mod"
+            "type": "uge"
         }
     ],
-    "sounds": [],
+    "sounds": [
+        {
+            "id": "7475eed2-26f6-430e-b57b-65c189a5503c",
+            "name": "commission.wav",
+            "symbol": "sound_commission_wav",
+            "filename": "commission.wav",
+            "type": "wav"
+        }
+    ],
     "fonts": [
         {
             "id": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",
@@ -951,9 +1007,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "",
-        "startX": 9,
-        "startY": 9,
+        "startSceneId": "95f04c6c-4bec-4f2a-825c-f06f1b629559",
+        "startX": 18,
+        "startY": 17,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -961,9 +1017,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
+        "worldScrollX": 212,
+        "worldScrollY": 97,
+        "zoom": 150,
         "sgbEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
@@ -1048,7 +1104,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
@@ -1056,7 +1112,7 @@
         "debuggerPauseOnWatchedVariableChanged": false,
         "debuggerBreakpoints": [],
         "debuggerWatchedVariables": [],
-        "colorMode": "mixed",
+        "colorMode": "mono",
         "previewAsMono": false,
         "openBuildLogOnWarnings": true,
         "generateDebugFilesEnabled": false,
