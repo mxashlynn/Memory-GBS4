@@ -46,6 +46,7 @@
 
 ## 🛠 Current
 - Wait on Title Screen till Button Pressed
+- Standard number of tiles per template is 384 (this is twice the total allowed onscreen at once in non-logo mode on DMG)
 
 
 ## ✓ Done
