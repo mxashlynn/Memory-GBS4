@@ -1,15 +1,20 @@
 # Memory ✨🎴🌈
 
-## 🗺 Later
+Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1209336784769523795
+
+## 🚢 Week of the 31st
+- More Bug Fixing
+- Polish
+- Post Finished Game
+
+
+## 🗺 Week of the 24th
 - Play Music
-- Start a new game whenever playfield is loaded
-- At start of new game:
-    - Randomize card array
-    - Set all match counts to zero
-    - Set number of moves to zero
-    - Set HP to 3
-    - Display cards face down
-    - Reset player pointer location
+- Bug Fixing
+- More Play Testing
+
+
+## 🗺 Week of the 24th
 - Player can Move pointer
 - Player can select cards
 - When player selects a card:
@@ -40,13 +45,22 @@
         - Display Game Over
         - End Game
 
-## 📋 Next
-- Store cards in array
+## 📋 Week of the 17th
+- Start a new game whenever playfield is loaded
+- At start of new game:
+    - Randomize card array
+    - Set all match counts to zero
+    - Set number of moves to zero
+    - Set HP to 3
+    - Display cards face down
+    - Reset player pointer location
+- Play Testing
 
 
-## 🛠 Current
+## 🛠 Week of the 10th
+        ➡ HERE! ⬅
 - Wait on Title Screen till Button Pressed
-- Standard number of tiles per template is 384 (this is twice the total allowed onscreen at once in non-logo mode on DMG)
+- Store cards in array
 
 
 ## ✓ Done
