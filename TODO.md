@@ -59,10 +59,12 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 
 ## 🛠 Week of the 10th
         ➡ HERE! ⬅
-- Wait on Title Screen till Button Pressed
 - Store cards in array
+- Set up player sprite
+- Set up status line (HUD)
 
 
 ## ✓ Done
 - Create a scene stating the rules
+- Wait on Title Screen till Button Pressed
 
