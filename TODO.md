@@ -16,7 +16,7 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 
 ## 🗺 Week of the 24th
 - Player can Move pointer
-- Player can select cards
+- Player can Select cards
 - When player selects a card:
     - If the card is already face up, nothing happens
     - If the card is face down and no Move has begun:
@@ -60,11 +60,11 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 ## 🛠 Week of the 10th
         ➡ HERE! ⬅
 - Store cards in array
-- Set up player sprite
 - Set up status line (HUD)
 
 
 ## ✓ Done
+- Set up player sprite
 - Create a scene stating the rules
 - Wait on Title Screen till Button Pressed
 
