@@ -67,4 +67,5 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 - Set up player sprite
 - Create a scene stating the rules
 - Wait on Title Screen till Button Pressed
+- Sets up fonts.
 
