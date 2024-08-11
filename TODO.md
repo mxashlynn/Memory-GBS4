@@ -46,6 +46,9 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
         - End Game
 
 ## 📋 Week of the 17th
+        ➡ HERE! ⬅
+- Set up status line (HUD)
+- Store cards in array
 - Start a new game whenever playfield is loaded
 - At start of new game:
     - Randomize card array
@@ -55,12 +58,6 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
     - Display cards face down
     - Reset player pointer location
 - Play Testing
-
-
-## 🛠 Week of the 10th
-        ➡ HERE! ⬅
-- Store cards in array
-- Set up status line (HUD)
 
 
 ## ✓ Done
