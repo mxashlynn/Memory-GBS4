@@ -10,6 +10,13 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 
 ## 🗺 Week of the 24th
 - Play Music
+- Play Sound Effects
+    - Move Cursor
+    - Flip Card
+    - Flip Card, Match!
+    - Flip Card, No Match!
+    - Game Won
+    - Game Lost
 - Bug Fixing
 - More Play Testing
 
