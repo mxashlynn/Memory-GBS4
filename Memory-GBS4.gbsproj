@@ -38,7 +38,8 @@
                         {
                             "command": "EVENT_GROUP",
                             "args": {
-                                "__label": "Set Up Status Line"
+                                "__label": "Set Up Status Line",
+                                "__comment": false
                             },
                             "children": {
                                 "true": [
@@ -51,14 +52,6 @@
                                             "allowFastForward": true
                                         },
                                         "id": "3ff5db5c-561e-4638-ac35-e50c6f9840b9"
-                                    },
-                                    {
-                                        "command": "EVENT_GBVM_SCRIPT",
-                                        "args": {
-                                            "script": "VM_OVERLAY_SHOW 0, 17, .UI_COLOR_WHITE, 0",
-                                            "references": []
-                                        },
-                                        "id": "7595d8bb-7e8c-44b6-8067-675f4c6bf6b1"
                                     }
                                 ]
                             },
@@ -153,42 +146,98 @@
                                         "children": {
                                             "true0": [
                                                 {
-                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                     "args": {
-                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275\"\nVM_DISPLAY_TEXT",
-                                                        "__label": "Write Flips"
+                                                        "__scriptTabs": "text",
+                                                        "minHeight": 1,
+                                                        "maxHeight": 1,
+                                                        "position": "bottom",
+                                                        "showBorder": false,
+                                                        "clearPrevious": false,
+                                                        "textX": 1,
+                                                        "textY": 1,
+                                                        "textHeight": 1,
+                                                        "closeWhen": "notModal",
+                                                        "closeButton": "a",
+                                                        "text": [
+                                                            "\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__label": "Write 3 Flips Left"
                                                     },
-                                                    "id": "9a67531f-df75-4236-b9b4-743682169e8a"
+                                                    "id": "94f1fb30-87e6-497c-a3ef-14e4fa5035f1"
                                                 }
                                             ],
                                             "true1": [
                                                 {
-                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                     "args": {
-                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275\"\nVM_DISPLAY_TEXT",
-                                                        "__label": "Write Flips"
+                                                        "__scriptTabs": "text",
+                                                        "minHeight": 1,
+                                                        "maxHeight": 1,
+                                                        "position": "bottom",
+                                                        "showBorder": false,
+                                                        "clearPrevious": false,
+                                                        "textX": 1,
+                                                        "textY": 1,
+                                                        "textHeight": 1,
+                                                        "closeWhen": "notModal",
+                                                        "closeButton": "a",
+                                                        "text": [
+                                                            "\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__label": "Write 2 Flips Left"
                                                     },
-                                                    "id": "5b83d297-be17-4c09-883f-0a42902fca9d"
+                                                    "id": "1730d4fb-52b2-4a34-a59a-3498ad665e55"
                                                 }
                                             ],
                                             "true2": [
                                                 {
-                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                     "args": {
-                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @   \\274\\275\"\nVM_DISPLAY_TEXT",
-                                                        "__label": "Write Flips"
+                                                        "__scriptTabs": "text",
+                                                        "minHeight": 1,
+                                                        "maxHeight": 1,
+                                                        "position": "bottom",
+                                                        "showBorder": false,
+                                                        "clearPrevious": false,
+                                                        "textX": 1,
+                                                        "textY": 1,
+                                                        "textHeight": 1,
+                                                        "closeWhen": "notModal",
+                                                        "closeButton": "a",
+                                                        "text": [
+                                                            "\\003\\001\\001\\275\\274 Flips Left @   \\274\\275"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__label": "Write 1 Flip Left"
                                                     },
-                                                    "id": "0f8448f6-0eb4-472f-bbd2-e212069e6cb0"
+                                                    "id": "1a8d80c3-3410-4c7b-9f93-11268c230394"
                                                 }
                                             ],
                                             "true3": [
                                                 {
-                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                     "args": {
-                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left     \\274\\275\"\nVM_DISPLAY_TEXT",
-                                                        "__label": "Write Flips"
+                                                        "__scriptTabs": "text",
+                                                        "minHeight": 1,
+                                                        "maxHeight": 1,
+                                                        "position": "bottom",
+                                                        "showBorder": false,
+                                                        "clearPrevious": false,
+                                                        "textX": 1,
+                                                        "textY": 1,
+                                                        "textHeight": 1,
+                                                        "closeWhen": "notModal",
+                                                        "closeButton": "a",
+                                                        "text": [
+                                                            "\\003\\001\\001\\275\\274 Flips Left     \\274\\275"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__label": "Write 0 Flips Left"
                                                     },
-                                                    "id": "1ec941ec-8764-46d4-834a-6b404f677954"
+                                                    "id": "0a8b54ed-0ddc-4d33-b6d6-6d2a449e7750"
                                                 }
                                             ],
                                             "true4": [],
@@ -205,12 +254,26 @@
                                             "true15": [],
                                             "false": [
                                                 {
-                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                                     "args": {
-                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275\"\nVM_DISPLAY_TEXT",
+                                                        "__scriptTabs": "text",
+                                                        "minHeight": 1,
+                                                        "maxHeight": 1,
+                                                        "position": "bottom",
+                                                        "showBorder": false,
+                                                        "clearPrevious": false,
+                                                        "textX": 1,
+                                                        "textY": 1,
+                                                        "textHeight": 1,
+                                                        "closeWhen": "notModal",
+                                                        "closeButton": "a",
+                                                        "text": [
+                                                            "\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275"
+                                                        ],
+                                                        "avatarId": "",
                                                         "__label": "Write ERROR"
                                                     },
-                                                    "id": "cc40b9b0-470a-4f23-bece-7db196bfc072"
+                                                    "id": "44b515f1-6447-4b64-8dda-1a397ba755c8"
                                                 }
                                             ]
                                         },
@@ -219,28 +282,50 @@
                                 ],
                                 "true1": [
                                     {
-                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                         "args": {
-                                            "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275\"\nVM_DISPLAY_TEXT",
-                                            "__label": "Lost"
+                                            "__scriptTabs": "text",
+                                            "minHeight": 1,
+                                            "maxHeight": 1,
+                                            "position": "bottom",
+                                            "showBorder": false,
+                                            "clearPrevious": false,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 1,
+                                            "closeWhen": "notModal",
+                                            "closeButton": "a",
+                                            "text": [
+                                                "\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275"
+                                            ],
+                                            "avatarId": "",
+                                            "__label": "Write Game Over"
                                         },
-                                        "id": "50a3d0fe-6411-41d2-ad57-3010a0ca2106"
+                                        "id": "c9c682ba-8d4c-4bdb-b19c-678b0b7d8ccd"
                                     }
                                 ],
                                 "true2": [
                                     {
-                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                         "args": {
-                                            "script": "VM_LOAD_TEXT 0\n.dw VAR_PLAYER_FLIPS_MADE_COUNT\n.asciz \"\\003\\001\\001\\275\\274Won in %D2 Flips!\\274\\275\"\nVM_DISPLAY_TEXT",
-                                            "__label": "Won",
-                                            "references": [
-                                                {
-                                                    "type": "variable",
-                                                    "id": "2"
-                                                }
-                                            ]
+                                            "__scriptTabs": "text",
+                                            "minHeight": 1,
+                                            "maxHeight": 1,
+                                            "position": "bottom",
+                                            "showBorder": false,
+                                            "clearPrevious": false,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 1,
+                                            "closeWhen": "notModal",
+                                            "closeButton": "a",
+                                            "text": [
+                                                "\\003\\001\\001\\275\\274Won in %D2$02$ Flips!\\274\\275"
+                                            ],
+                                            "avatarId": "",
+                                            "__label": "Write Game Won"
                                         },
-                                        "id": "0ce7b05a-4861-4235-91b4-af16a67f74b8"
+                                        "id": "554febac-2ce2-4b39-ba39-46f058838bcb"
                                     }
                                 ],
                                 "true3": [],
@@ -258,12 +343,26 @@
                                 "true15": [],
                                 "false": [
                                     {
-                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
                                         "args": {
-                                            "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274                \\274\\275\"\nVM_DISPLAY_TEXT",
-                                            "references": []
+                                            "__scriptTabs": "text",
+                                            "minHeight": 1,
+                                            "maxHeight": 1,
+                                            "position": "bottom",
+                                            "showBorder": false,
+                                            "clearPrevious": false,
+                                            "textX": 1,
+                                            "textY": 1,
+                                            "textHeight": 1,
+                                            "closeWhen": "notModal",
+                                            "closeButton": "a",
+                                            "text": [
+                                                "\\003\\001\\001\\275\\274                \\274\\275"
+                                            ],
+                                            "avatarId": "",
+                                            "__label": "Write Blank"
                                         },
-                                        "id": "6cdac4f0-8921-4781-8171-2fb2c0278756"
+                                        "id": "f1b35162-f66f-4396-a2be-0a59c3457979"
                                     }
                                 ]
                             },
