@@ -42,3 +42,7 @@
     - 0…MAX_INT = How many flips made so far.
 - Player Flips Left Count
     - 3…0 = How many flips remaining till game over.
+- Card X,Y
+    - 20 variables in a row forming an implicit array
+    - Card 0,0 is the upper  left card and has index 4
+    - Card 3,4 is the lower right card and has index 23
