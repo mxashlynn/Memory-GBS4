@@ -14,16 +14,20 @@
 
 ## Cards
 
+| Index | Name          | Glyph | Pairs |
+| ----- | ------------- | ----- | ----- |
+| 0     | Moon          | 🌙    | 4     |
+| 1     | Sun           | 🌞    | 4     |
+| 2     | Stars         | ✨     | 4     |
+| 3     | Planet        | 🪐     | 2     |
+| 4     | Aurora        | 🌌    | 2     |
+| 5     | Rainbow       | 🌈    | 2     |
+| 6     | Lightning     | ⚡     | 2     |
+| 7     | UNINITIALIZED |       | 0     |
+
 - 7 Card Types
-    - 20 Cards Total
-- Pairs & Sets:
-    - Moon🌙        x4
-    - Sun🌞         x4
-    - Stars✨        x4
-    - Planet🪐       x2
-    - Aurora🌌      x2
-    - Rainbow🌈     x2
-    - Lightning⚡    x2
+- 20 Cards Total
+
 
 ## Variables
 
