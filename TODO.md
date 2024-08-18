@@ -50,24 +50,24 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
         - Play Fail Jingle
         - Display Game Over
         - End Game
+- Play Testing
 
 ## 📋 Week of the 17th
         ➡ HERE! ⬅
-- Set up status line (HUD)
 - Store cards in array
 - Start a new game whenever playfield is loaded
 - At start of new game:
     - Randomize card array
-    - Set Game State to IN PLAY
-    - Set Player Match Count to 0
-    - Set Player Flips Made Count to 0
-    - Set Player Flips Left Count to 3
+    ✓ Set Game State to IN PLAY
+    ✓ Set Player Match Count to 0
+    ✓ Set Player Flips Made Count to 0
+    ✓ Set Player Flips Left Count to 3
     - Display cards face down
     - Reset player pointer location
-- Play Testing
 
 
 ## ✓ Done
+- Set up status line
 - Set up player sprite
 - Create a scene stating the rules
 - Wait on Title Screen till Button Pressed
