@@ -19,25 +19,321 @@
             "symbol": "scene_1",
             "x": 640,
             "y": 128,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "Status Line Writer",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "8bf2049a-74e3-499e-b304-3c21bb7327d2",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_0",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Set Up Status Line"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                                        "args": {
+                                            "speedIn": 0,
+                                            "speedOut": 0,
+                                            "speed": 0,
+                                            "allowFastForward": true
+                                        },
+                                        "id": "3ff5db5c-561e-4638-ac35-e50c6f9840b9"
+                                    },
+                                    {
+                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "args": {
+                                            "script": "VM_OVERLAY_SHOW 0, 17, .UI_COLOR_WHITE, 0",
+                                            "references": []
+                                        },
+                                        "id": "7595d8bb-7e8c-44b6-8067-675f4c6bf6b1"
+                                    }
+                                ]
+                            },
+                            "id": "19d829a3-4a29-4e90-ab00-5669dd1908ef"
+                        }
+                    ],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_SWITCH",
+                            "args": {
+                                "variable": "0",
+                                "choices": 3,
+                                "__collapseCase0": false,
+                                "value0": 1,
+                                "__collapseCase1": false,
+                                "value1": 2,
+                                "__collapseCase2": false,
+                                "value2": 3,
+                                "__collapseCase3": false,
+                                "value3": 4,
+                                "__collapseCase4": false,
+                                "value4": 5,
+                                "__collapseCase5": false,
+                                "value5": 6,
+                                "__collapseCase6": false,
+                                "value6": 7,
+                                "__collapseCase7": false,
+                                "value7": 8,
+                                "__collapseCase8": false,
+                                "value8": 9,
+                                "__collapseCase9": false,
+                                "value9": 10,
+                                "__collapseCase10": false,
+                                "value10": 11,
+                                "__collapseCase11": false,
+                                "value11": 12,
+                                "__collapseCase12": false,
+                                "value12": 13,
+                                "__collapseCase13": false,
+                                "value13": 14,
+                                "__collapseCase14": false,
+                                "value14": 15,
+                                "__collapseCase15": false,
+                                "value15": 16,
+                                "__collapseElse": false,
+                                "__label": "Write Appropriate Status",
+                                "__comment": false,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true0": [
+                                    {
+                                        "command": "EVENT_SWITCH",
+                                        "args": {
+                                            "variable": "3",
+                                            "choices": 4,
+                                            "__collapseCase0": false,
+                                            "value0": 3,
+                                            "__collapseCase1": false,
+                                            "value1": 2,
+                                            "__collapseCase2": false,
+                                            "value2": 1,
+                                            "__collapseCase3": false,
+                                            "value3": 0,
+                                            "__collapseCase4": false,
+                                            "value4": 5,
+                                            "__collapseCase5": false,
+                                            "value5": 6,
+                                            "__collapseCase6": false,
+                                            "value6": 7,
+                                            "__collapseCase7": false,
+                                            "value7": 8,
+                                            "__collapseCase8": false,
+                                            "value8": 9,
+                                            "__collapseCase9": false,
+                                            "value9": 10,
+                                            "__collapseCase10": false,
+                                            "value10": 11,
+                                            "__collapseCase11": false,
+                                            "value11": 12,
+                                            "__collapseCase12": false,
+                                            "value12": 13,
+                                            "__collapseCase13": false,
+                                            "value13": 14,
+                                            "__collapseCase14": false,
+                                            "value14": 15,
+                                            "__collapseCase15": false,
+                                            "value15": 16,
+                                            "__collapseElse": false,
+                                            "__label": "In Play"
+                                        },
+                                        "children": {
+                                            "true0": [
+                                                {
+                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "args": {
+                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275\"\nVM_DISPLAY_TEXT",
+                                                        "__label": "Write Flips"
+                                                    },
+                                                    "id": "9a67531f-df75-4236-b9b4-743682169e8a"
+                                                }
+                                            ],
+                                            "true1": [
+                                                {
+                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "args": {
+                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275\"\nVM_DISPLAY_TEXT",
+                                                        "__label": "Write Flips"
+                                                    },
+                                                    "id": "5b83d297-be17-4c09-883f-0a42902fca9d"
+                                                }
+                                            ],
+                                            "true2": [
+                                                {
+                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "args": {
+                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @   \\274\\275\"\nVM_DISPLAY_TEXT",
+                                                        "__label": "Write Flips"
+                                                    },
+                                                    "id": "0f8448f6-0eb4-472f-bbd2-e212069e6cb0"
+                                                }
+                                            ],
+                                            "true3": [
+                                                {
+                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "args": {
+                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left     \\274\\275\"\nVM_DISPLAY_TEXT",
+                                                        "__label": "Write Flips"
+                                                    },
+                                                    "id": "1ec941ec-8764-46d4-834a-6b404f677954"
+                                                }
+                                            ],
+                                            "true4": [],
+                                            "true5": [],
+                                            "true6": [],
+                                            "true7": [],
+                                            "true8": [],
+                                            "true9": [],
+                                            "true10": [],
+                                            "true11": [],
+                                            "true12": [],
+                                            "true13": [],
+                                            "true14": [],
+                                            "true15": [],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                    "args": {
+                                                        "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275\"\nVM_DISPLAY_TEXT",
+                                                        "__label": "Write ERROR"
+                                                    },
+                                                    "id": "cc40b9b0-470a-4f23-bece-7db196bfc072"
+                                                }
+                                            ]
+                                        },
+                                        "id": "4bb68203-9bb7-497f-98f2-0018c22b5520"
+                                    }
+                                ],
+                                "true1": [
+                                    {
+                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "args": {
+                                            "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275\"\nVM_DISPLAY_TEXT",
+                                            "__label": "Lost"
+                                        },
+                                        "id": "50a3d0fe-6411-41d2-ad57-3010a0ca2106"
+                                    }
+                                ],
+                                "true2": [
+                                    {
+                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "args": {
+                                            "script": "VM_LOAD_TEXT 0\n.dw VAR_PLAYER_FLIPS_MADE_COUNT\n.asciz \"\\003\\001\\001\\275\\274Won in %D2 Flips!\\274\\275\"\nVM_DISPLAY_TEXT",
+                                            "__label": "Won",
+                                            "references": [
+                                                {
+                                                    "type": "variable",
+                                                    "id": "2"
+                                                }
+                                            ]
+                                        },
+                                        "id": "0ce7b05a-4861-4235-91b4-af16a67f74b8"
+                                    }
+                                ],
+                                "true3": [],
+                                "true4": [],
+                                "true5": [],
+                                "true6": [],
+                                "true7": [],
+                                "true8": [],
+                                "true9": [],
+                                "true10": [],
+                                "true11": [],
+                                "true12": [],
+                                "true13": [],
+                                "true14": [],
+                                "true15": [],
+                                "false": [
+                                    {
+                                        "command": "EVENT_GBVM_SCRIPT",
+                                        "args": {
+                                            "script": "VM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274                \\274\\275\"\nVM_DISPLAY_TEXT",
+                                            "references": []
+                                        },
+                                        "id": "6cdac4f0-8921-4781-8171-2fb2c0278756"
+                                    }
+                                ]
+                            },
+                            "id": "fce37df0-ada1-4434-9fa6-3772f98ab1b6"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "479d88a3-a3e9-4c25-8cf2-64b51c30e643",
+                    "x": 0,
+                    "y": 0
+                }
+            ],
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "command": "EVENT_GROUP",
                     "args": {
-                        "speedIn": 0,
-                        "speedOut": 0,
-                        "speed": 0,
-                        "allowFastForward": true
+                        "__label": "Set Up New Game"
                     },
-                    "id": "41abc0fe-191b-4998-acc6-05c752d2aa4c"
-                },
-                {
-                    "command": "EVENT_GBVM_SCRIPT",
-                    "args": {
-                        "script": "VM_OVERLAY_SHOW 0, 17, .UI_COLOR_WHITE, 0\nVM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275\"\nVM_DISPLAY_TEXT"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "0",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 1
+                                    }
+                                },
+                                "id": "3de7fc8d-b386-44b6-a5d0-9cff24aecc04"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "1",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 0
+                                    }
+                                },
+                                "id": "f32f22f8-fadd-4a1f-b55d-5bb2ab39342f"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "2",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 0
+                                    }
+                                },
+                                "id": "06499d12-88f0-465b-a82f-476a6681cba8"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "3",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 3
+                                    }
+                                },
+                                "id": "8e4c206b-a04c-47af-a507-0734ab9b6f11"
+                            }
+                        ]
                     },
-                    "id": "785e80f0-17a5-454e-a5eb-3583db3f3b17"
+                    "id": "5dfef27b-18bc-4b17-8f48-288d69c68e9f"
                 }
             ],
             "playerHit1Script": [],
@@ -1520,7 +1816,28 @@
             "filename": "titles_tiles.png"
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "0",
+            "name": "Game State",
+            "symbol": "var_game_state"
+        },
+        {
+            "id": "1",
+            "name": "Player Match Count",
+            "symbol": "var_player_match_count"
+        },
+        {
+            "id": "2",
+            "name": "Player Flips Made Count",
+            "symbol": "var_player_flips_made_count"
+        },
+        {
+            "id": "3",
+            "name": "Player Flips Left Count",
+            "symbol": "var_player_flips_left_count"
+        }
+    ],
     "engineFieldValues": [
         {
             "id": "fade_style",

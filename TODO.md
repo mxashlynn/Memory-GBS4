@@ -34,7 +34,6 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
         - Reveal card
         - If this card's value matched First Revealed Card's value:
             - Play a chime
-            - Increment appropriate match count
             - Increment total match count
             - Reset Player HP
         - Else:
@@ -59,9 +58,10 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 - Start a new game whenever playfield is loaded
 - At start of new game:
     - Randomize card array
-    - Set all match counts to zero
-    - Set number of moves to zero
-    - Set HP to 3
+    - Set Game State to IN PLAY
+    - Set Player Match Count to 0
+    - Set Player Flips Made Count to 0
+    - Set Player Flips Left Count to 3
     - Display cards face down
     - Reset player pointer location
 - Play Testing
