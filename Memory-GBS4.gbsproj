@@ -21,7 +21,25 @@
             "y": 128,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": 0,
+                        "speedOut": 0,
+                        "speed": 0,
+                        "allowFastForward": true
+                    },
+                    "id": "41abc0fe-191b-4998-acc6-05c752d2aa4c"
+                },
+                {
+                    "command": "EVENT_GBVM_SCRIPT",
+                    "args": {
+                        "script": "VM_OVERLAY_SHOW 0, 17, .UI_COLOR_WHITE, 0\nVM_LOAD_TEXT 0\n.asciz \"\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275\"\nVM_DISPLAY_TEXT"
+                    },
+                    "id": "785e80f0-17a5-454e-a5eb-3583db3f3b17"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -1520,7 +1538,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 514,
+        "worldScrollX": 1014,
         "worldScrollY": 0,
         "zoom": 250,
         "sgbEnabled": false,
