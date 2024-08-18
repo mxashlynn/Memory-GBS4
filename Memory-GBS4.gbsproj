@@ -2056,7 +2056,7 @@
         "startX": 18,
         "startY": 17,
         "startMoveSpeed": 1,
-        "startAnimSpeed": 15,
+        "startAnimSpeed": 3,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
