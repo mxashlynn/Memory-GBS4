@@ -390,57 +390,62 @@
                 {
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "Set Up New Game"
+                        "__label": "Begin New Game",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
                             {
-                                "command": "EVENT_SET_VALUE",
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
-                                    "variable": "0",
-                                    "value": {
-                                        "type": "number",
-                                        "value": 1
-                                    }
+                                    "customEventId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "1"
+                                    },
+                                    "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "2"
+                                    },
+                                    "$variable[V3]$": {
+                                        "type": "variable",
+                                        "value": "3"
+                                    },
+                                    "__collapse": false
                                 },
-                                "id": "3de7fc8d-b386-44b6-a5d0-9cff24aecc04"
-                            },
-                            {
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "1",
-                                    "value": {
-                                        "type": "number",
-                                        "value": 0
-                                    }
-                                },
-                                "id": "f32f22f8-fadd-4a1f-b55d-5bb2ab39342f"
-                            },
-                            {
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "2",
-                                    "value": {
-                                        "type": "number",
-                                        "value": 0
-                                    }
-                                },
-                                "id": "06499d12-88f0-465b-a82f-476a6681cba8"
-                            },
-                            {
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "3",
-                                    "value": {
-                                        "type": "number",
-                                        "value": 3
-                                    }
-                                },
-                                "id": "8e4c206b-a04c-47af-a507-0734ab9b6f11"
+                                "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
                             }
                         ]
                     },
-                    "id": "5dfef27b-18bc-4b17-8f48-288d69c68e9f"
+                    "id": "7afbc709-a3f5-4c9a-9861-d570ff3638a9"
+                },
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "DEBUG"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 1,
+                                    "frames": 30
+                                },
+                                "id": "46f9a38b-9297-4a3b-a1d2-6fdcb14f05f9"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "Flip",
+                                    "loopAnim": true
+                                },
+                                "id": "a1ed2c1f-df7b-4fa5-9cc1-e5400535003f"
+                            }
+                        ]
+                    },
+                    "id": "a68d4d98-f140-4474-bedb-f4aec5a1ea0d"
                 }
             ],
             "playerHit1Script": [],
@@ -1796,7 +1801,107 @@
             ]
         }
     ],
-    "customEvents": [],
+    "customEvents": [
+        {
+            "id": "7e02202e-ff32-4afd-880f-72b3960a04f7",
+            "name": "Set Up New Game",
+            "description": "Resets state to the beginning of a play session.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Game State",
+                    "passByReference": true
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Player Match Count",
+                    "passByReference": true
+                },
+                "V2": {
+                    "id": "V2",
+                    "name": "Player Flips Made Count",
+                    "passByReference": true
+                },
+                "V3": {
+                    "id": "V3",
+                    "name": "Player Flips Left Count",
+                    "passByReference": true
+                }
+            },
+            "actors": {},
+            "symbol": "script_1",
+            "script": [
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V0",
+                        "value": {
+                            "type": "number",
+                            "value": 1
+                        }
+                    },
+                    "id": "93d0bef6-14ec-4071-95c1-14729a894012"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V1",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "fa441c9a-6eb4-4ae9-81ad-f885288c54f8"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V2",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "d0bbc348-875e-48f8-b95f-19ec36b26e33"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V3",
+                        "value": {
+                            "type": "number",
+                            "value": 3
+                        }
+                    },
+                    "id": "f10f9eee-dac3-4bc1-96ed-3ab784fa56d4"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_POSITION",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": {
+                            "type": "number",
+                            "value": 3
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 4
+                        }
+                    },
+                    "id": "9eb4b7fc-d8c9-47a6-a08f-a9de62c1218f"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_STATE",
+                    "args": {
+                        "actorId": "$self$",
+                        "spriteStateId": "",
+                        "loopAnim": false
+                    },
+                    "id": "bba179d6-17e0-4789-9c09-d0429b97cd53"
+                }
+            ]
+        }
+    ],
     "music": [
         {
             "id": "43afca87-c9e7-43c5-8012-4d77b0b9fa46",
@@ -2062,7 +2167,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1014,
+        "worldScrollX": 514,
         "worldScrollY": 0,
         "zoom": 250,
         "sgbEnabled": false,
@@ -2091,9 +2196,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            620,
-            189,
-            189
+            239,
+            170,
+            547
         ],
         "showNavigator": true,
         "defaultFontId": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",

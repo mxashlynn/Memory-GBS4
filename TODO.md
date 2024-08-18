@@ -57,13 +57,13 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 - Store cards in array
 - Start a new game whenever playfield is loaded
 - At start of new game:
-    - Randomize card array
     ✓ Set Game State to IN PLAY
     ✓ Set Player Match Count to 0
     ✓ Set Player Flips Made Count to 0
     ✓ Set Player Flips Left Count to 3
+    ✓ Reset player pointer location
+    - Randomize card array
     - Display cards face down
-    - Reset player pointer location
 
 
 ## ✓ Done
