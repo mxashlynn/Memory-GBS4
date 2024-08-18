@@ -390,6 +390,321 @@
                 {
                     "command": "EVENT_GROUP",
                     "args": {
+                        "__label": "Initialize Deck"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Moon Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "4",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "83bdd871-0448-4327-bd25-7592244894db"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "5",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "91b99719-8d62-4792-948d-eab3b1845949"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "6",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "b79afba4-3051-4ce9-814b-2085a0f054ae"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "7",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "e80bceab-6d35-449c-9584-9c8905e9428b"
+                                        }
+                                    ]
+                                },
+                                "id": "d24bfecc-830f-4a37-9491-c559566af5ab"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Sun Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "8",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "1916fa83-83f3-4549-9f9b-4747ab38c026"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "9",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "17944677-dacd-4cbf-90b6-602cab7c9a88"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "10",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "ffd6e0e5-7485-4e46-a51e-2632e0d3f7b3"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "11",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "6b58269b-0903-492e-8e02-1098a2dbd478"
+                                        }
+                                    ]
+                                },
+                                "id": "1f82e520-47fd-4da4-b2ea-1ab0127df9eb"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Stars Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "12",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "c06bf8f6-41de-4873-939b-e979a0d2b5fd"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "13",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "24ddcb47-030a-42c0-8bb0-905f2af867fa"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "14",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "df7b3637-a7e8-4a95-8605-fe0bb2b9b9f1"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "15",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "20b6633a-7fa4-4d78-aa3e-241a6e94fb0b"
+                                        }
+                                    ]
+                                },
+                                "id": "0520b665-7380-4b18-89d6-85d1cf7427dd"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Planet Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "16",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 4
+                                                }
+                                            },
+                                            "id": "222d2fdb-0afa-4add-bf64-1029aa179b82"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "17",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 4
+                                                }
+                                            },
+                                            "id": "b7c0f83b-1cb9-43a1-a739-730573f932e3"
+                                        }
+                                    ]
+                                },
+                                "id": "bacd0f7b-67b7-402a-a103-65ccee74473b"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Aurora Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "18",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 5
+                                                }
+                                            },
+                                            "id": "4664ea7b-13ac-4e0b-be74-667f3e588e28"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "19",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 5
+                                                }
+                                            },
+                                            "id": "efaf0a45-078e-4efd-908d-031c1d1bf4d9"
+                                        }
+                                    ]
+                                },
+                                "id": "5bcbf4b7-8a8a-41a7-83d8-f9315f3527b0"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Rainbow Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "20",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 6
+                                                }
+                                            },
+                                            "id": "18c4db9d-60f8-49b1-b885-ff0842ffd383"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "21",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 6
+                                                }
+                                            },
+                                            "id": "41913bad-3539-4bc0-9dea-8d680af5bd03"
+                                        }
+                                    ]
+                                },
+                                "id": "a17a12d6-a524-4cbc-8b69-b10c860ecaca"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Lightning Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "22",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 7
+                                                }
+                                            },
+                                            "id": "3dff2196-6767-4d03-9068-c2a2d65c33ee"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "23",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 7
+                                                }
+                                            },
+                                            "id": "59ceae4b-464c-4f63-9e43-f5c856fc1665"
+                                        }
+                                    ]
+                                },
+                                "id": "ed6dbf9b-4f10-43a3-a968-e01146102f08"
+                            }
+                        ]
+                    },
+                    "id": "dc6d7c68-ad77-4977-bc20-0c52386c9373"
+                },
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
                         "__label": "Begin New Game",
                         "__collapse": true
                     },
@@ -2167,7 +2482,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 514,
+        "worldScrollX": 1114,
         "worldScrollY": 0,
         "zoom": 250,
         "sgbEnabled": false,
@@ -2216,7 +2531,8 @@
         "batterylessEnabled": false,
         "favoriteEvents": [
             "EVENT_TEXT",
-            "EVENT_SWITCH_SCENE"
+            "EVENT_SWITCH_SCENE",
+            "EVENT_GROUP"
         ],
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
