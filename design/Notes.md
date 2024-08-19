@@ -1,5 +1,6 @@
 # Memory ✨🎴🌈
 
+
 ## Layout
 
 🃏 🃏 🃏 🃏 🃏
@@ -11,6 +12,7 @@
 🃏 🃏 🃏 🃏 🃏
 
 - 5x4 = 20 cards
+
 
 ## Cards
 
@@ -27,6 +29,21 @@
 
 - 7 Card Types
 - 20 Cards Total
+
+
+## Shuffle Algorithm
+
+Written here in pseudo-C:
+```
+for (byte i = high_index; i > low_index; i--)
+{
+    j = random(from low_index to i);
+    push(array[i]);
+    push(array[j]);
+    array[i] = pop();
+    array[j] = pop();
+}
+```
 
 
 ## Variables
@@ -48,3 +65,4 @@
     - Card 3,4 is the lower right card and has index 23
 - Index I & Index J
     - Used in Shuffling algorithm
+

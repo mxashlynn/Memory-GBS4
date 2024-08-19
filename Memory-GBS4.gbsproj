@@ -744,7 +744,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "DEBUG",
-                        "__comment": true
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -2262,21 +2262,11 @@
                 {
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "Shuffle Cards"
+                        "__label": "Shuffle Cards",
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
-                            {
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "V4",
-                                    "value": {
-                                        "type": "number",
-                                        "value": 23
-                                    }
-                                },
-                                "id": "321a2697-240c-4ceb-a73e-1dd03aefce43"
-                            },
                             {
                                 "command": "EVENT_LOOP_FOR",
                                 "args": {
@@ -2310,16 +2300,8 @@
                                         {
                                             "command": "EVENT_GBVM_SCRIPT",
                                             "args": {
-                                                "script": "VM_GET_INDIRECT VAR_VALUE_AT_J, VAR_INDEX_J\nVM_GET_INDIRECT VAR_VALUE_AT_I, VAR_INDEX_I\nVM_SET_INDIRECT VAR_INDEX_J, VAR_VALUE_AT_I\nVM_SET_INDIRECT VAR_INDEX_I, VAR_VALUE_AT_J",
+                                                "script": "VM_RPN\n    .R_REF_IND VAR_INDEX_I\n    .R_REF_IND VAR_INDEX_J\n    .R_REF_SET_IND VAR_INDEX_I \n    .R_REF_SET_IND VAR_INDEX_J\n    .R_STOP",
                                                 "references": [
-                                                    {
-                                                        "type": "variable",
-                                                        "id": "26"
-                                                    },
-                                                    {
-                                                        "type": "variable",
-                                                        "id": "27"
-                                                    },
                                                     {
                                                         "type": "variable",
                                                         "id": "24"
@@ -2600,16 +2582,6 @@
             "id": "25",
             "name": "Index J",
             "symbol": "var_index_j"
-        },
-        {
-            "id": "26",
-            "name": "Value At I",
-            "symbol": "var_value_at_i"
-        },
-        {
-            "id": "27",
-            "name": "Value At J",
-            "symbol": "var_value_at_j"
         }
     ],
     "engineFieldValues": [
@@ -2629,8 +2601,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 714,
-        "worldScrollY": 195,
+        "worldScrollX": 1014,
+        "worldScrollY": 300,
         "zoom": 250,
         "sgbEnabled": false,
         "customHead": "",
@@ -2717,13 +2689,23 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": true,
+        "debuggerEnabled": false,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
         "debuggerPauseOnScriptChanged": false,
         "debuggerPauseOnWatchedVariableChanged": false,
         "debuggerBreakpoints": [
+            {
+                "scriptEventId": "85078a30-4765-4a8e-9645-87a46734e2c4",
+                "context": {
+                    "type": "script",
+                    "entityType": "customEvent",
+                    "entityId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
+                    "sceneId": "",
+                    "scriptKey": "script"
+                }
+            },
             {
                 "scriptEventId": "214d2723-3ecc-48e3-95dd-a38d01dfc632",
                 "context": {

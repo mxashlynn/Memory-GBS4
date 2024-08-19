@@ -3,12 +3,6 @@
 Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1209336784769523795
 
 ## 🚢 Week of the 31st
-- More Bug Fixing
-- Polish
-- Post Finished Game
-
-
-## 🗺 Week of the 24th
 - Play Music
 - Play Sound Effects
     - Move Cursor
@@ -17,8 +11,9 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
     - Flip Card, No Match!
     - Game Won
     - Game Lost
-- Bug Fixing
-- More Play Testing
+- Polish
+- More Bug Fixing
+- Post Finished Game
 
 
 ## 🗺 Week of the 24th
@@ -60,6 +55,7 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
         - Display Game Over
         - End Game
 - Play Testing
+- Bug Fixing
 
 
 ## ✓ Done
