@@ -46,3 +46,5 @@
     - 20 variables in a row forming an implicit array
     - Card 0,0 is the upper  left card and has index 4
     - Card 3,4 is the lower right card and has index 23
+- Index I & Index J
+    - Used in Shuffling algorithm

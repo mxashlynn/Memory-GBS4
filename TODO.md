@@ -22,6 +22,15 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 
 
 ## 🗺 Week of the 24th
+- At start of new game:
+    ✓ Set Game State to IN PLAY
+    ✓ Set Player Match Count to 0
+    ✓ Set Player Flips Made Count to 0
+    ✓ Set Player Flips Left Count to 3
+    ✓ Reset player pointer location
+    ✓ Randomize card array
+        ➡ HERE! ⬅
+    - Display cards face down
 - Player can Move pointer
 - Player can Select cards
 - When player selects a card:
@@ -52,24 +61,13 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
         - End Game
 - Play Testing
 
-## 📋 Week of the 17th
-        ➡ HERE! ⬅
-- Store cards in array
-- Start a new game whenever playfield is loaded
-- At start of new game:
-    ✓ Set Game State to IN PLAY
-    ✓ Set Player Match Count to 0
-    ✓ Set Player Flips Made Count to 0
-    ✓ Set Player Flips Left Count to 3
-    ✓ Reset player pointer location
-    - Randomize card array
-    - Display cards face down
-
 
 ## ✓ Done
+- Create a scene stating the rules
+- Sets up fonts.
+- Wait on Title Screen till Button Pressed
 - Set up status line
 - Set up player sprite
-- Create a scene stating the rules
-- Wait on Title Screen till Button Pressed
-- Sets up fonts.
+- Start a new game whenever playfield is loaded
+- Store cards in array
 

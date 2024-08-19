@@ -388,9 +388,15 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_RNG_SEED",
+                    "args": {},
+                    "id": "8677c81b-08e2-4689-8b16-8e7b7c9ba416"
+                },
+                {
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "Initialize Deck"
+                        "__label": "Initialize Deck",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -703,41 +709,42 @@
                     "id": "dc6d7c68-ad77-4977-bc20-0c52386c9373"
                 },
                 {
-                    "command": "EVENT_GROUP",
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
                     "args": {
-                        "__label": "Begin New Game",
-                        "__collapse": true
+                        "customEventId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
+                        "$variable[V1]$": {
+                            "type": "variable",
+                            "value": "1"
+                        },
+                        "$variable[V2]$": {
+                            "type": "variable",
+                            "value": "2"
+                        },
+                        "$variable[V3]$": {
+                            "type": "variable",
+                            "value": "3"
+                        },
+                        "__collapse": true,
+                        "$variable[V0]$": {
+                            "type": "variable",
+                            "value": "0"
+                        },
+                        "$variable[V4]$": {
+                            "type": "variable",
+                            "value": "24"
+                        },
+                        "$variable[V5]$": {
+                            "type": "variable",
+                            "value": "25"
+                        }
                     },
-                    "children": {
-                        "true": [
-                            {
-                                "command": "EVENT_CALL_CUSTOM_EVENT",
-                                "args": {
-                                    "customEventId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
-                                    "$variable[V1]$": {
-                                        "type": "variable",
-                                        "value": "1"
-                                    },
-                                    "$variable[V2]$": {
-                                        "type": "variable",
-                                        "value": "2"
-                                    },
-                                    "$variable[V3]$": {
-                                        "type": "variable",
-                                        "value": "3"
-                                    },
-                                    "__collapse": false
-                                },
-                                "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
-                            }
-                        ]
-                    },
-                    "id": "7afbc709-a3f5-4c9a-9861-d570ff3638a9"
+                    "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
                 },
                 {
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "DEBUG"
+                        "__label": "DEBUG",
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -2141,78 +2148,198 @@
                     "id": "V3",
                     "name": "Player Flips Left Count",
                     "passByReference": true
+                },
+                "V4": {
+                    "id": "V4",
+                    "name": "i",
+                    "passByReference": true
+                },
+                "V5": {
+                    "id": "V5",
+                    "name": "j",
+                    "passByReference": true
                 }
             },
             "actors": {},
             "symbol": "script_1",
             "script": [
                 {
-                    "command": "EVENT_SET_VALUE",
+                    "command": "EVENT_GROUP",
                     "args": {
-                        "variable": "V0",
-                        "value": {
-                            "type": "number",
-                            "value": 1
-                        }
+                        "__label": "Reset State",
+                        "__collapse": true
                     },
-                    "id": "93d0bef6-14ec-4071-95c1-14729a894012"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "V0",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 1
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "93d0bef6-14ec-4071-95c1-14729a894012"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "V1",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 0
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "fa441c9a-6eb4-4ae9-81ad-f885288c54f8"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "V2",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 0
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "d0bbc348-875e-48f8-b95f-19ec36b26e33"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "V3",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 3
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "f10f9eee-dac3-4bc1-96ed-3ab784fa56d4"
+                            }
+                        ]
+                    },
+                    "id": "e522f954-1003-49de-bb20-10bbe490d1d8"
                 },
                 {
-                    "command": "EVENT_SET_VALUE",
+                    "command": "EVENT_GROUP",
                     "args": {
-                        "variable": "V1",
-                        "value": {
-                            "type": "number",
-                            "value": 0
-                        }
+                        "__label": "Reset Selector",
+                        "__collapse": true
                     },
-                    "id": "fa441c9a-6eb4-4ae9-81ad-f885288c54f8"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_POSITION",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 3
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 4
+                                    }
+                                },
+                                "id": "9eb4b7fc-d8c9-47a6-a08f-a9de62c1218f"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "",
+                                    "loopAnim": false
+                                },
+                                "id": "bba179d6-17e0-4789-9c09-d0429b97cd53"
+                            }
+                        ]
+                    },
+                    "id": "e870dd83-770f-4d16-9ab8-5bad73ccf119"
                 },
                 {
-                    "command": "EVENT_SET_VALUE",
+                    "command": "EVENT_GROUP",
                     "args": {
-                        "variable": "V2",
-                        "value": {
-                            "type": "number",
-                            "value": 0
-                        }
+                        "__label": "Shuffle Cards"
                     },
-                    "id": "d0bbc348-875e-48f8-b95f-19ec36b26e33"
-                },
-                {
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "V3",
-                        "value": {
-                            "type": "number",
-                            "value": 3
-                        }
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "V4",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 23
+                                    }
+                                },
+                                "id": "321a2697-240c-4ceb-a73e-1dd03aefce43"
+                            },
+                            {
+                                "command": "EVENT_LOOP_FOR",
+                                "args": {
+                                    "variable": "V4",
+                                    "from": {
+                                        "type": "number",
+                                        "value": 23
+                                    },
+                                    "comparison": ">",
+                                    "to": {
+                                        "type": "number",
+                                        "value": 4
+                                    },
+                                    "operation": "-=",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 1
+                                    }
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+                                            "args": {
+                                                "variable": "V5",
+                                                "expression": "rnd($V4$ - 4) + 4",
+                                                "__label": "j = random(from 4 to i)"
+                                            },
+                                            "id": "1d390295-bc45-4e0b-83e7-99be506cfa2c"
+                                        },
+                                        {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_GET_INDIRECT VAR_VALUE_AT_J, VAR_INDEX_J\nVM_GET_INDIRECT VAR_VALUE_AT_I, VAR_INDEX_I\nVM_SET_INDIRECT VAR_INDEX_J, VAR_VALUE_AT_I\nVM_SET_INDIRECT VAR_INDEX_I, VAR_VALUE_AT_J",
+                                                "references": [
+                                                    {
+                                                        "type": "variable",
+                                                        "id": "26"
+                                                    },
+                                                    {
+                                                        "type": "variable",
+                                                        "id": "27"
+                                                    },
+                                                    {
+                                                        "type": "variable",
+                                                        "id": "24"
+                                                    },
+                                                    {
+                                                        "type": "variable",
+                                                        "id": "25"
+                                                    }
+                                                ],
+                                                "__label": "Swap Array[i] with Array[j]"
+                                            },
+                                            "id": "9006f8f9-fef7-4bf5-a164-6741fda12a0d"
+                                        }
+                                    ]
+                                },
+                                "id": "3914d937-7731-4db7-89ef-7fd96529211c"
+                            }
+                        ]
                     },
-                    "id": "f10f9eee-dac3-4bc1-96ed-3ab784fa56d4"
-                },
-                {
-                    "command": "EVENT_ACTOR_SET_POSITION",
-                    "args": {
-                        "actorId": "$self$",
-                        "x": {
-                            "type": "number",
-                            "value": 3
-                        },
-                        "y": {
-                            "type": "number",
-                            "value": 4
-                        }
-                    },
-                    "id": "9eb4b7fc-d8c9-47a6-a08f-a9de62c1218f"
-                },
-                {
-                    "command": "EVENT_ACTOR_SET_STATE",
-                    "args": {
-                        "actorId": "$self$",
-                        "spriteStateId": "",
-                        "loopAnim": false
-                    },
-                    "id": "bba179d6-17e0-4789-9c09-d0429b97cd53"
+                    "id": "e7e2d75c-6db0-4d75-b6ed-d09926d4d681"
                 }
             ]
         }
@@ -2463,6 +2590,26 @@
             "id": "23",
             "name": "Card 3,4",
             "symbol": "var_card_3_4"
+        },
+        {
+            "id": "24",
+            "name": "Index I",
+            "symbol": "var_index_i"
+        },
+        {
+            "id": "25",
+            "name": "Index J",
+            "symbol": "var_index_j"
+        },
+        {
+            "id": "26",
+            "name": "Value At I",
+            "symbol": "var_value_at_i"
+        },
+        {
+            "id": "27",
+            "name": "Value At J",
+            "symbol": "var_value_at_j"
         }
     ],
     "engineFieldValues": [
@@ -2482,8 +2629,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1114,
-        "worldScrollY": 0,
+        "worldScrollX": 714,
+        "worldScrollY": 195,
         "zoom": 250,
         "sgbEnabled": false,
         "customHead": "",
@@ -2570,13 +2717,24 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
         "debuggerPauseOnScriptChanged": false,
         "debuggerPauseOnWatchedVariableChanged": false,
-        "debuggerBreakpoints": [],
+        "debuggerBreakpoints": [
+            {
+                "scriptEventId": "214d2723-3ecc-48e3-95dd-a38d01dfc632",
+                "context": {
+                    "type": "script",
+                    "entityType": "customEvent",
+                    "entityId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
+                    "sceneId": "",
+                    "scriptKey": "script"
+                }
+            }
+        ],
         "debuggerWatchedVariables": [],
         "colorMode": "mono",
         "previewAsMono": false,
