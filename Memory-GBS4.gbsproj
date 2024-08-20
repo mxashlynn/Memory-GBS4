@@ -383,6 +383,34 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "minHeight": 18,
+                        "maxHeight": 18,
+                        "position": "bottom",
+                        "showBorder": true,
+                        "clearPrevious": true,
+                        "textX": 3,
+                        "textY": 1,
+                        "textHeight": 3,
+                        "closeWhen": "notModal",
+                        "closeButton": "a",
+                        "text": [
+                            "\\216\\217 \\216\\217 \\216\\217 \\216\\217 \\216\\217\n\\236\\237Shuffling\\177\\236\\237\n\\256\\257 \\256\\257 \\256\\257 \\256\\257 \\256\\257"
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "849c8eb8-e7a0-48a8-ba04-041700469338"
+                },
+                {
+                    "command": "EVENT_FADE_IN",
+                    "args": {
+                        "speed": 1
+                    },
+                    "id": "90fb432d-65b8-41e3-b239-cf81ab135842"
+                },
+                {
                     "command": "EVENT_RNG_SEED",
                     "args": {
                         "__collapse": true
@@ -422,49 +450,6 @@
                     "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
                 },
                 {
-                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                    "args": {
-                        "__scriptTabs": "text",
-                        "minHeight": 18,
-                        "maxHeight": 18,
-                        "position": "bottom",
-                        "showBorder": true,
-                        "clearPrevious": true,
-                        "textX": 3,
-                        "textY": 1,
-                        "textHeight": 3,
-                        "closeWhen": "notModal",
-                        "closeButton": "a",
-                        "text": [
-                            "\\216\\217 \\216\\217 \\216\\217 \\216\\217 \\216\\217\n\\236\\237Shuffling\\177\\236\\237\n\\256\\257 \\256\\257 \\256\\257 \\256\\257 \\256\\257"
-                        ],
-                        "avatarId": ""
-                    },
-                    "id": "849c8eb8-e7a0-48a8-ba04-041700469338"
-                },
-                {
-                    "command": "EVENT_FADE_IN",
-                    "args": {
-                        "speed": 1
-                    },
-                    "id": "90fb432d-65b8-41e3-b239-cf81ab135842"
-                },
-                {
-                    "command": "EVENT_CALL_CUSTOM_EVENT",
-                    "args": {
-                        "customEventId": "974e18eb-569e-453b-b052-176a0361ce4b",
-                        "$variable[V0]$": {
-                            "type": "number",
-                            "value": 3
-                        },
-                        "$variable[V1]$": {
-                            "type": "number",
-                            "value": 1
-                        }
-                    },
-                    "id": "4e4f17a0-9e5b-44b4-a923-f67c82ee405b"
-                },
-                {
                     "command": "EVENT_SET_VALUE",
                     "args": {
                         "variable": "26",
@@ -479,7 +464,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "DEBUG",
-                        "__comment": false
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -2204,7 +2189,7 @@
         {
             "id": "7e02202e-ff32-4afd-880f-72b3960a04f7",
             "name": "Set Up New Game",
-            "description": "Resets state to the beginning of a play session.",
+            "description": "Resets state to the beginning of a play session and flips all cards to show their backs.",
             "variables": {
                 "V0": {
                     "id": "V0",
@@ -2399,6 +2384,21 @@
                         ]
                     },
                     "id": "e7e2d75c-6db0-4d75-b6ed-d09926d4d681"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "f90339dc-59de-4333-b719-0077ada36cde",
+                        "$variable[V0]$": {
+                            "type": "number",
+                            "value": 0
+                        },
+                        "$variable[V1]$": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "d717cebd-b6f0-4e93-8eab-97a631afc615"
                 }
             ]
         },
@@ -2546,6 +2546,92 @@
                         ]
                     },
                     "id": "be9ce2d3-a27d-40b2-bdb9-17a84da0b4d3"
+                }
+            ]
+        },
+        {
+            "id": "f90339dc-59de-4333-b719-0077ada36cde",
+            "name": "Flip All Cards to Back",
+            "description": "Replaces all card tiles with card back graphics.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_3",
+            "script": [
+                {
+                    "command": "EVENT_LOOP_FOR",
+                    "args": {
+                        "variable": "V0",
+                        "from": {
+                            "type": "number",
+                            "value": 3
+                        },
+                        "comparison": "<=",
+                        "to": {
+                            "type": "number",
+                            "value": 15
+                        },
+                        "operation": "+=",
+                        "value": {
+                            "type": "number",
+                            "value": 3
+                        }
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_LOOP_FOR",
+                                "args": {
+                                    "variable": "V1",
+                                    "from": {
+                                        "type": "number",
+                                        "value": 1
+                                    },
+                                    "comparison": "<=",
+                                    "to": {
+                                        "type": "number",
+                                        "value": 13
+                                    },
+                                    "operation": "+=",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 4
+                                    }
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                                            "args": {
+                                                "customEventId": "974e18eb-569e-453b-b052-176a0361ce4b",
+                                                "$variable[V0]$": {
+                                                    "type": "variable",
+                                                    "value": "V0"
+                                                },
+                                                "$variable[V1]$": {
+                                                    "type": "variable",
+                                                    "value": "V1"
+                                                }
+                                            },
+                                            "id": "5f42d87f-00a8-4010-9966-169e2ffa794e"
+                                        }
+                                    ]
+                                },
+                                "id": "ed15a09c-2816-4b9d-af56-6faf6791e428"
+                            }
+                        ]
+                    },
+                    "id": "973e89ba-524c-4aa4-a441-80adaa09b2f1"
                 }
             ]
         }
@@ -2831,7 +2917,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 1341,
-        "worldScrollY": 385,
+        "worldScrollY": 285,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
