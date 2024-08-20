@@ -14,7 +14,7 @@
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
-            "autoFadeSpeed": 1,
+            "autoFadeSpeed": null,
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818",
             "symbol": "scene_1",
             "x": 640,
@@ -34,88 +34,34 @@
                     "collisionGroup": "",
                     "symbol": "actor_0",
                     "script": [],
-                    "startScript": [
+                    "startScript": [],
+                    "updateScript": [
                         {
-                            "command": "EVENT_GROUP",
+                            "command": "EVENT_IF",
                             "args": {
-                                "__label": "Set Up Status Line",
-                                "__comment": false
+                                "condition": {
+                                    "type": "variable",
+                                    "value": "26"
+                                },
+                                "__collapseElse": true,
+                                "__label": "If Initialized",
+                                "__disableElse": true
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
-                                        "args": {
-                                            "speedIn": 0,
-                                            "speedOut": 0,
-                                            "speed": 0,
-                                            "allowFastForward": true
-                                        },
-                                        "id": "3ff5db5c-561e-4638-ac35-e50c6f9840b9"
-                                    }
-                                ]
-                            },
-                            "id": "19d829a3-4a29-4e90-ab00-5669dd1908ef"
-                        }
-                    ],
-                    "updateScript": [
-                        {
-                            "command": "EVENT_SWITCH",
-                            "args": {
-                                "variable": "0",
-                                "choices": 3,
-                                "__collapseCase0": false,
-                                "value0": 1,
-                                "__collapseCase1": false,
-                                "value1": 2,
-                                "__collapseCase2": false,
-                                "value2": 3,
-                                "__collapseCase3": false,
-                                "value3": 4,
-                                "__collapseCase4": false,
-                                "value4": 5,
-                                "__collapseCase5": false,
-                                "value5": 6,
-                                "__collapseCase6": false,
-                                "value6": 7,
-                                "__collapseCase7": false,
-                                "value7": 8,
-                                "__collapseCase8": false,
-                                "value8": 9,
-                                "__collapseCase9": false,
-                                "value9": 10,
-                                "__collapseCase10": false,
-                                "value10": 11,
-                                "__collapseCase11": false,
-                                "value11": 12,
-                                "__collapseCase12": false,
-                                "value12": 13,
-                                "__collapseCase13": false,
-                                "value13": 14,
-                                "__collapseCase14": false,
-                                "value14": 15,
-                                "__collapseCase15": false,
-                                "value15": 16,
-                                "__collapseElse": false,
-                                "__label": "Write Appropriate Status",
-                                "__comment": false,
-                                "__collapse": false
-                            },
-                            "children": {
-                                "true0": [
-                                    {
                                         "command": "EVENT_SWITCH",
                                         "args": {
-                                            "variable": "3",
-                                            "choices": 4,
+                                            "variable": "0",
+                                            "choices": 3,
                                             "__collapseCase0": false,
-                                            "value0": 3,
+                                            "value0": 1,
                                             "__collapseCase1": false,
                                             "value1": 2,
                                             "__collapseCase2": false,
-                                            "value2": 1,
+                                            "value2": 3,
                                             "__collapseCase3": false,
-                                            "value3": 0,
+                                            "value3": 4,
                                             "__collapseCase4": false,
                                             "value4": 5,
                                             "__collapseCase5": false,
@@ -141,31 +87,187 @@
                                             "__collapseCase15": false,
                                             "value15": 16,
                                             "__collapseElse": false,
-                                            "__label": "In Play"
+                                            "__label": "Write Appropriate Status",
+                                            "__comment": false,
+                                            "__collapse": false
                                         },
                                         "children": {
                                             "true0": [
                                                 {
-                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                    "command": "EVENT_SWITCH",
                                                     "args": {
-                                                        "__scriptTabs": "text",
-                                                        "minHeight": 1,
-                                                        "maxHeight": 1,
-                                                        "position": "bottom",
-                                                        "showBorder": false,
-                                                        "clearPrevious": false,
-                                                        "textX": 1,
-                                                        "textY": 1,
-                                                        "textHeight": 1,
-                                                        "closeWhen": "notModal",
-                                                        "closeButton": "a",
-                                                        "text": [
-                                                            "\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__label": "Write 3 Flips Left"
+                                                        "variable": "3",
+                                                        "choices": 4,
+                                                        "__collapseCase0": false,
+                                                        "value0": 3,
+                                                        "__collapseCase1": false,
+                                                        "value1": 2,
+                                                        "__collapseCase2": false,
+                                                        "value2": 1,
+                                                        "__collapseCase3": false,
+                                                        "value3": 0,
+                                                        "__collapseCase4": false,
+                                                        "value4": 5,
+                                                        "__collapseCase5": false,
+                                                        "value5": 6,
+                                                        "__collapseCase6": false,
+                                                        "value6": 7,
+                                                        "__collapseCase7": false,
+                                                        "value7": 8,
+                                                        "__collapseCase8": false,
+                                                        "value8": 9,
+                                                        "__collapseCase9": false,
+                                                        "value9": 10,
+                                                        "__collapseCase10": false,
+                                                        "value10": 11,
+                                                        "__collapseCase11": false,
+                                                        "value11": 12,
+                                                        "__collapseCase12": false,
+                                                        "value12": 13,
+                                                        "__collapseCase13": false,
+                                                        "value13": 14,
+                                                        "__collapseCase14": false,
+                                                        "value14": 15,
+                                                        "__collapseCase15": false,
+                                                        "value15": 16,
+                                                        "__collapseElse": false,
+                                                        "__label": "In Play"
                                                     },
-                                                    "id": "94f1fb30-87e6-497c-a3ef-14e4fa5035f1"
+                                                    "children": {
+                                                        "true0": [
+                                                            {
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "args": {
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 1,
+                                                                    "maxHeight": 1,
+                                                                    "position": "bottom",
+                                                                    "showBorder": false,
+                                                                    "clearPrevious": false,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 1,
+                                                                    "closeWhen": "notModal",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__label": "Write 3 Flips Left"
+                                                                },
+                                                                "id": "94f1fb30-87e6-497c-a3ef-14e4fa5035f1"
+                                                            }
+                                                        ],
+                                                        "true1": [
+                                                            {
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "args": {
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 1,
+                                                                    "maxHeight": 1,
+                                                                    "position": "bottom",
+                                                                    "showBorder": false,
+                                                                    "clearPrevious": false,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 1,
+                                                                    "closeWhen": "notModal",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__label": "Write 2 Flips Left"
+                                                                },
+                                                                "id": "1730d4fb-52b2-4a34-a59a-3498ad665e55"
+                                                            }
+                                                        ],
+                                                        "true2": [
+                                                            {
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "args": {
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 1,
+                                                                    "maxHeight": 1,
+                                                                    "position": "bottom",
+                                                                    "showBorder": false,
+                                                                    "clearPrevious": false,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 1,
+                                                                    "closeWhen": "notModal",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "\\003\\001\\001\\275\\274 Flips Left @   \\274\\275"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__label": "Write 1 Flip Left"
+                                                                },
+                                                                "id": "1a8d80c3-3410-4c7b-9f93-11268c230394"
+                                                            }
+                                                        ],
+                                                        "true3": [
+                                                            {
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "args": {
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 1,
+                                                                    "maxHeight": 1,
+                                                                    "position": "bottom",
+                                                                    "showBorder": false,
+                                                                    "clearPrevious": false,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 1,
+                                                                    "closeWhen": "notModal",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "\\003\\001\\001\\275\\274 Flips Left     \\274\\275"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__label": "Write 0 Flips Left"
+                                                                },
+                                                                "id": "0a8b54ed-0ddc-4d33-b6d6-6d2a449e7750"
+                                                            }
+                                                        ],
+                                                        "true4": [],
+                                                        "true5": [],
+                                                        "true6": [],
+                                                        "true7": [],
+                                                        "true8": [],
+                                                        "true9": [],
+                                                        "true10": [],
+                                                        "true11": [],
+                                                        "true12": [],
+                                                        "true13": [],
+                                                        "true14": [],
+                                                        "true15": [],
+                                                        "false": [
+                                                            {
+                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "args": {
+                                                                    "__scriptTabs": "text",
+                                                                    "minHeight": 1,
+                                                                    "maxHeight": 1,
+                                                                    "position": "bottom",
+                                                                    "showBorder": false,
+                                                                    "clearPrevious": false,
+                                                                    "textX": 1,
+                                                                    "textY": 1,
+                                                                    "textHeight": 1,
+                                                                    "closeWhen": "notModal",
+                                                                    "closeButton": "a",
+                                                                    "text": [
+                                                                        "\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__label": "Write ERROR"
+                                                                },
+                                                                "id": "44b515f1-6447-4b64-8dda-1a397ba755c8"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "4bb68203-9bb7-497f-98f2-0018c22b5520"
                                                 }
                                             ],
                                             "true1": [
@@ -184,12 +286,12 @@
                                                         "closeWhen": "notModal",
                                                         "closeButton": "a",
                                                         "text": [
-                                                            "\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275"
+                                                            "\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275"
                                                         ],
                                                         "avatarId": "",
-                                                        "__label": "Write 2 Flips Left"
+                                                        "__label": "Write Game Over"
                                                     },
-                                                    "id": "1730d4fb-52b2-4a34-a59a-3498ad665e55"
+                                                    "id": "c9c682ba-8d4c-4bdb-b19c-678b0b7d8ccd"
                                                 }
                                             ],
                                             "true2": [
@@ -208,38 +310,15 @@
                                                         "closeWhen": "notModal",
                                                         "closeButton": "a",
                                                         "text": [
-                                                            "\\003\\001\\001\\275\\274 Flips Left @   \\274\\275"
+                                                            "\\003\\001\\001\\275\\274Won in %D2$02$ Flips!\\274\\275"
                                                         ],
                                                         "avatarId": "",
-                                                        "__label": "Write 1 Flip Left"
+                                                        "__label": "Write Game Won"
                                                     },
-                                                    "id": "1a8d80c3-3410-4c7b-9f93-11268c230394"
+                                                    "id": "554febac-2ce2-4b39-ba39-46f058838bcb"
                                                 }
                                             ],
-                                            "true3": [
-                                                {
-                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                    "args": {
-                                                        "__scriptTabs": "text",
-                                                        "minHeight": 1,
-                                                        "maxHeight": 1,
-                                                        "position": "bottom",
-                                                        "showBorder": false,
-                                                        "clearPrevious": false,
-                                                        "textX": 1,
-                                                        "textY": 1,
-                                                        "textHeight": 1,
-                                                        "closeWhen": "notModal",
-                                                        "closeButton": "a",
-                                                        "text": [
-                                                            "\\003\\001\\001\\275\\274 Flips Left     \\274\\275"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__label": "Write 0 Flips Left"
-                                                    },
-                                                    "id": "0a8b54ed-0ddc-4d33-b6d6-6d2a449e7750"
-                                                }
-                                            ],
+                                            "true3": [],
                                             "true4": [],
                                             "true5": [],
                                             "true6": [],
@@ -268,113 +347,29 @@
                                                         "closeWhen": "notModal",
                                                         "closeButton": "a",
                                                         "text": [
-                                                            "\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275"
+                                                            "\\003\\001\\001\\275\\274                \\274\\275"
                                                         ],
                                                         "avatarId": "",
-                                                        "__label": "Write ERROR"
+                                                        "__label": "Write Blank"
                                                     },
-                                                    "id": "44b515f1-6447-4b64-8dda-1a397ba755c8"
+                                                    "id": "f1b35162-f66f-4396-a2be-0a59c3457979"
                                                 }
                                             ]
                                         },
-                                        "id": "4bb68203-9bb7-497f-98f2-0018c22b5520"
+                                        "id": "fce37df0-ada1-4434-9fa6-3772f98ab1b6"
+                                    },
+                                    {
+                                        "command": "EVENT_WAIT",
+                                        "args": {
+                                            "time": 1,
+                                            "frames": 30
+                                        },
+                                        "id": "fcd3be25-26ab-4356-83b1-a2b95a88cb07"
                                     }
                                 ],
-                                "true1": [
-                                    {
-                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                        "args": {
-                                            "__scriptTabs": "text",
-                                            "minHeight": 1,
-                                            "maxHeight": 1,
-                                            "position": "bottom",
-                                            "showBorder": false,
-                                            "clearPrevious": false,
-                                            "textX": 1,
-                                            "textY": 1,
-                                            "textHeight": 1,
-                                            "closeWhen": "notModal",
-                                            "closeButton": "a",
-                                            "text": [
-                                                "\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275"
-                                            ],
-                                            "avatarId": "",
-                                            "__label": "Write Game Over"
-                                        },
-                                        "id": "c9c682ba-8d4c-4bdb-b19c-678b0b7d8ccd"
-                                    }
-                                ],
-                                "true2": [
-                                    {
-                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                        "args": {
-                                            "__scriptTabs": "text",
-                                            "minHeight": 1,
-                                            "maxHeight": 1,
-                                            "position": "bottom",
-                                            "showBorder": false,
-                                            "clearPrevious": false,
-                                            "textX": 1,
-                                            "textY": 1,
-                                            "textHeight": 1,
-                                            "closeWhen": "notModal",
-                                            "closeButton": "a",
-                                            "text": [
-                                                "\\003\\001\\001\\275\\274Won in %D2$02$ Flips!\\274\\275"
-                                            ],
-                                            "avatarId": "",
-                                            "__label": "Write Game Won"
-                                        },
-                                        "id": "554febac-2ce2-4b39-ba39-46f058838bcb"
-                                    }
-                                ],
-                                "true3": [],
-                                "true4": [],
-                                "true5": [],
-                                "true6": [],
-                                "true7": [],
-                                "true8": [],
-                                "true9": [],
-                                "true10": [],
-                                "true11": [],
-                                "true12": [],
-                                "true13": [],
-                                "true14": [],
-                                "true15": [],
-                                "false": [
-                                    {
-                                        "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                        "args": {
-                                            "__scriptTabs": "text",
-                                            "minHeight": 1,
-                                            "maxHeight": 1,
-                                            "position": "bottom",
-                                            "showBorder": false,
-                                            "clearPrevious": false,
-                                            "textX": 1,
-                                            "textY": 1,
-                                            "textHeight": 1,
-                                            "closeWhen": "notModal",
-                                            "closeButton": "a",
-                                            "text": [
-                                                "\\003\\001\\001\\275\\274                \\274\\275"
-                                            ],
-                                            "avatarId": "",
-                                            "__label": "Write Blank"
-                                        },
-                                        "id": "f1b35162-f66f-4396-a2be-0a59c3457979"
-                                    }
-                                ]
+                                "false": []
                             },
-                            "id": "fce37df0-ada1-4434-9fa6-3772f98ab1b6"
-                        },
-                        {
-                            "command": "EVENT_WAIT",
-                            "args": {
-                                "time": 1,
-                                "frames": 30
-                            },
-                            "id": "fcd3be25-26ab-4356-83b1-a2b95a88cb07"
+                            "id": "3a175834-f223-4ab1-b548-f20d0786c446"
                         }
                     ],
                     "hit1Script": [],
@@ -389,324 +384,10 @@
             "script": [
                 {
                     "command": "EVENT_RNG_SEED",
-                    "args": {},
-                    "id": "8677c81b-08e2-4689-8b16-8e7b7c9ba416"
-                },
-                {
-                    "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "Initialize Deck",
                         "__collapse": true
                     },
-                    "children": {
-                        "true": [
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Moon Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "4",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 1
-                                                }
-                                            },
-                                            "id": "83bdd871-0448-4327-bd25-7592244894db"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "5",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 1
-                                                }
-                                            },
-                                            "id": "91b99719-8d62-4792-948d-eab3b1845949"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "6",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 1
-                                                }
-                                            },
-                                            "id": "b79afba4-3051-4ce9-814b-2085a0f054ae"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "7",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 1
-                                                }
-                                            },
-                                            "id": "e80bceab-6d35-449c-9584-9c8905e9428b"
-                                        }
-                                    ]
-                                },
-                                "id": "d24bfecc-830f-4a37-9491-c559566af5ab"
-                            },
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Sun Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "8",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 2
-                                                }
-                                            },
-                                            "id": "1916fa83-83f3-4549-9f9b-4747ab38c026"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "9",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 2
-                                                }
-                                            },
-                                            "id": "17944677-dacd-4cbf-90b6-602cab7c9a88"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "10",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 2
-                                                }
-                                            },
-                                            "id": "ffd6e0e5-7485-4e46-a51e-2632e0d3f7b3"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "11",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 2
-                                                }
-                                            },
-                                            "id": "6b58269b-0903-492e-8e02-1098a2dbd478"
-                                        }
-                                    ]
-                                },
-                                "id": "1f82e520-47fd-4da4-b2ea-1ab0127df9eb"
-                            },
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Stars Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "12",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 3
-                                                }
-                                            },
-                                            "id": "c06bf8f6-41de-4873-939b-e979a0d2b5fd"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "13",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 3
-                                                }
-                                            },
-                                            "id": "24ddcb47-030a-42c0-8bb0-905f2af867fa"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "14",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 3
-                                                }
-                                            },
-                                            "id": "df7b3637-a7e8-4a95-8605-fe0bb2b9b9f1"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "15",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 3
-                                                }
-                                            },
-                                            "id": "20b6633a-7fa4-4d78-aa3e-241a6e94fb0b"
-                                        }
-                                    ]
-                                },
-                                "id": "0520b665-7380-4b18-89d6-85d1cf7427dd"
-                            },
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Planet Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "16",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 4
-                                                }
-                                            },
-                                            "id": "222d2fdb-0afa-4add-bf64-1029aa179b82"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "17",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 4
-                                                }
-                                            },
-                                            "id": "b7c0f83b-1cb9-43a1-a739-730573f932e3"
-                                        }
-                                    ]
-                                },
-                                "id": "bacd0f7b-67b7-402a-a103-65ccee74473b"
-                            },
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Aurora Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "18",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 5
-                                                }
-                                            },
-                                            "id": "4664ea7b-13ac-4e0b-be74-667f3e588e28"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "19",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 5
-                                                }
-                                            },
-                                            "id": "efaf0a45-078e-4efd-908d-031c1d1bf4d9"
-                                        }
-                                    ]
-                                },
-                                "id": "5bcbf4b7-8a8a-41a7-83d8-f9315f3527b0"
-                            },
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Rainbow Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "20",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 6
-                                                }
-                                            },
-                                            "id": "18c4db9d-60f8-49b1-b885-ff0842ffd383"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "21",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 6
-                                                }
-                                            },
-                                            "id": "41913bad-3539-4bc0-9dea-8d680af5bd03"
-                                        }
-                                    ]
-                                },
-                                "id": "a17a12d6-a524-4cbc-8b69-b10c860ecaca"
-                            },
-                            {
-                                "command": "EVENT_GROUP",
-                                "args": {
-                                    "__label": "Lightning Cards",
-                                    "__collapse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "22",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 7
-                                                }
-                                            },
-                                            "id": "3dff2196-6767-4d03-9068-c2a2d65c33ee"
-                                        },
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "23",
-                                                "value": {
-                                                    "type": "number",
-                                                    "value": 7
-                                                }
-                                            },
-                                            "id": "59ceae4b-464c-4f63-9e43-f5c856fc1665"
-                                        }
-                                    ]
-                                },
-                                "id": "ed6dbf9b-4f10-43a3-a968-e01146102f08"
-                            }
-                        ]
-                    },
-                    "id": "dc6d7c68-ad77-4977-bc20-0c52386c9373"
+                    "id": "8677c81b-08e2-4689-8b16-8e7b7c9ba416"
                 },
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -741,10 +422,63 @@
                     "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
                 },
                 {
+                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                    "args": {
+                        "__scriptTabs": "layout",
+                        "minHeight": 18,
+                        "maxHeight": 18,
+                        "position": "bottom",
+                        "showBorder": true,
+                        "clearPrevious": true,
+                        "textX": 1,
+                        "textY": 1,
+                        "textHeight": 3,
+                        "closeWhen": "notModal",
+                        "closeButton": "a",
+                        "text": [
+                            " \\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\217\n \\236\\236Shuffling\\177\\236\\236\\236\\237\n \\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\257"
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "849c8eb8-e7a0-48a8-ba04-041700469338"
+                },
+                {
+                    "command": "EVENT_FADE_IN",
+                    "args": {
+                        "speed": 1
+                    },
+                    "id": "90fb432d-65b8-41e3-b239-cf81ab135842"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "974e18eb-569e-453b-b052-176a0361ce4b",
+                        "$variable[V0]$": {
+                            "type": "number",
+                            "value": 3
+                        },
+                        "$variable[V1]$": {
+                            "type": "number",
+                            "value": 1
+                        }
+                    },
+                    "id": "4e4f17a0-9e5b-44b4-a923-f67c82ee405b"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "26",
+                        "value": {
+                            "type": "true"
+                        }
+                    },
+                    "id": "a0f7b763-2b4b-4a1e-bae7-238a54cd14f8"
+                },
+                {
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "DEBUG",
-                        "__comment": false
+                        "__comment": true
                     },
                     "children": {
                         "true": [
@@ -804,7 +538,8 @@
                 {
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
-                        "actorId": "$self$"
+                        "actorId": "$self$",
+                        "__collapse": true
                     },
                     "id": "63121860-aafc-4739-bbe3-c9f28dd88263"
                 },
@@ -815,7 +550,8 @@
                             "select"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -847,7 +583,8 @@
                             "start"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -871,6 +608,345 @@
                         ]
                     },
                     "id": "74b31419-e061-4a10-b222-31fabde04ccc"
+                },
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Write Dialogue Instantly",
+                        "__comment": false,
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                                "args": {
+                                    "speedIn": 0,
+                                    "speedOut": 0,
+                                    "speed": 0,
+                                    "allowFastForward": true
+                                },
+                                "id": "ba79b3ff-c53e-46d9-8659-f32daac7166d"
+                            }
+                        ]
+                    },
+                    "id": "135c9ec3-53f4-4bdd-a7af-51c978b02bb1"
+                },
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Initialize Deck",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Moon Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "4",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "08b3fbe2-e9a9-4fbb-b332-e8b535fb2d59"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "5",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "37bf2f3d-0378-422a-9b52-670377070b3e"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "6",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "062ef453-cfda-4345-82fe-245fc8af0f0c"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "7",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 1
+                                                }
+                                            },
+                                            "id": "5242733a-4cd1-4ea5-92f7-a8cc7b37bad7"
+                                        }
+                                    ]
+                                },
+                                "id": "8bb4faf3-f05d-4fe2-b65b-8f526c87d1bb"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Sun Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "8",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "be8e9200-7eff-4f74-bf63-509674cc94fc"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "9",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "dd377735-3a0a-4de2-993c-3c1c585d58c1"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "10",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "aa268e1f-84a2-47fb-b7df-a74cdd2d5d34"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "11",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 2
+                                                }
+                                            },
+                                            "id": "f9cf31ea-a038-417d-8119-83f96c4a2f60"
+                                        }
+                                    ]
+                                },
+                                "id": "26e986fe-89cc-44fa-979e-32e99fca0084"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Stars Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "12",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "07ba5023-068a-47f9-975a-3c07cc94e1ce"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "13",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "0abf13ca-4f85-4e14-91a0-0b52dc477f78"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "14",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "bae0b985-c89a-44c0-a590-a3f8d83828d1"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "15",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 3
+                                                }
+                                            },
+                                            "id": "0c530489-8cc3-4eaa-a0f5-92f625d08027"
+                                        }
+                                    ]
+                                },
+                                "id": "49693faf-285b-4408-91f5-5cd2e30bf77c"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Planet Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "16",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 4
+                                                }
+                                            },
+                                            "id": "d99a8075-a4fa-456a-ae98-13af886f7efc"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "17",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 4
+                                                }
+                                            },
+                                            "id": "a1137fd9-8001-49e5-a85c-e76fbd0298d3"
+                                        }
+                                    ]
+                                },
+                                "id": "184a085a-9a7a-4d3b-a36b-fb4202e18934"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Aurora Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "18",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 5
+                                                }
+                                            },
+                                            "id": "beba9757-26d1-4778-8991-bd326a992fa2"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "19",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 5
+                                                }
+                                            },
+                                            "id": "100332a4-a4ff-47b7-9046-36486f280d6d"
+                                        }
+                                    ]
+                                },
+                                "id": "d7c99f86-0857-4709-bc8f-8217db188829"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Rainbow Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "20",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 6
+                                                }
+                                            },
+                                            "id": "659d238d-99e0-46bd-b5d0-ffec6dfe998a"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "21",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 6
+                                                }
+                                            },
+                                            "id": "10e563bb-fe91-4bae-b198-08fcaed26f89"
+                                        }
+                                    ]
+                                },
+                                "id": "1b60c2c6-b4bf-4f3f-a053-460139532d56"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Lightning Cards",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "22",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 7
+                                                }
+                                            },
+                                            "id": "8a263524-00e8-4fe8-819d-97f5bee09770"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "23",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 7
+                                                }
+                                            },
+                                            "id": "7d248fa0-6095-4b4b-a057-76cbe4aac06a"
+                                        }
+                                    ]
+                                },
+                                "id": "c1aee55d-158f-4779-bce6-5abb59411c51"
+                            }
+                        ]
+                    },
+                    "id": "47ee809e-8365-4b9a-a12c-785e4a0ac2b4"
                 }
             ],
             "playerHit1Script": [],
@@ -2263,7 +2339,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Shuffle Cards",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -2322,6 +2398,153 @@
                         ]
                     },
                     "id": "e7e2d75c-6db0-4d75-b6ed-d09926d4d681"
+                }
+            ]
+        },
+        {
+            "id": "974e18eb-569e-453b-b052-176a0361ce4b",
+            "name": "Flip Card to Back",
+            "description": "Replaces relative to the given coordinates to show the back of a card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_2",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Back",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 108
+                                    }
+                                },
+                                "id": "f8ff51f4-647f-44e7-b16e-1bd77801a835"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 109
+                                    }
+                                },
+                                "id": "ae6db477-ac8e-496d-ae3d-b2e8ece5beae"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 124
+                                    }
+                                },
+                                "id": "ac0c8eff-82b7-4be1-babf-537c7a2e4d21"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 125
+                                    }
+                                },
+                                "id": "6b14068a-20bc-4e55-af37-5e7f46251ec3"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 140
+                                    }
+                                },
+                                "id": "d9467b52-8e5e-46ac-b1c9-ca8458639301"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 141
+                                    }
+                                },
+                                "id": "d1c15a02-cc8a-4712-b590-ed55ed035e63"
+                            }
+                        ]
+                    },
+                    "id": "be9ce2d3-a27d-40b2-bdb9-17a84da0b4d3"
                 }
             ]
         }
@@ -2582,6 +2805,11 @@
             "id": "25",
             "name": "Index J",
             "symbol": "var_index_j"
+        },
+        {
+            "id": "26",
+            "name": "Is Initialized?",
+            "symbol": "var_is_initialized_"
         }
     ],
     "engineFieldValues": [
@@ -2601,9 +2829,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1014,
-        "worldScrollY": 300,
-        "zoom": 250,
+        "worldScrollX": 1341,
+        "worldScrollY": 385,
+        "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
