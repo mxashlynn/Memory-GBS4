@@ -399,14 +399,17 @@
                         "text": [
                             "\\216\\217 \\216\\217 \\216\\217 \\216\\217 \\216\\217\n\\236\\237Shuffling\\177\\236\\237\n\\256\\257 \\256\\257 \\256\\257 \\256\\257 \\256\\257"
                         ],
-                        "avatarId": ""
+                        "avatarId": "",
+                        "__collapse": true,
+                        "__label": "Show \"Shuffling\" Overlay"
                     },
                     "id": "849c8eb8-e7a0-48a8-ba04-041700469338"
                 },
                 {
                     "command": "EVENT_FADE_IN",
                     "args": {
-                        "speed": 1
+                        "speed": 1,
+                        "__collapse": true
                     },
                     "id": "90fb432d-65b8-41e3-b239-cf81ab135842"
                 },
@@ -456,7 +459,9 @@
                         "value": {
                             "type": "true"
                         },
-                        "__comment": false
+                        "__comment": false,
+                        "__label": "Clear \"Shuffling\" Overlay",
+                        "__collapse": true
                     },
                     "id": "a0f7b763-2b4b-4a1e-bae7-238a54cd14f8"
                 },
