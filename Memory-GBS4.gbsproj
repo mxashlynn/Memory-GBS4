@@ -424,19 +424,19 @@
                 {
                     "command": "PT_EVENT_ADVANCED_DIALOGUE",
                     "args": {
-                        "__scriptTabs": "layout",
+                        "__scriptTabs": "text",
                         "minHeight": 18,
                         "maxHeight": 18,
                         "position": "bottom",
                         "showBorder": true,
                         "clearPrevious": true,
-                        "textX": 1,
+                        "textX": 3,
                         "textY": 1,
                         "textHeight": 3,
                         "closeWhen": "notModal",
                         "closeButton": "a",
                         "text": [
-                            " \\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\216\\217\n \\236\\236Shuffling\\177\\236\\236\\236\\237\n \\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\256\\257"
+                            "\\216\\217 \\216\\217 \\216\\217 \\216\\217 \\216\\217\n\\236\\237Shuffling\\177\\236\\237\n\\256\\257 \\256\\257 \\256\\257 \\256\\257 \\256\\257"
                         ],
                         "avatarId": ""
                     },
@@ -470,7 +470,8 @@
                         "variable": "26",
                         "value": {
                             "type": "true"
-                        }
+                        },
+                        "__comment": false
                     },
                     "id": "a0f7b763-2b4b-4a1e-bae7-238a54cd14f8"
                 },
@@ -478,7 +479,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "DEBUG",
-                        "__comment": true
+                        "__comment": false
                     },
                     "children": {
                         "true": [
