@@ -17,16 +17,7 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 
 
 ## 🗺 Week of the 24th
-- At start of new game:
-    ✓ Set Game State to IN PLAY
-    ✓ Set Player Match Count to 0
-    ✓ Set Player Flips Made Count to 0
-    ✓ Set Player Flips Left Count to 3
-    ✓ Reset player pointer location
-    ✓ Randomize card array
-        ➡ HERE! ⬅
-    - Display cards face down
-- Player can Move pointer
+- Player can Move pointer                               ⬅⬅⬅ HERE!
 - Player can Select cards
 - When player selects a card:
     - If the card is already face up, nothing happens
@@ -66,4 +57,8 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 - Set up player sprite
 - Start a new game whenever playfield is loaded
 - Store cards in array
+- Start New Game
+    - Set game state variables
+    - Randomize card array
+    - Display cards face down
 
