@@ -775,6 +775,254 @@
                     "id": "90fb432d-65b8-41e3-b239-cf81ab135842"
                 },
                 {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Set Up Movement",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": [
+                                        "right"
+                                    ],
+                                    "override": true,
+                                    "__scriptTabs": "press",
+                                    "__label": "Move Right On Grid",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "lt",
+                                                    "valueA": {
+                                                        "type": "property",
+                                                        "target": "player",
+                                                        "property": "xpos"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": 15
+                                                    }
+                                                },
+                                                "__collapseElse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": {
+                                                                "type": "number",
+                                                                "value": 3
+                                                            },
+                                                            "y": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            },
+                                                            "moveType": "horizontal",
+                                                            "useCollisions": false
+                                                        },
+                                                        "id": "02591a1b-0ce7-4673-acb5-b75d6edd437a"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "39879085-7c0b-4e46-bf74-0a0ce0cdf12a"
+                                        }
+                                    ]
+                                },
+                                "id": "e78d3b88-0cba-42fa-b83c-094bc719ee00"
+                            },
+                            {
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": [
+                                        "left"
+                                    ],
+                                    "override": true,
+                                    "__scriptTabs": "press",
+                                    "__label": "Move Left On Grid",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "gt",
+                                                    "valueA": {
+                                                        "type": "property",
+                                                        "target": "player",
+                                                        "property": "xpos"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": 5
+                                                    }
+                                                },
+                                                "__collapseElse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": {
+                                                                "type": "number",
+                                                                "value": -3
+                                                            },
+                                                            "y": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            },
+                                                            "moveType": "horizontal",
+                                                            "useCollisions": false
+                                                        },
+                                                        "id": "7f512481-006e-4f1f-b1c6-41d057ea351b"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "ab5e8d2e-1ce9-4429-8aea-e8e3fe6fecc4"
+                                        }
+                                    ]
+                                },
+                                "id": "bbb1d0e8-a259-48ab-86bf-118376be7161"
+                            },
+                            {
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": [
+                                        "up"
+                                    ],
+                                    "override": true,
+                                    "__scriptTabs": "press",
+                                    "__label": "Move Up On Grid",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "gt",
+                                                    "valueA": {
+                                                        "type": "property",
+                                                        "target": "player",
+                                                        "property": "ypos"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": 4
+                                                    }
+                                                },
+                                                "__collapseElse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            },
+                                                            "y": {
+                                                                "type": "number",
+                                                                "value": -4
+                                                            },
+                                                            "moveType": "vertical",
+                                                            "useCollisions": false
+                                                        },
+                                                        "id": "c3787492-ad7a-494d-a999-433128aa932a"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "47bd12d0-ec72-42c8-b0e3-2879c760d8d5"
+                                        }
+                                    ]
+                                },
+                                "id": "c269d943-2426-4278-9d43-64531ce83a73"
+                            },
+                            {
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": [
+                                        "down"
+                                    ],
+                                    "override": true,
+                                    "__scriptTabs": "press",
+                                    "__label": "Move Down On Grid",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "lt",
+                                                    "valueA": {
+                                                        "type": "property",
+                                                        "target": "player",
+                                                        "property": "ypos"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": 13
+                                                    }
+                                                },
+                                                "__collapseElse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "x": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            },
+                                                            "y": {
+                                                                "type": "number",
+                                                                "value": 4
+                                                            },
+                                                            "moveType": "vertical",
+                                                            "useCollisions": false
+                                                        },
+                                                        "id": "3da60380-fe70-40b1-8278-12ce1b22370d"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "471b2d45-3b00-43f6-a29c-fac285fb4e89"
+                                        }
+                                    ]
+                                },
+                                "id": "733419e3-4a69-47f9-98f9-a76ed1050eb8"
+                            }
+                        ]
+                    },
+                    "id": "6d1e5aab-73f3-493e-abab-c7f34ee7b550"
+                },
+                {
                     "command": "EVENT_RNG_SEED",
                     "args": {
                         "__collapse": true
@@ -3267,14 +3515,14 @@
         "startSceneId": "95f04c6c-4bec-4f2a-825c-f06f1b629559",
         "startX": 18,
         "startY": 17,
-        "startMoveSpeed": 1,
-        "startAnimSpeed": 3,
+        "startMoveSpeed": 4,
+        "startAnimSpeed": 7,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1541,
+        "worldScrollX": 1341,
         "worldScrollY": 285,
         "zoom": 300,
         "sgbEnabled": false,
@@ -3373,7 +3621,7 @@
         "colorMode": "mono",
         "previewAsMono": false,
         "openBuildLogOnWarnings": true,
-        "generateDebugFilesEnabled": false,
+        "generateDebugFilesEnabled": true,
         "defaultFadeStyle": "white",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
     }
