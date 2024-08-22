@@ -3368,28 +3368,7 @@
         "debuggerCollapsedPanes": [],
         "debuggerPauseOnScriptChanged": false,
         "debuggerPauseOnWatchedVariableChanged": false,
-        "debuggerBreakpoints": [
-            {
-                "scriptEventId": "85078a30-4765-4a8e-9645-87a46734e2c4",
-                "context": {
-                    "type": "script",
-                    "entityType": "customEvent",
-                    "entityId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
-                    "sceneId": "",
-                    "scriptKey": "script"
-                }
-            },
-            {
-                "scriptEventId": "214d2723-3ecc-48e3-95dd-a38d01dfc632",
-                "context": {
-                    "type": "script",
-                    "entityType": "customEvent",
-                    "entityId": "7e02202e-ff32-4afd-880f-72b3960a04f7",
-                    "sceneId": "",
-                    "scriptKey": "script"
-                }
-            }
-        ],
+        "debuggerBreakpoints": [],
         "debuggerWatchedVariables": [],
         "colorMode": "mono",
         "previewAsMono": false,
