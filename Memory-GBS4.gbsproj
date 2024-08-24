@@ -3019,7 +3019,7 @@
         {
             "id": "974e18eb-569e-453b-b052-176a0361ce4b",
             "name": "Flip Card to Back",
-            "description": "Replaces relative to the given coordinates to show the back of a card.",
+            "description": "Replaces tiles relative to the given coordinates to show the back of a card.",
             "variables": {
                 "V0": {
                     "id": "V0",
@@ -3060,7 +3060,7 @@
                                         "value": 108
                                     }
                                 },
-                                "id": "f8ff51f4-647f-44e7-b16e-1bd77801a835"
+                                "id": "946b7beb-b16c-4cfe-ab24-ed34d8680e7a"
                             },
                             {
                                 "command": "EVENT_REPLACE_TILE_XY",
@@ -3079,7 +3079,7 @@
                                         "value": 109
                                     }
                                 },
-                                "id": "ae6db477-ac8e-496d-ae3d-b2e8ece5beae"
+                                "id": "0242ba12-352b-414f-909c-cf8dbe99a8cc"
                             },
                             {
                                 "command": "EVENT_REPLACE_TILE_XY",
@@ -3098,7 +3098,7 @@
                                         "value": 124
                                     }
                                 },
-                                "id": "ac0c8eff-82b7-4be1-babf-537c7a2e4d21"
+                                "id": "d2a4ec4d-0de7-4585-bda5-021802812e50"
                             },
                             {
                                 "command": "EVENT_REPLACE_TILE_XY",
@@ -3117,7 +3117,7 @@
                                         "value": 125
                                     }
                                 },
-                                "id": "6b14068a-20bc-4e55-af37-5e7f46251ec3"
+                                "id": "aa5b9fbb-256c-4c56-8e43-e9a951b4fddb"
                             },
                             {
                                 "command": "EVENT_REPLACE_TILE_XY",
@@ -3136,7 +3136,7 @@
                                         "value": 140
                                     }
                                 },
-                                "id": "d9467b52-8e5e-46ac-b1c9-ca8458639301"
+                                "id": "7d99744e-9fff-4354-b608-cd86c2a218e2"
                             },
                             {
                                 "command": "EVENT_REPLACE_TILE_XY",
@@ -3155,11 +3155,11 @@
                                         "value": 141
                                     }
                                 },
-                                "id": "d1c15a02-cc8a-4712-b590-ed55ed035e63"
+                                "id": "06a719bf-25d8-47bc-8318-4732d7d67a15"
                             }
                         ]
                     },
-                    "id": "be9ce2d3-a27d-40b2-bdb9-17a84da0b4d3"
+                    "id": "7f12f9f3-44c6-4718-85cc-de9c956eec25"
                 }
             ]
         },
@@ -3246,6 +3246,1035 @@
                         ]
                     },
                     "id": "973e89ba-524c-4aa4-a441-80adaa09b2f1"
+                }
+            ]
+        },
+        {
+            "id": "e58ac081-312c-4aec-95d5-34cb382347eb",
+            "name": "Flip Card to Moon",
+            "description": "Replaces tiles relative to the given coordinates to show a Moon card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "TIle Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_4",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Moon",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 10
+                                    }
+                                },
+                                "id": "fe7c8688-9daa-4472-8645-f21d7c72131a"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 11
+                                    }
+                                },
+                                "id": "6da2c104-522e-46b0-9da7-0c0cf823d0f3"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 26
+                                    }
+                                },
+                                "id": "c2f62b90-fbbd-4397-9a4b-ad76d774a226"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 27
+                                    }
+                                },
+                                "id": "9a94c0e8-ceab-4fb4-854d-214f81027e47"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 42
+                                    }
+                                },
+                                "id": "57bfd8a3-ca2a-4d68-b282-889b7935a389"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 43
+                                    }
+                                },
+                                "id": "f87c49d1-51d3-46ea-a1f8-944d590e246e"
+                            }
+                        ]
+                    },
+                    "id": "616bd0a7-881b-4b34-9831-cb0b44260262"
+                }
+            ]
+        },
+        {
+            "id": "9ed28bc6-29f2-41be-bfa6-a99d70ad0a28",
+            "name": "Flip Card to Sun",
+            "description": "Replaces tiles relative to the given coordinates to show a Sun card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_5",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Sun",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 12
+                                    }
+                                },
+                                "id": "5968c574-4915-48fc-8793-2775d35de99f"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 13
+                                    }
+                                },
+                                "id": "f0ec7744-a7c7-40df-8b56-0b66f7925fc1"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 28
+                                    }
+                                },
+                                "id": "0dc21858-4c86-4635-8b62-683bfed48cbd"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 29
+                                    }
+                                },
+                                "id": "405829c7-9e0a-45e0-8fe5-da67f2ca7617"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 44
+                                    }
+                                },
+                                "id": "2ce209b5-6f10-4517-b0b0-c94a15932392"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 45
+                                    }
+                                },
+                                "id": "610b3607-d5e5-4093-941f-d5b86525021c"
+                            }
+                        ]
+                    },
+                    "id": "a193030f-7e85-4dd7-8bd6-e150647aa0cf"
+                }
+            ]
+        },
+        {
+            "id": "58356913-626d-423d-a061-0d7fba971b59",
+            "name": "Flip Card to Stars",
+            "description": "Replaces tiles relative to the given coordinates to show a Stars card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_6",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Stars",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 14
+                                    }
+                                },
+                                "id": "283ab037-6d6e-4a4c-81d6-4a1e1960bab0"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 15
+                                    }
+                                },
+                                "id": "6d2273e5-fcb8-48b3-8713-d0b88a05209c"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 30
+                                    }
+                                },
+                                "id": "9738d5a3-a86e-4dc0-8b04-48d21c9bb500"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 31
+                                    }
+                                },
+                                "id": "cece7ab0-f700-4e35-8df4-5a0f4695057b"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 46
+                                    }
+                                },
+                                "id": "8cc71087-e045-48f1-87a5-55f061df1777"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 47
+                                    }
+                                },
+                                "id": "aa8d703f-986a-425a-8ef4-dd1432ce6825"
+                            }
+                        ]
+                    },
+                    "id": "76d7c7d6-cdbd-4a3a-9fef-169752733a4a"
+                }
+            ]
+        },
+        {
+            "id": "d3623c56-67e4-4fd1-a11c-eb234da45e54",
+            "name": "Flip Card to Planet",
+            "description": "Replaces tiles relative to the given coordinates to show a Planet card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": true
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": true
+                }
+            },
+            "actors": {},
+            "symbol": "script_7",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Planet",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 58
+                                    }
+                                },
+                                "id": "13a80c94-d40f-4662-82f6-9432d80c4d3e"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 59
+                                    }
+                                },
+                                "id": "ada7a5df-8943-4c43-af93-401da94c6e52"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 74
+                                    }
+                                },
+                                "id": "b85f49dd-58cd-49c6-b826-d3c539473857"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 75
+                                    }
+                                },
+                                "id": "c9f58094-3a44-483c-8685-231c9d50b822"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 90
+                                    }
+                                },
+                                "id": "d756b8bd-935c-4569-95c4-96c6895e492b"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 91
+                                    }
+                                },
+                                "id": "bd6fc6e9-e700-4acf-a36a-9c38aa714e3f"
+                            }
+                        ]
+                    },
+                    "id": "6a1d5d2e-5086-438f-8ce8-d0b26195adf0"
+                }
+            ]
+        },
+        {
+            "id": "7cbd7808-fc00-4707-a563-5cc7270716ea",
+            "name": "Flip Card to Aurora",
+            "description": "Replaces tiles relative to the given coordinates to show a Aurora card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_8",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Aurora",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 60
+                                    }
+                                },
+                                "id": "754a9d7c-6264-4963-a952-1a4f54e7cabe"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 61
+                                    }
+                                },
+                                "id": "040dda62-2f6a-4a12-ad6f-52f9bdd6c65a"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 76
+                                    }
+                                },
+                                "id": "0706440a-6b2d-4a9b-b440-b89fbb4799e4"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 77
+                                    }
+                                },
+                                "id": "7edbeaf0-7e23-431d-b8f0-d965e664bce4"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 92
+                                    }
+                                },
+                                "id": "cea7263b-23e9-4c6f-888e-a7914a5ac9a6"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 93
+                                    }
+                                },
+                                "id": "4e2838a8-e670-4a2a-b650-b3376a56649c"
+                            }
+                        ]
+                    },
+                    "id": "bd83db0a-0607-4163-b5cf-09f4520355e0"
+                }
+            ]
+        },
+        {
+            "id": "dfe63c22-6ce8-48c8-83bb-f0da63fe55a7",
+            "name": "Flip Card to Rainbow",
+            "description": "Replaces tiles relative to the given coordinates to show a Rainbow card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_9",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Aurora",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 62
+                                    }
+                                },
+                                "id": "a2e124aa-acac-4be7-8087-408e4274fbe2"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 63
+                                    }
+                                },
+                                "id": "3762a358-366e-41be-a118-5252944a9a1d"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 76
+                                    }
+                                },
+                                "id": "b2099ebe-e4a2-4b96-a596-0ba39d7da4dc"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 77
+                                    }
+                                },
+                                "id": "95296ac2-56d9-491a-9e47-f34a77d3013d"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 92
+                                    }
+                                },
+                                "id": "628420b9-a29e-4a19-bb23-ea6d7e269ff7"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 93
+                                    }
+                                },
+                                "id": "724c9489-c54a-467a-b067-b2dcf95f1b13"
+                            }
+                        ]
+                    },
+                    "id": "f1962172-dc77-4dfe-a555-2aaa3cdf9253"
+                }
+            ]
+        },
+        {
+            "id": "04361d42-d128-4a5b-8dc2-c9a64d2075c4",
+            "name": "Flip Card to Lightning",
+            "description": "Replaces tiles relative to the given coordinates to show a Lightning card.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_10",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Flip Card to Lightning",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 106
+                                    }
+                                },
+                                "id": "36f0ba67-467e-491c-954d-6b3bd5474cdf"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 107
+                                    }
+                                },
+                                "id": "05783447-d6b7-4c74-a3ae-b5c02d971233"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 122
+                                    }
+                                },
+                                "id": "aa74f9ff-b174-47af-92c7-2079c32cd96d"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 123
+                                    }
+                                },
+                                "id": "be63f17c-338e-4ae0-bcf7-43391818bc32"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 138
+                                    }
+                                },
+                                "id": "54786767-afcc-469b-977b-588f98c12ca5"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 139
+                                    }
+                                },
+                                "id": "837a7a39-d5df-4c86-8bd5-9880a93b7141"
+                            }
+                        ]
+                    },
+                    "id": "8fafd5bc-eeb1-420f-8bca-792c59c9d2e8"
                 }
             ]
         }
@@ -3522,8 +4551,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1341,
-        "worldScrollY": 285,
+        "worldScrollX": 1141,
+        "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
@@ -3551,9 +4580,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            239,
-            170,
-            547
+            220,
+            303,
+            433
         ],
         "showNavigator": true,
         "defaultFontId": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",
