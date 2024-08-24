@@ -1267,6 +1267,329 @@
                         ]
                     },
                     "id": "fa56154e-d85d-4eda-8243-ed5fdd6068d1"
+                },
+                {
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "a",
+                            "start"
+                        ],
+                        "override": true,
+                        "__scriptTabs": "press",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Computer Index (Offset)"
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "Init Variables",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "24",
+                                                            "value": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            }
+                                                        },
+                                                        "id": "b5f4103b-adfc-4c99-88b7-1c5af8348f2d"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "L0",
+                                                            "value": {
+                                                                "type": "property",
+                                                                "target": "player",
+                                                                "property": "xpos"
+                                                            }
+                                                        },
+                                                        "id": "cd488fa5-9f02-47d8-968e-6718a31e671f"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "L1",
+                                                            "value": {
+                                                                "type": "property",
+                                                                "target": "player",
+                                                                "property": "ypos"
+                                                            }
+                                                        },
+                                                        "id": "fd6117a7-a243-49a9-b2d8-bbf886e85b9b"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "d5cf9576-a17c-4789-ad19-fe746c7b056f"
+                                        },
+                                        {
+                                            "command": "EVENT_SWITCH",
+                                            "args": {
+                                                "variable": "L0",
+                                                "choices": 4,
+                                                "__collapseCase0": false,
+                                                "value0": 6,
+                                                "__collapseCase1": false,
+                                                "value1": 9,
+                                                "__collapseCase2": false,
+                                                "value2": 12,
+                                                "__collapseCase3": false,
+                                                "value3": 15,
+                                                "__collapseCase4": false,
+                                                "value4": 5,
+                                                "__collapseCase5": false,
+                                                "value5": 6,
+                                                "__collapseCase6": false,
+                                                "value6": 7,
+                                                "__collapseCase7": false,
+                                                "value7": 8,
+                                                "__collapseCase8": false,
+                                                "value8": 9,
+                                                "__collapseCase9": false,
+                                                "value9": 10,
+                                                "__collapseCase10": false,
+                                                "value10": 11,
+                                                "__collapseCase11": false,
+                                                "value11": 12,
+                                                "__collapseCase12": false,
+                                                "value12": 13,
+                                                "__collapseCase13": false,
+                                                "value13": 14,
+                                                "__collapseCase14": false,
+                                                "value14": 15,
+                                                "__collapseCase15": false,
+                                                "value15": 16,
+                                                "__collapseElse": false,
+                                                "__collapse": true,
+                                                "__label": "Switch on X",
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true0": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 1,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "b08f396a-caad-4947-aefa-93a597240b2b"
+                                                    }
+                                                ],
+                                                "true1": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 2,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "56d025f0-7511-4aa5-a2ed-6b12fdac941e"
+                                                    }
+                                                ],
+                                                "true2": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 3,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "8b223695-6fcd-4e68-b713-af6f54f46e30"
+                                                    }
+                                                ],
+                                                "true3": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 4,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "c288b735-00f9-459e-a780-5d56f2cbb5f6"
+                                                    }
+                                                ],
+                                                "true4": [],
+                                                "true5": [],
+                                                "true6": [],
+                                                "true7": [],
+                                                "true8": [],
+                                                "true9": [],
+                                                "true10": [],
+                                                "true11": [],
+                                                "true12": [],
+                                                "true13": [],
+                                                "true14": [],
+                                                "true15": [],
+                                                "false": []
+                                            },
+                                            "id": "2d21ec33-9d80-40cd-907b-c3f4e48c11e7"
+                                        },
+                                        {
+                                            "command": "EVENT_SWITCH",
+                                            "args": {
+                                                "variable": "L1",
+                                                "choices": 3,
+                                                "__collapseCase0": false,
+                                                "value0": 8,
+                                                "__collapseCase1": false,
+                                                "value1": 12,
+                                                "__collapseCase2": false,
+                                                "value2": 16,
+                                                "__collapseCase3": false,
+                                                "value3": 15,
+                                                "__collapseCase4": false,
+                                                "value4": 5,
+                                                "__collapseCase5": false,
+                                                "value5": 6,
+                                                "__collapseCase6": false,
+                                                "value6": 7,
+                                                "__collapseCase7": false,
+                                                "value7": 8,
+                                                "__collapseCase8": false,
+                                                "value8": 9,
+                                                "__collapseCase9": false,
+                                                "value9": 10,
+                                                "__collapseCase10": false,
+                                                "value10": 11,
+                                                "__collapseCase11": false,
+                                                "value11": 12,
+                                                "__collapseCase12": false,
+                                                "value12": 13,
+                                                "__collapseCase13": false,
+                                                "value13": 14,
+                                                "__collapseCase14": false,
+                                                "value14": 15,
+                                                "__collapseCase15": false,
+                                                "value15": 16,
+                                                "__collapseElse": false,
+                                                "__collapse": true,
+                                                "__label": "Switch on Y",
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true0": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 5,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "c0b7c91a-a01d-4579-80fd-f1b29fbd087c"
+                                                    }
+                                                ],
+                                                "true1": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 10,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "438e33f5-e833-4e0b-97d6-47ceb4e35211"
+                                                    }
+                                                ],
+                                                "true2": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "24",
+                                                            "operation": "add",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 15,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "7f7f4b6d-e240-455b-a784-6ef953aa04a4"
+                                                    }
+                                                ],
+                                                "true3": [],
+                                                "true4": [],
+                                                "true5": [],
+                                                "true6": [],
+                                                "true7": [],
+                                                "true8": [],
+                                                "true9": [],
+                                                "true10": [],
+                                                "true11": [],
+                                                "true12": [],
+                                                "true13": [],
+                                                "true14": [],
+                                                "true15": [],
+                                                "false": []
+                                            },
+                                            "id": "e14dd57f-8ff0-42e4-b713-a0de24540157"
+                                        },
+                                        {
+                                            "command": "EVENT_TEXT",
+                                            "args": {
+                                                "text": [
+                                                    " Card Index: $24$"
+                                                ],
+                                                "avatarId": ""
+                                            },
+                                            "id": "0a8ea152-763c-4f22-ac45-e496456fd2d4"
+                                        }
+                                    ]
+                                },
+                                "id": "f1b52242-fe49-48ca-aaa8-442bfc04a3dd"
+                            }
+                        ]
+                    },
+                    "id": "3a3d4363-37fe-4e4d-803b-7fb2c83f97f2"
                 }
             ],
             "playerHit1Script": [],
@@ -4697,6 +5020,16 @@
             "id": "26",
             "name": "Is Initialized?",
             "symbol": "var_is_initialized_"
+        },
+        {
+            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
+            "name": "Player X",
+            "symbol": "var_player_x"
+        },
+        {
+            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L1",
+            "name": "Player Y",
+            "symbol": "var_player_y"
         }
     ],
     "engineFieldValues": [
@@ -4716,8 +5049,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1141,
-        "worldScrollY": 385,
+        "worldScrollX": 1479,
+        "worldScrollY": 144,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
