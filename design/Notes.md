@@ -65,6 +65,10 @@ for (byte i = high_index; i > low_index; i--)
     - Card 3,4 is the lower right card and has index 23
 - Index I & Index J
     - Used in Shuffling algorithm
+- Current Revealed Card
+    - Indicates the index of the card the player has flipped face-up.  Values:
+        - -1    = No cards are revealed.
+        - 0…19  = Index of revealed card.
 
 
 ## Writing Every Card in Dialogue
