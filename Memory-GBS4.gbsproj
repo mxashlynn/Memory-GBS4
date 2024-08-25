@@ -1057,6 +1057,10 @@
                         "$variable[V5]$": {
                             "type": "variable",
                             "value": "25"
+                        },
+                        "$variable[V6]$": {
+                            "type": "variable",
+                            "value": "27"
                         }
                     },
                     "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
@@ -1548,7 +1552,8 @@
                                         {
                                             "command": "EVENT_GROUP",
                                             "args": {
-                                                "__label": "Flip Card"
+                                                "__label": "Flip Card",
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -1603,6 +1608,160 @@
                                                 ]
                                             },
                                             "id": "d4a46fde-09d7-4972-8db2-4042075dcde8"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "eq",
+                                                    "valueA": {
+                                                        "type": "variable",
+                                                        "value": "24"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "variable",
+                                                        "value": "27"
+                                                    }
+                                                },
+                                                "__collapseElse": true,
+                                                "__label": "If Card Already Revealed, Do Nothing",
+                                                "__disableElse": true,
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_STOP",
+                                                        "args": {},
+                                                        "id": "9fdab2b0-d293-45be-9081-59dd2bb20e2e"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "19b4efc9-2a7a-4008-a47b-9be95030dde9"
+                                        },
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "Get Value at Index",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "25",
+                                                            "value": {
+                                                                "type": "add",
+                                                                "valueA": {
+                                                                    "type": "variable",
+                                                                    "value": "24"
+                                                                },
+                                                                "valueB": {
+                                                                    "type": "number",
+                                                                    "value": 4
+                                                                }
+                                                            },
+                                                            "__label": "Compute Offset from Index"
+                                                        },
+                                                        "id": "aab53dca-6ff1-4221-9188-296168bf16ac"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                        "args": {
+                                                            "script": "VM_GET_INDIRECT VAR_CARD_VALUE, VAR_INDEX_J",
+                                                            "__label": "Get Value at Offset",
+                                                            "references": [
+                                                                {
+                                                                    "type": "variable",
+                                                                    "id": "28"
+                                                                },
+                                                                {
+                                                                    "type": "variable",
+                                                                    "id": "25"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "id": "78bcff84-7bf1-4b0b-9967-84e42e278808"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "2868b9a1-0d70-400d-a524-5a71924e4373"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "eq",
+                                                    "valueA": {
+                                                        "type": "variable",
+                                                        "value": "27"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": -1
+                                                    }
+                                                },
+                                                "__collapseElse": false,
+                                                "__label": "If Move Has Not Begun",
+                                                "__disableElse": false,
+                                                "__collapse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                        "args": {
+                                                            "customEventId": "2da26cab-45d5-4c99-b5ea-5920db0b2f3c",
+                                                            "$variable[V0]$": {
+                                                                "type": "variable",
+                                                                "value": "L0"
+                                                            },
+                                                            "$variable[V1]$": {
+                                                                "type": "sub",
+                                                                "valueA": {
+                                                                    "type": "variable",
+                                                                    "value": "L1"
+                                                                },
+                                                                "valueB": {
+                                                                    "type": "number",
+                                                                    "value": 3
+                                                                }
+                                                            },
+                                                            "$variable[V2]$": {
+                                                                "type": "variable",
+                                                                "value": "28"
+                                                            }
+                                                        },
+                                                        "id": "5cfc1bd2-6a51-427d-8595-7fa8cf529475"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "27",
+                                                            "value": {
+                                                                "type": "variable",
+                                                                "value": "24"
+                                                            }
+                                                        },
+                                                        "id": "13b38717-7205-4232-8904-fefa63060f98"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "Not\nImplemented\nYet"
+                                                            ],
+                                                            "avatarId": ""
+                                                        },
+                                                        "id": "7e0b303f-4493-4a1b-ad0d-69218e2d9dec"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "352dd259-7fab-42a3-b431-d2cf0c3cfb9b"
                                         }
                                     ]
                                 },
@@ -3343,6 +3502,11 @@
                     "id": "V5",
                     "name": "j",
                     "passByReference": true
+                },
+                "V6": {
+                    "id": "V6",
+                    "name": "Current Revealed Card",
+                    "passByReference": true
                 }
             },
             "actors": {},
@@ -3403,6 +3567,18 @@
                                     "__collapse": true
                                 },
                                 "id": "f10f9eee-dac3-4bc1-96ed-3ab784fa56d4"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "V6",
+                                    "value": {
+                                        "type": "number",
+                                        "value": -1
+                                    },
+                                    "__collapse": true
+                                },
+                                "id": "013868f0-5fb4-40cf-aa4e-1b6feb19a7d3"
                             }
                         ]
                     },
@@ -4349,7 +4525,7 @@
         {
             "id": "7cbd7808-fc00-4707-a563-5cc7270716ea",
             "name": "Flip Card to Aurora",
-            "description": "Replaces tiles relative to the given coordinates to show a Aurora card.",
+            "description": "Replaces tiles relative to the given coordinates to show an Aurora card.",
             "variables": {
                 "V0": {
                     "id": "V0",
@@ -4933,6 +5109,248 @@
                     "id": "6acbe218-a2ce-4c7f-ab45-5512bc1e1ce1"
                 }
             ]
+        },
+        {
+            "id": "2da26cab-45d5-4c99-b5ea-5920db0b2f3c",
+            "name": "Flip Card by Value",
+            "description": "Replaces tiles relative to the given coordinates to show the card indicated by the given value.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "Tile X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Tile Y",
+                    "passByReference": false
+                },
+                "V2": {
+                    "id": "V2",
+                    "name": "Card Value",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_12",
+            "script": [
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V0",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "7777be24-eab2-4f13-bb23-fba6b2c4feed"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V1",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "5eb51cc4-191d-4c88-bad4-afb3fa184ce2"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "V2",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "35358be3-27df-4347-b1b8-0221f76fd6d0"
+                },
+                {
+                    "command": "EVENT_SWITCH",
+                    "args": {
+                        "variable": "V2",
+                        "choices": 7,
+                        "__collapseCase0": false,
+                        "value0": 1,
+                        "__collapseCase1": false,
+                        "value1": 2,
+                        "__collapseCase2": false,
+                        "value2": 3,
+                        "__collapseCase3": false,
+                        "value3": 4,
+                        "__collapseCase4": false,
+                        "value4": 5,
+                        "__collapseCase5": false,
+                        "value5": 6,
+                        "__collapseCase6": false,
+                        "value6": 7,
+                        "__collapseCase7": false,
+                        "value7": 8,
+                        "__collapseCase8": false,
+                        "value8": 9,
+                        "__collapseCase9": false,
+                        "value9": 10,
+                        "__collapseCase10": false,
+                        "value10": 11,
+                        "__collapseCase11": false,
+                        "value11": 12,
+                        "__collapseCase12": false,
+                        "value12": 13,
+                        "__collapseCase13": false,
+                        "value13": 14,
+                        "__collapseCase14": false,
+                        "value14": 15,
+                        "__collapseCase15": false,
+                        "value15": 16,
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true0": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "e58ac081-312c-4aec-95d5-34cb382347eb",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "499056d8-2f88-4f91-bff7-0932f17b926f"
+                            }
+                        ],
+                        "true1": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "9ed28bc6-29f2-41be-bfa6-a99d70ad0a28",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "0b519290-75b3-4cae-9306-1659878212ee"
+                            }
+                        ],
+                        "true2": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "58356913-626d-423d-a061-0d7fba971b59",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "1863c73c-5539-47b9-be1b-a91a1bc50d4e"
+                            }
+                        ],
+                        "true3": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "d3623c56-67e4-4fd1-a11c-eb234da45e54",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "f48a9af2-95da-48a7-bfdc-4033ced91bf7"
+                            }
+                        ],
+                        "true4": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "7cbd7808-fc00-4707-a563-5cc7270716ea",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "69380af5-6145-4e95-b094-12b407049aff"
+                            }
+                        ],
+                        "true5": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "dfe63c22-6ce8-48c8-83bb-f0da63fe55a7",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "efb1efcd-e6ea-48bd-b3f7-1e067f311d2e"
+                            }
+                        ],
+                        "true6": [
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "04361d42-d128-4a5b-8dc2-c9a64d2075c4",
+                                    "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "V0"
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "variable",
+                                        "value": "V1"
+                                    }
+                                },
+                                "id": "dbf65679-de3b-4102-901d-3b7ce772dab1"
+                            }
+                        ],
+                        "true7": [],
+                        "true8": [],
+                        "true9": [],
+                        "true10": [],
+                        "true11": [],
+                        "true12": [],
+                        "true13": [],
+                        "true14": [],
+                        "true15": [],
+                        "false": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "  Error unknown\n  card value: $V2$"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "3eaa747e-b8f7-480e-9996-d2cdd05d5842"
+                            }
+                        ]
+                    },
+                    "id": "122fe0e3-37b5-4e38-8278-974dcb8688d9"
+                }
+            ]
         }
     ],
     "music": [
@@ -5198,6 +5616,16 @@
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L1",
             "name": "Player Y",
             "symbol": "var_player_y"
+        },
+        {
+            "id": "27",
+            "name": "Current Revealed Card Index",
+            "symbol": "var_current_revealed_card_i"
+        },
+        {
+            "id": "28",
+            "name": "Card Value",
+            "symbol": "var_card_value"
         }
     ],
     "engineFieldValues": [
@@ -5218,7 +5646,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 1478,
-        "worldScrollY": 344,
+        "worldScrollY": 392,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
@@ -5247,8 +5675,8 @@
         "playerPaletteId": "",
         "navigatorSplitSizes": [
             220,
-            303,
-            433
+            466,
+            270
         ],
         "showNavigator": true,
         "defaultFontId": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",
@@ -5267,7 +5695,8 @@
         "favoriteEvents": [
             "EVENT_TEXT",
             "EVENT_SWITCH_SCENE",
-            "EVENT_GROUP"
+            "EVENT_GROUP",
+            "EVENT_COMMENT"
         ],
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -5305,7 +5734,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],

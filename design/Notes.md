@@ -67,8 +67,8 @@ for (byte i = high_index; i > low_index; i--)
     - Used in Shuffling algorithm
 - Current Revealed Card
     - Indicates the index of the card the player has flipped face-up.  Values:
-        - -1    = No cards are revealed.
-        - 0…19  = Index of revealed card.
+        - -1    = No cards are revealed.  AKA, the current move has not begun.
+        - 0…19  = Index of revealed card.  AKA, we are mid-move.
 
 
 ## Writing Every Card in Dialogue
