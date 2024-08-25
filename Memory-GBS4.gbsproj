@@ -39,16 +39,16 @@
                 15,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -57,18 +57,18 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
                 0,
                 0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -79,16 +79,16 @@
                 15,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -97,78 +97,38 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
                 15,
                 15,
                 15,
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
                 15,
                 15,
                 15,
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
                 15,
                 15,
                 15,
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -177,18 +137,18 @@
                 15,
                 15,
                 15,
-                0,
-                0,
                 0,
                 0,
-                0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -199,16 +159,16 @@
                 15,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -217,18 +177,38 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -237,18 +217,18 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
                 0,
                 0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -257,18 +237,18 @@
                 15,
                 15,
                 15,
-                0,
                 0,
                 0,
-                0,
-                0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -277,18 +257,38 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -297,18 +297,18 @@
                 15,
                 15,
                 15,
-                0,
-                0,
-                0,
-                0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -317,18 +317,18 @@
                 15,
                 15,
                 15,
-                0,
-                0,
                 0,
                 0,
-                0,
-                0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 15,
@@ -1077,37 +1077,9 @@
                 {
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "DEBUG",
-                        "__comment": true
-                    },
-                    "children": {
-                        "true": [
-                            {
-                                "command": "EVENT_WAIT",
-                                "args": {
-                                    "time": 1,
-                                    "frames": 30
-                                },
-                                "id": "46f9a38b-9297-4a3b-a1d2-6fdcb14f05f9"
-                            },
-                            {
-                                "command": "EVENT_ACTOR_SET_STATE",
-                                "args": {
-                                    "actorId": "$self$",
-                                    "spriteStateId": "Flip",
-                                    "loopAnim": true
-                                },
-                                "id": "a1ed2c1f-df7b-4fa5-9cc1-e5400535003f"
-                            }
-                        ]
-                    },
-                    "id": "a68d4d98-f140-4474-bedb-f4aec5a1ea0d"
-                },
-                {
-                    "command": "EVENT_GROUP",
-                    "args": {
                         "__label": "DEBUG 🃏",
-                        "__comment": true
+                        "__comment": true,
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -1574,14 +1546,63 @@
                                             "id": "e14dd57f-8ff0-42e4-b713-a0de24540157"
                                         },
                                         {
-                                            "command": "EVENT_TEXT",
+                                            "command": "EVENT_GROUP",
                                             "args": {
-                                                "text": [
-                                                    " Card Index: $24$"
-                                                ],
-                                                "avatarId": ""
+                                                "__label": "Flip Card"
                                             },
-                                            "id": "0a8ea152-763c-4f22-ac45-e496456fd2d4"
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_ACTOR_SET_STATE",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "spriteStateId": "Flip",
+                                                            "loopAnim": false
+                                                        },
+                                                        "id": "a1ed2c1f-df7b-4fa5-9cc1-e5400535003f"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_WAIT",
+                                                        "args": {
+                                                            "time": 0.4,
+                                                            "frames": 30
+                                                        },
+                                                        "id": "3351264c-24f9-487e-be6e-a694bb92436d"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                                                        "args": {
+                                                            "customEventId": "e58ac081-312c-4aec-95d5-34cb382347eb",
+                                                            "$variable[V0]$": {
+                                                                "type": "variable",
+                                                                "value": "L0"
+                                                            },
+                                                            "$variable[V1]$": {
+                                                                "type": "sub",
+                                                                "valueA": {
+                                                                    "type": "variable",
+                                                                    "value": "L1"
+                                                                },
+                                                                "valueB": {
+                                                                    "type": "number",
+                                                                    "value": 3
+                                                                }
+                                                            }
+                                                        },
+                                                        "id": "1902d08a-74b8-4662-9073-aaea6692baa3"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_ACTOR_SET_STATE",
+                                                        "args": {
+                                                            "actorId": "$self$",
+                                                            "spriteStateId": "",
+                                                            "loopAnim": false
+                                                        },
+                                                        "id": "f43f66d4-9107-484c-b98a-b07871b15a19"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "d4a46fde-09d7-4972-8db2-4042075dcde8"
                                         }
                                     ]
                                 },
@@ -2184,7 +2205,7 @@
             "symbol": "sprite_actor_animated_copy",
             "numFrames": 8,
             "filename": "card_selector.png",
-            "checksum": "fcc8ea12a0afe0f318516da4cb7d2cb2dc261872",
+            "checksum": "35b46a9a0666d49d6a8a8c93fbd3d2c27eee0c87",
             "width": 128,
             "height": 32,
             "states": [
@@ -4765,6 +4786,153 @@
                     "id": "8fafd5bc-eeb1-420f-8bca-792c59c9d2e8"
                 }
             ]
+        },
+        {
+            "id": "8d2d39bf-8a60-4256-8df7-8a8dc2c9fad4",
+            "name": "Clear Card Graphic",
+            "description": "Erases the card at the given coordinates.",
+            "variables": {
+                "V0": {
+                    "id": "V0",
+                    "name": "X",
+                    "passByReference": false
+                },
+                "V1": {
+                    "id": "V1",
+                    "name": "Y",
+                    "passByReference": false
+                }
+            },
+            "actors": {},
+            "symbol": "script_11",
+            "script": [
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Clear Card",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 188
+                                    }
+                                },
+                                "id": "522e4847-8b3b-4893-9b8a-ad3170986bd8"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 188
+                                    }
+                                },
+                                "id": "818f6c88-4096-47f1-b9fb-0394f2bf6731"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 188
+                                    }
+                                },
+                                "id": "90f63091-723a-4ca7-a4c3-0f6648b5df37"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 1"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 188
+                                    }
+                                },
+                                "id": "46200b1a-1082-4fbf-83d2-bedfce19bc42"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 188
+                                    }
+                                },
+                                "id": "93242589-20db-403c-a3f3-c1ef7d8bb703"
+                            },
+                            {
+                                "command": "EVENT_REPLACE_TILE_XY",
+                                "args": {
+                                    "x": {
+                                        "type": "expression",
+                                        "value": "$V0$ + 1"
+                                    },
+                                    "y": {
+                                        "type": "expression",
+                                        "value": "$V1$ + 2"
+                                    },
+                                    "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
+                                    "tileIndex": {
+                                        "type": "number",
+                                        "value": 188
+                                    }
+                                },
+                                "id": "c5dacc12-d969-4503-871d-8cf66fd140bf"
+                            }
+                        ]
+                    },
+                    "id": "6acbe218-a2ce-4c7f-ab45-5512bc1e1ce1"
+                }
+            ]
         }
     ],
     "music": [
@@ -5043,14 +5211,14 @@
         "startX": 18,
         "startY": 17,
         "startMoveSpeed": 4,
-        "startAnimSpeed": 7,
+        "startAnimSpeed": 3,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1479,
-        "worldScrollY": 144,
+        "worldScrollX": 1478,
+        "worldScrollY": 344,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
