@@ -1081,12 +1081,22 @@
                 {
                     "command": "EVENT_GROUP",
                     "args": {
-                        "__label": "DEBUG 🃏",
-                        "__comment": true,
-                        "__collapse": false
+                        "__label": "DEBUG SHOW ALL CARDS 🃏",
+                        "__comment": false,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Testing...."
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "450233dd-a86a-412d-95a1-104c9a5b82da"
+                            },
                             {
                                 "command": "EVENT_CALL_CUSTOM_EVENT",
                                 "args": {
@@ -1105,7 +1115,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5,
+                                    "time": 1,
                                     "frames": 30
                                 },
                                 "id": "5a13f2a2-c8d4-45ad-a9f7-1f12f963d7e8"
@@ -1128,7 +1138,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5,
+                                    "time": 1,
                                     "frames": 30
                                 },
                                 "id": "eefdb78f-b851-4617-b341-c887385aef40"
@@ -1151,7 +1161,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5,
+                                    "time": 1,
                                     "frames": 30
                                 },
                                 "id": "ec060a49-ae86-4841-8e32-a0bc2b871917"
@@ -1174,7 +1184,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5,
+                                    "time": 1,
                                     "frames": 30
                                 },
                                 "id": "baaf84fc-8987-4d9c-ab17-7d574880fd91"
@@ -1197,7 +1207,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5,
+                                    "time": 1,
                                     "frames": 30
                                 },
                                 "id": "4e77cb3e-a82b-4d80-832e-2036b3214802"
@@ -1220,7 +1230,7 @@
                             {
                                 "command": "EVENT_WAIT",
                                 "args": {
-                                    "time": 0.5,
+                                    "time": 1,
                                     "frames": 30
                                 },
                                 "id": "07c89131-ff74-493e-afe7-3e702d0c3501"

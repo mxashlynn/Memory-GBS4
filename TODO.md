@@ -17,14 +17,14 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
 
 
 ## 🗺 Week of the 24th
-- When player selects a card:                           ⬅⬅⬅ HERE!
-    - If the card is already face up, nothing happens
-    - If the card is face down and no Move has begun:
-        - Reveal card
-        - Set First Revealed Card value to this card's value
-        - Begin Move
+- FIX BUG causing graphics to glitch when flipping cards!                           ⬅⬅⬅ HERE!
+- When player selects a card:
+    ✔ If the card is already face up, nothing happens
+    ✔ Reveal card
+    ✔ If the card is face down and no Move has begun:
+        ✔ Set First Revealed Card value to this card's value
+        ✔ Begin Move
     - If the card is face down and a Move has begun:
-        - Reveal card
         - If this card's value matched First Revealed Card's value:
             - Play a chime
             - Increment total match count
