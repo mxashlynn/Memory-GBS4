@@ -1239,6 +1239,29 @@
                                     }
                                 },
                                 "id": "a3fe8ea0-954c-46b6-a56a-3ec0e39159ec"
+                            },
+                            {
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 1,
+                                    "frames": 30
+                                },
+                                "id": "2abe9f18-a158-4678-909d-7599eae43059"
+                            },
+                            {
+                                "command": "EVENT_CALL_CUSTOM_EVENT",
+                                "args": {
+                                    "customEventId": "974e18eb-569e-453b-b052-176a0361ce4b",
+                                    "$variable[V0]$": {
+                                        "type": "number",
+                                        "value": 3
+                                    },
+                                    "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 1
+                                    }
+                                },
+                                "id": "309ff68e-4b40-4749-99e0-aca86dd965a8"
                             }
                         ]
                     },
@@ -1253,14 +1276,16 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": false,
+                        "__comment": true
                     },
                     "children": {
                         "true": [
                             {
                                 "command": "EVENT_GROUP",
                                 "args": {
-                                    "__label": "Computer Index (Offset)"
+                                    "__label": "Compute Index",
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -1282,6 +1307,17 @@
                                                             }
                                                         },
                                                         "id": "b5f4103b-adfc-4c99-88b7-1c5af8348f2d"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "25",
+                                                            "value": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            }
+                                                        },
+                                                        "id": "4fba81c0-4853-4f0e-8ce2-88ec8059205b"
                                                     },
                                                     {
                                                         "command": "EVENT_SET_VALUE",
@@ -1548,224 +1584,208 @@
                                                 "false": []
                                             },
                                             "id": "e14dd57f-8ff0-42e4-b713-a0de24540157"
+                                        }
+                                    ]
+                                },
+                                "id": "cf09d3da-b47e-47ec-8143-21fe3f71fa88"
+                            },
+                            {
+                                "command": "EVENT_IF",
+                                "args": {
+                                    "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                            "type": "variable",
+                                            "value": "24"
                                         },
+                                        "valueB": {
+                                            "type": "variable",
+                                            "value": "27"
+                                        }
+                                    },
+                                    "__collapseElse": true,
+                                    "__label": "If Card Already Revealed, Do Nothing",
+                                    "__disableElse": true,
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
                                         {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Flip Card",
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_ACTOR_SET_STATE",
-                                                        "args": {
-                                                            "actorId": "$self$",
-                                                            "spriteStateId": "Flip",
-                                                            "loopAnim": false
-                                                        },
-                                                        "id": "a1ed2c1f-df7b-4fa5-9cc1-e5400535003f"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_WAIT",
-                                                        "args": {
-                                                            "time": 0.4,
-                                                            "frames": 30
-                                                        },
-                                                        "id": "3351264c-24f9-487e-be6e-a694bb92436d"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                        "args": {
-                                                            "customEventId": "e58ac081-312c-4aec-95d5-34cb382347eb",
-                                                            "$variable[V0]$": {
-                                                                "type": "variable",
-                                                                "value": "L0"
-                                                            },
-                                                            "$variable[V1]$": {
-                                                                "type": "sub",
-                                                                "valueA": {
-                                                                    "type": "variable",
-                                                                    "value": "L1"
-                                                                },
-                                                                "valueB": {
-                                                                    "type": "number",
-                                                                    "value": 3
-                                                                }
-                                                            }
-                                                        },
-                                                        "id": "1902d08a-74b8-4662-9073-aaea6692baa3"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_ACTOR_SET_STATE",
-                                                        "args": {
-                                                            "actorId": "$self$",
-                                                            "spriteStateId": "",
-                                                            "loopAnim": false
-                                                        },
-                                                        "id": "f43f66d4-9107-484c-b98a-b07871b15a19"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "d4a46fde-09d7-4972-8db2-4042075dcde8"
-                                        },
+                                            "command": "EVENT_STOP",
+                                            "args": {},
+                                            "id": "9fdab2b0-d293-45be-9081-59dd2bb20e2e"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "19b4efc9-2a7a-4008-a47b-9be95030dde9"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Get Value at Index",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
                                         {
-                                            "command": "EVENT_IF",
+                                            "command": "EVENT_SET_VALUE",
                                             "args": {
-                                                "condition": {
-                                                    "type": "eq",
+                                                "variable": "25",
+                                                "value": {
+                                                    "type": "add",
                                                     "valueA": {
                                                         "type": "variable",
                                                         "value": "24"
                                                     },
                                                     "valueB": {
-                                                        "type": "variable",
-                                                        "value": "27"
-                                                    }
-                                                },
-                                                "__collapseElse": true,
-                                                "__label": "If Card Already Revealed, Do Nothing",
-                                                "__disableElse": true,
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_STOP",
-                                                        "args": {},
-                                                        "id": "9fdab2b0-d293-45be-9081-59dd2bb20e2e"
-                                                    }
-                                                ],
-                                                "false": []
-                                            },
-                                            "id": "19b4efc9-2a7a-4008-a47b-9be95030dde9"
-                                        },
-                                        {
-                                            "command": "EVENT_GROUP",
-                                            "args": {
-                                                "__label": "Get Value at Index",
-                                                "__collapse": true
-                                            },
-                                            "children": {
-                                                "true": [
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "25",
-                                                            "value": {
-                                                                "type": "add",
-                                                                "valueA": {
-                                                                    "type": "variable",
-                                                                    "value": "24"
-                                                                },
-                                                                "valueB": {
-                                                                    "type": "number",
-                                                                    "value": 4
-                                                                }
-                                                            },
-                                                            "__label": "Compute Offset from Index"
-                                                        },
-                                                        "id": "aab53dca-6ff1-4221-9188-296168bf16ac"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_GBVM_SCRIPT",
-                                                        "args": {
-                                                            "script": "VM_GET_INDIRECT VAR_CARD_VALUE, VAR_INDEX_J",
-                                                            "__label": "Get Value at Offset",
-                                                            "references": [
-                                                                {
-                                                                    "type": "variable",
-                                                                    "id": "28"
-                                                                },
-                                                                {
-                                                                    "type": "variable",
-                                                                    "id": "25"
-                                                                }
-                                                            ]
-                                                        },
-                                                        "id": "78bcff84-7bf1-4b0b-9967-84e42e278808"
-                                                    }
-                                                ]
-                                            },
-                                            "id": "2868b9a1-0d70-400d-a524-5a71924e4373"
-                                        },
-                                        {
-                                            "command": "EVENT_IF",
-                                            "args": {
-                                                "condition": {
-                                                    "type": "eq",
-                                                    "valueA": {
-                                                        "type": "variable",
-                                                        "value": "27"
-                                                    },
-                                                    "valueB": {
                                                         "type": "number",
-                                                        "value": -1
+                                                        "value": 4
                                                     }
                                                 },
-                                                "__collapseElse": false,
-                                                "__label": "If Move Has Not Begun",
-                                                "__disableElse": false,
-                                                "__collapse": false
+                                                "__label": "Compute Offset from Index"
                                             },
-                                            "children": {
-                                                "true": [
+                                            "id": "aab53dca-6ff1-4221-9188-296168bf16ac"
+                                        },
+                                        {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_GET_INDIRECT VAR_CARD_VALUE, VAR_INDEX_J",
+                                                "__label": "Get Value at Offset",
+                                                "references": [
                                                     {
-                                                        "command": "EVENT_CALL_CUSTOM_EVENT",
-                                                        "args": {
-                                                            "customEventId": "2da26cab-45d5-4c99-b5ea-5920db0b2f3c",
-                                                            "$variable[V0]$": {
-                                                                "type": "variable",
-                                                                "value": "L0"
-                                                            },
-                                                            "$variable[V1]$": {
-                                                                "type": "sub",
-                                                                "valueA": {
-                                                                    "type": "variable",
-                                                                    "value": "L1"
-                                                                },
-                                                                "valueB": {
-                                                                    "type": "number",
-                                                                    "value": 3
-                                                                }
-                                                            },
-                                                            "$variable[V2]$": {
-                                                                "type": "variable",
-                                                                "value": "28"
-                                                            }
-                                                        },
-                                                        "id": "5cfc1bd2-6a51-427d-8595-7fa8cf529475"
+                                                        "type": "variable",
+                                                        "id": "28"
                                                     },
                                                     {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "27",
-                                                            "value": {
-                                                                "type": "variable",
-                                                                "value": "24"
-                                                            }
-                                                        },
-                                                        "id": "13b38717-7205-4232-8904-fefa63060f98"
-                                                    }
-                                                ],
-                                                "false": [
-                                                    {
-                                                        "command": "EVENT_TEXT",
-                                                        "args": {
-                                                            "text": [
-                                                                "Not\nImplemented\nYet"
-                                                            ],
-                                                            "avatarId": ""
-                                                        },
-                                                        "id": "7e0b303f-4493-4a1b-ad0d-69218e2d9dec"
+                                                        "type": "variable",
+                                                        "id": "25"
                                                     }
                                                 ]
                                             },
-                                            "id": "352dd259-7fab-42a3-b431-d2cf0c3cfb9b"
+                                            "id": "78bcff84-7bf1-4b0b-9967-84e42e278808"
                                         }
                                     ]
                                 },
-                                "id": "f1b52242-fe49-48ca-aaa8-442bfc04a3dd"
+                                "id": "2868b9a1-0d70-400d-a524-5a71924e4373"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Revealed: $27$\nIndex:  $24$\nOffset: $25$\nValue:  $28$"
+                                    ],
+                                    "avatarId": "",
+                                    "__label": "DEBUG PRINTF",
+                                    "__comment": true
+                                },
+                                "id": "60e54e0c-a92d-4717-88b0-87aa6023683a"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "Reveal Card",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "spriteStateId": "Flip",
+                                                "loopAnim": false
+                                            },
+                                            "id": "4f4f5f51-e0d7-4287-8594-1aa1a4b9f1c9"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.4,
+                                                "frames": 30
+                                            },
+                                            "id": "e7aee69f-6ebe-456f-b0d5-ec1465cb3025"
+                                        },
+                                        {
+                                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                                            "args": {
+                                                "customEventId": "2da26cab-45d5-4c99-b5ea-5920db0b2f3c",
+                                                "$variable[V0]$": {
+                                                    "type": "variable",
+                                                    "value": "L0"
+                                                },
+                                                "$variable[V1]$": {
+                                                    "type": "sub",
+                                                    "valueA": {
+                                                        "type": "variable",
+                                                        "value": "L1"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": 3
+                                                    }
+                                                },
+                                                "$variable[V2]$": {
+                                                    "type": "variable",
+                                                    "value": "28"
+                                                }
+                                            },
+                                            "id": "2b1452a3-55fc-4582-a1b4-934dbc930fa4"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "spriteStateId": "",
+                                                "loopAnim": false
+                                            },
+                                            "id": "01c6d4bf-3a29-4ba3-b186-1ad8c978559a"
+                                        }
+                                    ]
+                                },
+                                "id": "c1c710d2-4659-4449-95e9-0ed8261921b6"
+                            },
+                            {
+                                "command": "EVENT_IF",
+                                "args": {
+                                    "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                            "type": "variable",
+                                            "value": "27"
+                                        },
+                                        "valueB": {
+                                            "type": "number",
+                                            "value": -1
+                                        }
+                                    },
+                                    "__collapseElse": false,
+                                    "__label": "If Move Has Not Begun",
+                                    "__disableElse": true,
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "27",
+                                                "value": {
+                                                    "type": "variable",
+                                                    "value": "24"
+                                                }
+                                            },
+                                            "id": "c5c4fb2a-3c92-4998-94a7-636fbf45a374"
+                                        },
+                                        {
+                                            "command": "EVENT_STOP",
+                                            "args": {},
+                                            "id": "2171ef1f-3c36-4af6-9892-822f31fa9e1c"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "352dd259-7fab-42a3-b431-d2cf0c3cfb9b"
                             }
                         ]
                     },
@@ -5135,39 +5155,6 @@
             "symbol": "script_12",
             "script": [
                 {
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "V0",
-                        "value": {
-                            "type": "number",
-                            "value": 0
-                        }
-                    },
-                    "id": "7777be24-eab2-4f13-bb23-fba6b2c4feed"
-                },
-                {
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "V1",
-                        "value": {
-                            "type": "number",
-                            "value": 0
-                        }
-                    },
-                    "id": "5eb51cc4-191d-4c88-bad4-afb3fa184ce2"
-                },
-                {
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "V2",
-                        "value": {
-                            "type": "number",
-                            "value": 0
-                        }
-                    },
-                    "id": "35358be3-27df-4347-b1b8-0221f76fd6d0"
-                },
-                {
                     "command": "EVENT_SWITCH",
                     "args": {
                         "variable": "V2",
@@ -5344,7 +5331,7 @@
                                     ],
                                     "avatarId": ""
                                 },
-                                "id": "3eaa747e-b8f7-480e-9996-d2cdd05d5842"
+                                "id": "f83d3e26-e61b-4f79-87bd-a225f7c171da"
                             }
                         ]
                     },
