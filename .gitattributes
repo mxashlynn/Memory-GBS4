@@ -1,6 +1,7 @@
 # GitHub Language Detection
 design/* linguist-documentation
-*.gbsproj linguist-language=JSON
+*.gbsproj linguist-language=GBVM
+*.s linguist-language=GBVM
 
 # Normalize Line Endings to LineFeed
 *.md text=auto
