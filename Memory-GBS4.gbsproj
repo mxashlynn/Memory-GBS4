@@ -4413,12 +4413,12 @@
                 "V0": {
                     "id": "V0",
                     "name": "Tile X",
-                    "passByReference": true
+                    "passByReference": false
                 },
                 "V1": {
                     "id": "V1",
                     "name": "Tile Y",
-                    "passByReference": true
+                    "passByReference": false
                 }
             },
             "actors": {},
@@ -5642,8 +5642,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1541,
-        "worldScrollY": 385,
+        "worldScrollX": 941,
+        "worldScrollY": 85,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
