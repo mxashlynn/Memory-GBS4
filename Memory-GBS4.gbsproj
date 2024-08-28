@@ -1082,8 +1082,8 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "DEBUG SHOW ALL CARDS 🃏",
-                        "__comment": false,
-                        "__collapse": false
+                        "__comment": true,
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -1287,7 +1287,7 @@
                         "override": true,
                         "__scriptTabs": "press",
                         "__collapse": false,
-                        "__comment": true
+                        "__comment": false
                     },
                     "children": {
                         "true": [
@@ -4778,7 +4778,7 @@
                                     "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
                                     "tileIndex": {
                                         "type": "number",
-                                        "value": 76
+                                        "value": 78
                                     }
                                 },
                                 "id": "b2099ebe-e4a2-4b96-a596-0ba39d7da4dc"
@@ -4797,7 +4797,7 @@
                                     "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
                                     "tileIndex": {
                                         "type": "number",
-                                        "value": 77
+                                        "value": 79
                                     }
                                 },
                                 "id": "95296ac2-56d9-491a-9e47-f34a77d3013d"
@@ -4816,7 +4816,7 @@
                                     "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
                                     "tileIndex": {
                                         "type": "number",
-                                        "value": 92
+                                        "value": 94
                                     }
                                 },
                                 "id": "628420b9-a29e-4a19-bb23-ea6d7e269ff7"
@@ -4835,7 +4835,7 @@
                                     "tilesetId": "554668eb-fd2e-49e6-b5ff-7592b4ab7933",
                                     "tileIndex": {
                                         "type": "number",
-                                        "value": 93
+                                        "value": 95
                                     }
                                 },
                                 "id": "724c9489-c54a-467a-b067-b2dcf95f1b13"
@@ -5642,8 +5642,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 941,
-        "worldScrollY": 85,
+        "worldScrollX": 1441,
+        "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
