@@ -16,16 +16,23 @@
 
 ## Cards
 
-| Encoding | Name          | Glyph | Pairs |
-| -------- | ------------- | ----- | ----- |
-| 0        | UNINITIALIZED |       | 0     |
-| 1        | Moon          | 🌙    | 2     |
-| 2        | Sun           | 🌞    | 2     |
-| 3        | Stars         | ✨     | 2     |
-| 4        | Planet        | 🪐     | 1     |
-| 5        | Aurora        | 🌌    | 1     |
-| 6        | Rainbow       | 🌈    | 1     |
-| 7        | Lightning     | ⚡     | 1     |
+| Encoding | Name          | Revealed? | Glyph | Pairs |
+| -------- | ------------- | --------- | ----- | ----- |
+|  0       | UNINITIALIZED |       N/A |       | 0     |
+|  1       | Moon          |         ✔ | 🌙    | 2     |
+|  2       | Sun           |         ✔ | 🌞    | 2     |
+|  3       | Stars         |         ✔ | ✨     | 2     |
+|  4       | Planet        |         ✔ | 🪐     | 1     |
+|  5       | Aurora        |         ✔ | 🌌    | 1     |
+|  6       | Rainbow       |         ✔ | 🌈    | 1     |
+|  7       | Lightning     |         ✔ | ⚡     | 1     |
+| 11       | Moon          |        🚫 | 🌙    | 2     |
+| 12       | Sun           |        🚫 | 🌞    | 2     |
+| 13       | Stars         |        🚫 | ✨     | 2     |
+| 14       | Planet        |        🚫 | 🪐     | 1     |
+| 15       | Aurora        |        🚫 | 🌌    | 1     |
+| 16       | Rainbow       |        🚫 | 🌈    | 1     |
+| 17       | Lightning     |        🚫 | ⚡     | 1     |
 
 - 7 Card Types
 - 20 Cards Total
