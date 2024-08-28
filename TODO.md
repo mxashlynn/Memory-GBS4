@@ -1,23 +1,7 @@
 # Memory ✨🎴🌈
 
-Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1209336784769523795
 
 ## 🚢 Week of the 31st
-- Play Music
-- Play Sound Effects
-    - Move Cursor
-    - Flip Card
-    - Flip Card, Match!
-    - Flip Card, No Match!
-    - Game Won
-    - Game Lost
-- Polish
-- More Bug Fixing
-- Post Finished Game
-
-
-## 🗺 Week of the 24th
-- FIX BUG causing graphics to glitch when flipping cards!                           ⬅⬅⬅ HERE!
 - When player selects a card:
     ✔ If the card is already face up, nothing happens
     ✔ Reveal card
@@ -43,8 +27,20 @@ Painter Momo Array Discussion: https://discord.com/channels/554713715442712616/1
         - Play Fail Jingle
         - Display Game Over
         - End Game
+- Play Music
+    - Title
+    - Playfield
+- Play Sound Effects
+    - Move Cursor
+    - Flip Card
+    - Flip Card, Match!
+    - Flip Card, No Match!
+    - Game Won
+    - Game Lost
 - Play Testing
 - Bug Fixing
+- Polish
+- Post Finished Game
 
 
 ## ✓ Done
