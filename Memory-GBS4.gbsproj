@@ -1391,7 +1391,7 @@
                                 "command": "EVENT_GROUP",
                                 "args": {
                                     "__label": "Get Value at Index",
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -1417,7 +1417,7 @@
                                         {
                                             "command": "EVENT_GBVM_SCRIPT",
                                             "args": {
-                                                "script": "VM_GET_INDIRECT VAR_CARD_VALUE, VAR_INDEX_J",
+                                                "script": "VM_GET_INDIRECT VAR_NEW_REVEALED_CARD_VALUE, VAR_INDEX_J",
                                                 "__label": "Get Value at Offset",
                                                 "references": [
                                                     {
@@ -1452,7 +1452,7 @@
                                     },
                                     "__collapseElse": false,
                                     "__label": "If Card Already Revealed, Do Nothing",
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -1484,7 +1484,7 @@
                                         {
                                             "command": "EVENT_GBVM_SCRIPT",
                                             "args": {
-                                                "script": "VM_SET_INDIRECT VAR_INDEX_J, VAR_CARD_VALUE",
+                                                "script": "VM_SET_INDIRECT VAR_INDEX_J, VAR_NEW_REVEALED_CARD_VALUE",
                                                 "__label": "Get Value at Offset",
                                                 "references": [
                                                     {
@@ -1502,18 +1502,6 @@
                                     ]
                                 },
                                 "id": "91bfbfd9-3c39-46af-9e64-12a244ae94f7"
-                            },
-                            {
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "Revealed: $27$\nIndex:  $24$\nOffset: $25$\nValue:  $28$"
-                                    ],
-                                    "avatarId": "",
-                                    "__label": "DEBUG PRINTF",
-                                    "__comment": true
-                                },
-                                "id": "60e54e0c-a92d-4717-88b0-87aa6023683a"
                             },
                             {
                                 "command": "EVENT_GROUP",
@@ -1596,7 +1584,7 @@
                                     "__collapseElse": false,
                                     "__label": "If Move Has Not Begun",
                                     "__disableElse": true,
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -1620,6 +1608,111 @@
                                     "false": []
                                 },
                                 "id": "352dd259-7fab-42a3-b431-d2cf0c3cfb9b"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "If Move Has Begun",
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "Get Value at Index",
+                                                "__collapse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "25",
+                                                            "value": {
+                                                                "type": "add",
+                                                                "valueA": {
+                                                                    "type": "variable",
+                                                                    "value": "27"
+                                                                },
+                                                                "valueB": {
+                                                                    "type": "number",
+                                                                    "value": 4
+                                                                }
+                                                            },
+                                                            "__label": "Compute Offset from Index"
+                                                        },
+                                                        "id": "51220e2c-5e9e-4183-a64f-cd9981bb2220"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                        "args": {
+                                                            "script": "VM_GET_INDIRECT VAR_OLD_REVEALED_CARD_VALUE, VAR_INDEX_J",
+                                                            "__label": "Get Value at Offset",
+                                                            "references": [
+                                                                {
+                                                                    "type": "variable",
+                                                                    "id": "29"
+                                                                },
+                                                                {
+                                                                    "type": "variable",
+                                                                    "id": "25"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "id": "f61028e4-7a8b-42c7-9236-3fcaf38336a3"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "9f11f549-087e-4125-9215-9ee11683404d"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "eq",
+                                                    "valueA": {
+                                                        "type": "variable",
+                                                        "value": "29"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "variable",
+                                                        "value": "28"
+                                                    }
+                                                },
+                                                "__collapseElse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "Implement Me!"
+                                                            ],
+                                                            "avatarId": ""
+                                                        },
+                                                        "id": "6cd877be-30e3-4f47-9ae8-b723bfa4883d"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "command": "EVENT_TEXT",
+                                                        "args": {
+                                                            "text": [
+                                                                "Implement Me!"
+                                                            ],
+                                                            "avatarId": ""
+                                                        },
+                                                        "id": "bf5fc904-615a-474e-ad9c-8b23bb962af1"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "4b8087e5-c183-4bb1-97ff-3678b7e8e9ac"
+                                        }
+                                    ]
+                                },
+                                "id": "16723ffd-c8e4-403d-b03b-6a56a5a54e03"
                             }
                         ]
                     },
@@ -5642,13 +5735,18 @@
         },
         {
             "id": "27",
-            "name": "Current Revealed Card Index",
-            "symbol": "var_current_revealed_card_i"
+            "name": "Old Revealed Card Index",
+            "symbol": "var_old_revealed_card_index"
         },
         {
             "id": "28",
-            "name": "Card Value",
-            "symbol": "var_card_value"
+            "name": "New Revealed Card Value",
+            "symbol": "var_new_revealed_card_value"
+        },
+        {
+            "id": "29",
+            "name": "Old Revealed Card Value",
+            "symbol": "var_old_revealed_card_value"
         },
         {
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
