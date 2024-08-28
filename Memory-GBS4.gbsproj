@@ -1083,7 +1083,7 @@
                     "args": {
                         "__label": "DEBUG SHOW ALL CARDS 🃏",
                         "__comment": false,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -3885,12 +3885,12 @@
             "variables": {
                 "V0": {
                     "id": "V0",
-                    "name": "X",
+                    "name": "Tile X",
                     "passByReference": false
                 },
                 "V1": {
                     "id": "V1",
-                    "name": "Y",
+                    "name": "Tile Y",
                     "passByReference": false
                 }
             },
@@ -3976,7 +3976,7 @@
                 },
                 "V1": {
                     "id": "V1",
-                    "name": "TIle Y",
+                    "name": "Tile Y",
                     "passByReference": false
                 }
             },
@@ -5000,12 +5000,12 @@
             "variables": {
                 "V0": {
                     "id": "V0",
-                    "name": "X",
+                    "name": "Tile X",
                     "passByReference": false
                 },
                 "V1": {
                     "id": "V1",
-                    "name": "Y",
+                    "name": "Tile Y",
                     "passByReference": false
                 }
             },
@@ -5605,16 +5605,6 @@
             "symbol": "var_is_initialized_"
         },
         {
-            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
-            "name": "Player X",
-            "symbol": "var_player_x"
-        },
-        {
-            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L1",
-            "name": "Player Y",
-            "symbol": "var_player_y"
-        },
-        {
             "id": "27",
             "name": "Current Revealed Card Index",
             "symbol": "var_current_revealed_card_i"
@@ -5623,6 +5613,16 @@
             "id": "28",
             "name": "Card Value",
             "symbol": "var_card_value"
+        },
+        {
+            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
+            "name": "Player X",
+            "symbol": "var_player_x"
+        },
+        {
+            "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L1",
+            "name": "Player Y",
+            "symbol": "var_player_y"
         }
     ],
     "engineFieldValues": [
@@ -5642,8 +5642,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1478,
-        "worldScrollY": 392,
+        "worldScrollX": 1541,
+        "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
