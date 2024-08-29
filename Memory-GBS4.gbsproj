@@ -3687,7 +3687,8 @@
                                         "type": "number",
                                         "value": 1
                                     },
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__label": "Set State to In Play"
                                 },
                                 "id": "93d0bef6-14ec-4071-95c1-14729a894012"
                             },
@@ -3699,7 +3700,8 @@
                                         "type": "number",
                                         "value": 0
                                     },
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__label": "Set No Matches Yet"
                                 },
                                 "id": "fa441c9a-6eb4-4ae9-81ad-f885288c54f8"
                             },
@@ -3711,7 +3713,8 @@
                                         "type": "number",
                                         "value": 0
                                     },
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__label": "Set No Flips Yet"
                                 },
                                 "id": "d0bbc348-875e-48f8-b95f-19ec36b26e33"
                             },
@@ -3723,7 +3726,8 @@
                                         "type": "number",
                                         "value": 3
                                     },
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__label": "Set 3 Flips Left"
                                 },
                                 "id": "f10f9eee-dac3-4bc1-96ed-3ab784fa56d4"
                             },
@@ -3735,7 +3739,8 @@
                                         "type": "number",
                                         "value": -1
                                     },
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__label": "Set No Card Revealed"
                                 },
                                 "id": "013868f0-5fb4-40cf-aa4e-1b6feb19a7d3"
                             }
@@ -3787,6 +3792,14 @@
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_COMMENT",
+                                "args": {
+                                    "text": "Fisher-Yates/Knuth Algorithm\n\n20 card deck stored in global variables from index 4 to 24.\n\nSwap is coded in GBVM as visual scripting does not yet have array operations.  Toxa suggested using the RPN calculator to pop and push the values pointed to by `i` and `j` onto/off of the VM's stack.\n\nThis is the same algorithm in pseudo-C:\n\nfor (byte i = high_index; i > low_index; i--)\n{\n    j = random(from low_index to i);\n    push(array[i]);\n    push(array[j]);\n    array[i] = pop();\n    array[j] = pop();\n}\n\nMore info:  https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle",
+                                    "__collapse": true
+                                },
+                                "id": "4fa9b0c2-4918-4540-94f0-d2b1bb22ecff"
+                            },
                             {
                                 "command": "EVENT_LOOP_FOR",
                                 "args": {
