@@ -53,6 +53,51 @@ for (byte i = high_index; i > low_index; i--)
 ```
 
 
+## Matching Algorithm
+- The game consists of turns.
+- A turn consists of flipping two cards.
+    - The turn begins when the first card is flipped and ends when the second card if flipped.
+    - We call the first flipped card the "Old Card" and the second flipped card the "New Card".
+    - Score is recorded in terms of flips, not turns.
+- The player can move their selector both during and between turns.
+    - When they hit the 'A' button, they select the card under the selector.
+- When player selects a card:
+    - If the card is already face up, nothing happens;
+    - If the card is face down, it is Flipped up, revealing it.
+- When a card is revealed:
+    - Increment Flips Made Counter
+    - If a Turn has not begun:
+        - Begin Turn
+        - Set Old Revealed Card Value to this card's value.
+        - Set Old Revealed Card Index to this card's index.
+        - Set Old Revealed Card X to selector's X.
+        - Set Old Revealed Card Y to selector's Y.
+    - If a Turn has begun:
+        - Set New Revealed Card Value to this card's value.
+        - Set New Revealed Card Index to this card's index.
+        - Set New Revealed Card X to selector's X.
+        - Set New Revealed Card Y to selector's Y.
+        - Compare values of Old and New cards.
+        - If this card's value matches Old Revealed Card's value:
+            - Play a chime
+            - Increment total match count
+            - Reset Player HP
+        - Else:
+            - Play a buzz
+            - Flip both cards back over to hide them
+            - Decrement Player HP
+        - Increment Turn count
+        - End Turn
+    - If total match count is 10:
+        - Play Win Jingle
+        - Display Congratulations and Total Turns
+        - End Game
+    - Else If HP is zero:
+        - Play Fail Jingle
+        - Display Game Over
+        - End Game
+
+
 ## Variables
 
 - Game State
@@ -60,11 +105,11 @@ for (byte i = high_index; i > low_index; i--)
     - 1 = In Play
     - 2 = Lost
     - 3 = Won
-- Player Match Count
+- Player Match Counter
     - 0…10 = How many card pairs found so far.
-- Player Flips Made Count
+- Player Flips Made Counter
     - 0…MAX_INT = How many flips made so far.
-- Player Flips Left Count
+- Player Flips Left Counter
     - 3…0 = How many flips remaining till game over.
 - Card X,Y
     - 20 variables in a row forming an implicit array
@@ -72,10 +117,20 @@ for (byte i = high_index; i > low_index; i--)
     - Card 3,4 is the lower right card and has index 23
 - Index I & Index J
     - Used in Shuffling algorithm
-- Current Revealed Card
-    - Indicates the index of the card the player has flipped face-up.  Values:
-        - -1    = No cards are revealed.  AKA, the current move has not begun.
-        - 0…19  = Index of revealed card.  AKA, we are mid-move.
+- Old Revealed Card Index
+    - Indicates the index of the card the player has flipped face-up at the beginning of the turn.  Values:
+        - -1    = No cards are revealed.  AKA, the current turn has not begun.
+        - 0…19  = Index of revealed card.  AKA, we are mid-turn.
+- Old Revealed Card Value
+    - Value of the card revealed at the beginning of the current turn.
+- Old Revealed Card X & Old Revealed Card Y
+    - Tile coordinates of the card revealed at the beginning of the current turn.
+- New Revealed Card Index
+    - Index of the card the player has flipped face-up at the end of the turn.  Values as before.
+- New Revealed Card Value
+    - Value of the card revealed at the end of the current turn.
+- New Revealed Card X & New Revealed Card Y
+    - Tile coordinates of the card revealed at the end of the current turn.
 
 
 ## Writing Every Card in Dialogue
