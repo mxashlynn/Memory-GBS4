@@ -1060,7 +1060,7 @@
                         },
                         "$variable[V6]$": {
                             "type": "variable",
-                            "value": "27"
+                            "value": "31"
                         }
                     },
                     "id": "2d11987e-6ccc-4e43-94b4-2c13e36292ba"
@@ -1603,7 +1603,7 @@
                                         "type": "eq",
                                         "valueA": {
                                             "type": "variable",
-                                            "value": "27"
+                                            "value": "31"
                                         },
                                         "valueB": {
                                             "type": "number",
@@ -1620,7 +1620,7 @@
                                         {
                                             "command": "EVENT_SET_VALUE",
                                             "args": {
-                                                "variable": "27",
+                                                "variable": "31",
                                                 "value": {
                                                     "type": "variable",
                                                     "value": "24"
@@ -1662,7 +1662,7 @@
                                                                 "type": "add",
                                                                 "valueA": {
                                                                     "type": "variable",
-                                                                    "value": "27"
+                                                                    "value": "31"
                                                                 },
                                                                 "valueB": {
                                                                     "type": "number",
@@ -1681,7 +1681,7 @@
                                                             "references": [
                                                                 {
                                                                     "type": "variable",
-                                                                    "id": "29"
+                                                                    "id": "32"
                                                                 },
                                                                 {
                                                                     "type": "variable",
@@ -1702,7 +1702,7 @@
                                                     "type": "eq",
                                                     "valueA": {
                                                         "type": "variable",
-                                                        "value": "29"
+                                                        "value": "32"
                                                     },
                                                     "valueB": {
                                                         "type": "variable",
@@ -1768,7 +1768,7 @@
                                                                                         "type": "add",
                                                                                         "valueA": {
                                                                                             "type": "variable",
-                                                                                            "value": "27"
+                                                                                            "value": "31"
                                                                                         },
                                                                                         "valueB": {
                                                                                             "type": "number",
@@ -1782,12 +1782,12 @@
                                                                             {
                                                                                 "command": "EVENT_SET_VALUE",
                                                                                 "args": {
-                                                                                    "variable": "29",
+                                                                                    "variable": "32",
                                                                                     "value": {
                                                                                         "type": "add",
                                                                                         "valueA": {
                                                                                             "type": "variable",
-                                                                                            "value": "29"
+                                                                                            "value": "32"
                                                                                         },
                                                                                         "valueB": {
                                                                                             "type": "number",
@@ -1806,7 +1806,7 @@
                                                                                     "references": [
                                                                                         {
                                                                                             "type": "variable",
-                                                                                            "id": "29"
+                                                                                            "id": "32"
                                                                                         },
                                                                                         {
                                                                                             "type": "variable",
@@ -1855,7 +1855,7 @@
                                                                                         "type": "add",
                                                                                         "valueA": {
                                                                                             "type": "variable",
-                                                                                            "value": "29"
+                                                                                            "value": "32"
                                                                                         },
                                                                                         "valueB": {
                                                                                             "type": "number",
@@ -5990,8 +5990,8 @@
         },
         {
             "id": "27",
-            "name": "Old Revealed Card Index",
-            "symbol": "var_old_revealed_card_index_0"
+            "name": "New Revealed Card Index",
+            "symbol": "var_new_revealed_card_index"
         },
         {
             "id": "28",
@@ -6000,8 +6000,33 @@
         },
         {
             "id": "29",
+            "name": "New Revealed Card X",
+            "symbol": "var_new_revealed_card_x"
+        },
+        {
+            "id": "30",
+            "name": "New Revealed Card Y",
+            "symbol": "var_new_revealed_card_y"
+        },
+        {
+            "id": "31",
+            "name": "Old Revealed Card Index",
+            "symbol": "var_old_revealed_card_index"
+        },
+        {
+            "id": "32",
             "name": "Old Revealed Card Value",
             "symbol": "var_old_revealed_card_value"
+        },
+        {
+            "id": "33",
+            "name": "Old Revealed Card X",
+            "symbol": "var_old_revealed_card_x"
+        },
+        {
+            "id": "34",
+            "name": "Old Revealed Card Y",
+            "symbol": "var_old_revealed_card_y"
         },
         {
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
@@ -6031,7 +6056,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1241,
+        "worldScrollX": 1441,
         "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,
@@ -6061,8 +6086,8 @@
         "playerPaletteId": "",
         "navigatorSplitSizes": [
             220,
-            466,
-            270
+            368,
+            368
         ],
         "showNavigator": true,
         "defaultFontId": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",
