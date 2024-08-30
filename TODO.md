@@ -2,6 +2,11 @@
 
 
 ## 🚢 Week of the 31st
+
+We will need to reimplement the algorithm below using the new variables.
+Note that we cannot assume that a selected card is either old or new until we check if the turn has already begun.
+
+
 - When player selects a card:
     - If the card is already face up, nothing happens
     - If the card is face down, it is Flipped up, revealing it
