@@ -30,22 +30,22 @@ Note that we cannot assume that a selected card is either old or new until we ch
             ✓ Set New Revealed Card Y to selector's Y
             ✓ Compare values of Old and New cards
                 ✓ If this card's value matches Old Revealed Card's value:
-                    ✓ Play a chime
+                    - Play a chime
                     ✓ Increment total match count
                     ✓ Reset Flips Remaining
                 ✓ Else:
-                    ✓ Play a buzz
+                    - Play a buzz
                     ✓ Flip both cards back over to hide them
                     ✓ Decrement Flips Remaining
             ✓ End Turn
-    - If total Match Count is 10:
+    ✓ If total Match Count is 10:
         - Play Win Jingle
-        - Display Congratulations and Total Turns
-        - End Game
-    - If total Flips Remaining is 0:
+        ✓ Display Congratulations and Total Turns
+        ✓ End Game
+    ✓ If total Flips Remaining is 0:
         - Play Fail Jingle
-        - Display Game Over
-        - End Game
+        ✓ Display Game Over
+        ✓ End Game
 - Play Music
     - Title
     - Playfield
