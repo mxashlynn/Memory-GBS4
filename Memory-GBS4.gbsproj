@@ -1785,6 +1785,14 @@
                                                 ],
                                                 "false": [
                                                     {
+                                                        "command": "EVENT_WAIT",
+                                                        "args": {
+                                                            "time": 0.6,
+                                                            "frames": 30
+                                                        },
+                                                        "id": "e4e33d93-0fd4-41aa-8265-ea1fb1983b20"
+                                                    },
+                                                    {
                                                         "command": "EVENT_DEC_VALUE",
                                                         "args": {
                                                             "variable": "3",
