@@ -1410,7 +1410,7 @@
                             {
                                 "command": "EVENT_GBVM_SCRIPT",
                                 "args": {
-                                    "script": "VM_GET_INDIRECT VAR_SELECTOR_VALUE, VAR_SELECTOR_OFFSET",
+                                    "script": "VM_GET_INDIRECT VAR_SELECTOR_VALUE, VAR_MEMORY_OFFSET",
                                     "__label": "Get Value at Offset",
                                     "references": [
                                         {
@@ -1496,7 +1496,7 @@
                                         {
                                             "command": "EVENT_GBVM_SCRIPT",
                                             "args": {
-                                                "script": "VM_SET_INDIRECT VAR_SELECTOR_OFFSET, VAR_SELECTOR_VALUE",
+                                                "script": "VM_SET_INDIRECT VAR_MEMORY_OFFSET, VAR_SELECTOR_VALUE",
                                                 "__label": "Set Value at Offset",
                                                 "references": [
                                                     {
@@ -1605,7 +1605,7 @@
                                             "command": "EVENT_GROUP",
                                             "args": {
                                                 "__label": "Store Revealed Card as Old Card",
-                                                "__collapse": true
+                                                "__collapse": false
                                             },
                                             "children": {
                                                 "true": [
@@ -2144,7 +2144,8 @@
                             {
                                 "command": "EVENT_GROUP",
                                 "args": {
-                                    "__label": "Check Game State"
+                                    "__label": "Check Game State",
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
