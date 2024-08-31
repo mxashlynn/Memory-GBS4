@@ -2197,12 +2197,18 @@
                                             "id": "61fe1706-a496-4fab-93cc-f52a44a87f62"
                                         },
                                         {
-                                            "command": "EVENT_WAIT",
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
                                             "args": {
-                                                "time": 0.6,
-                                                "frames": 30
+                                                "type": "tone",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 800,
+                                                "duration": 0.1,
+                                                "wait": true,
+                                                "effect": 0,
+                                                "__label": "PLAY TEMP SOUND"
                                             },
-                                            "id": "ebd91270-00b4-4011-90e8-6921746acdfa"
+                                            "id": "c73dd396-e10d-4a43-b895-48c4bbcaf63f"
                                         },
                                         {
                                             "command": "EVENT_AWAIT_INPUT",
@@ -2210,10 +2216,51 @@
                                                 "input": [
                                                     "a",
                                                     "b",
-                                                    "start"
+                                                    "start",
+                                                    "select",
+                                                    "right",
+                                                    "down",
+                                                    "up",
+                                                    "left"
                                                 ]
                                             },
                                             "id": "fd3fe400-194a-46e0-831f-9d4045f8b36a"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "26",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                },
+                                                "__label": "Reset \"Shuffling\" Overlay",
+                                                "__collapse": true
+                                            },
+                                            "id": "0f09540c-acdb-4cd1-a374-394018857f56"
+                                        },
+                                        {
+                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                            "args": {
+                                                "__scriptTabs": "text",
+                                                "minHeight": 18,
+                                                "maxHeight": 18,
+                                                "position": "bottom",
+                                                "showBorder": true,
+                                                "clearPrevious": true,
+                                                "textX": 3,
+                                                "textY": 1,
+                                                "textHeight": 3,
+                                                "closeWhen": "notModal",
+                                                "closeButton": "a",
+                                                "text": [
+                                                    "\\216\\217 \\216\\217 \\216\\217 \\216\\217 \\216\\217\n\\236\\237Shuffling\\177\\236\\237\n\\256\\257 \\256\\257 \\256\\257 \\256\\257 \\256\\257"
+                                                ],
+                                                "avatarId": "",
+                                                "__collapse": true,
+                                                "__label": "Show \"Shuffling\" Overlay"
+                                            },
+                                            "id": "48ec58f5-deab-4ba0-a3a3-0b1960c4f346"
                                         },
                                         {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -2266,6 +2313,19 @@
                                                 }
                                             },
                                             "id": "a9ee6e13-add7-46bf-a2ea-78686a4ad23d"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "26",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__comment": false,
+                                                "__label": "Clear \"Shuffling\" Overlay",
+                                                "__collapse": true
+                                            },
+                                            "id": "4178f711-874f-4002-b2f1-992b114d29d7"
                                         }
                                     ],
                                     "false": []
@@ -2305,12 +2365,18 @@
                                             "id": "a177446b-9dde-4ec5-9d46-4efc458cf780"
                                         },
                                         {
-                                            "command": "EVENT_WAIT",
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
                                             "args": {
-                                                "time": 0.6,
-                                                "frames": 30
+                                                "type": "beep",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 800,
+                                                "duration": 0.1,
+                                                "wait": true,
+                                                "effect": 0,
+                                                "__label": "PLAY TEMP SOUND"
                                             },
-                                            "id": "8ff8b8eb-0f60-49da-8f74-b8694a909598"
+                                            "id": "94944ac2-90c7-4067-a7ac-e382c71adeba"
                                         },
                                         {
                                             "command": "EVENT_AWAIT_INPUT",
@@ -2322,6 +2388,42 @@
                                                 ]
                                             },
                                             "id": "fd654aef-2cb3-4acc-9193-af294808aa26"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "26",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                },
+                                                "__label": "Reset \"Shuffling\" Overlay",
+                                                "__collapse": true
+                                            },
+                                            "id": "035a801b-1af6-44f8-bce4-367fae44fbdb"
+                                        },
+                                        {
+                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                            "args": {
+                                                "__scriptTabs": "text",
+                                                "minHeight": 18,
+                                                "maxHeight": 18,
+                                                "position": "bottom",
+                                                "showBorder": true,
+                                                "clearPrevious": true,
+                                                "textX": 3,
+                                                "textY": 1,
+                                                "textHeight": 3,
+                                                "closeWhen": "notModal",
+                                                "closeButton": "a",
+                                                "text": [
+                                                    "\\216\\217 \\216\\217 \\216\\217 \\216\\217 \\216\\217\n\\236\\237Shuffling\\177\\236\\237\n\\256\\257 \\256\\257 \\256\\257 \\256\\257 \\256\\257"
+                                                ],
+                                                "avatarId": "",
+                                                "__collapse": true,
+                                                "__label": "Show \"Shuffling\" Overlay"
+                                            },
+                                            "id": "e8edebed-c0bc-4ad3-b08d-194b5b71096a"
                                         },
                                         {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -2374,6 +2476,19 @@
                                                 }
                                             },
                                             "id": "3550149a-8ada-4cce-a38e-1bc80894c697"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "26",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__comment": false,
+                                                "__label": "Clear \"Shuffling\" Overlay",
+                                                "__collapse": true
+                                            },
+                                            "id": "c6139507-2fad-4f58-8a05-d5f10b42ff27"
                                         }
                                     ],
                                     "false": []
@@ -2621,20 +2736,39 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_COMMENT",
-                    "args": {
-                        "text": "Play Music",
-                        "__label": "Play Music"
-                    },
-                    "id": "d42afeff-6666-45dc-bf49-b7b2502f8388"
-                },
-                {
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "$self$",
                         "__collapse": true
                     },
                     "id": "63121860-aafc-4739-bbe3-c9f28dd88263"
+                },
+                {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "tone",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 800,
+                        "duration": 0.1,
+                        "wait": false,
+                        "effect": 0,
+                        "__label": "PLAY TEMP SOUND"
+                    },
+                    "id": "38694073-a036-43a5-a735-1d869fe6b909"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "26",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        },
+                        "__label": "Set Uninitialized",
+                        "__collapse": true
+                    },
+                    "id": "1264cc16-7ce7-4295-8691-115bc51800de"
                 },
                 {
                     "command": "EVENT_SET_INPUT_SCRIPT",
@@ -6485,8 +6619,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1241,
-        "worldScrollY": 385,
+        "worldScrollX": 1321,
+        "worldScrollY": 407,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
