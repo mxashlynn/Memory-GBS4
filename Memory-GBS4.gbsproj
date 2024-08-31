@@ -1677,7 +1677,7 @@
                                 "command": "EVENT_GROUP",
                                 "args": {
                                     "__label": "If Turn Has Begun",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
@@ -1757,7 +1757,7 @@
                                                 },
                                                 "__collapseElse": false,
                                                 "__label": "If Cards Match",
-                                                "__collapse": true
+                                                "__collapse": false
                                             },
                                             "children": {
                                                 "true": [
@@ -1796,7 +1796,7 @@
                                                         "command": "EVENT_GROUP",
                                                         "args": {
                                                             "__label": "Set Revealed Cards Back to Hidden",
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "children": {
                                                             "true": [
@@ -1944,7 +1944,7 @@
                                                         "command": "EVENT_GROUP",
                                                         "args": {
                                                             "__label": "Hide Cards On Screen",
-                                                            "__collapse": true
+                                                            "__collapse": false
                                                         },
                                                         "children": {
                                                             "true": [
@@ -1979,11 +1979,18 @@
                                                                                     "customEventId": "974e18eb-569e-453b-b052-176a0361ce4b",
                                                                                     "$variable[V0]$": {
                                                                                         "type": "variable",
-                                                                                        "value": "L0"
+                                                                                        "value": "29"
                                                                                     },
                                                                                     "$variable[V1]$": {
-                                                                                        "type": "variable",
-                                                                                        "value": "L1"
+                                                                                        "type": "sub",
+                                                                                        "valueA": {
+                                                                                            "type": "variable",
+                                                                                            "value": "30"
+                                                                                        },
+                                                                                        "valueB": {
+                                                                                            "type": "number",
+                                                                                            "value": 3
+                                                                                        }
                                                                                     }
                                                                                 },
                                                                                 "id": "771cd692-dc16-4aa1-93df-0dd45bce7502"
@@ -2050,8 +2057,15 @@
                                                                                         "value": "33"
                                                                                     },
                                                                                     "$variable[V1]$": {
-                                                                                        "type": "variable",
-                                                                                        "value": "34"
+                                                                                        "type": "sub",
+                                                                                        "valueA": {
+                                                                                            "type": "variable",
+                                                                                            "value": "34"
+                                                                                        },
+                                                                                        "valueB": {
+                                                                                            "type": "number",
+                                                                                            "value": 3
+                                                                                        }
                                                                                     }
                                                                                 },
                                                                                 "id": "339cd0f8-3861-4436-ae01-b5251198df55"
@@ -2155,7 +2169,8 @@
                                                 "text": [
                                                     " Implement me!"
                                                 ],
-                                                "avatarId": ""
+                                                "avatarId": "",
+                                                "__comment": true
                                             },
                                             "id": "53d1638b-8081-4096-929f-bab94be401c0"
                                         }
@@ -6198,7 +6213,7 @@
         {
             "id": "27",
             "name": "New Revealed Card Index",
-            "symbol": "var_new_revealed_card_index"
+            "symbol": "var_new_revealed_card_index_0"
         },
         {
             "id": "28",
@@ -6213,7 +6228,7 @@
         {
             "id": "30",
             "name": "New Revealed Card Y",
-            "symbol": "var_new_revealed_card_y"
+            "symbol": "var_new_revealed_card_y_0"
         },
         {
             "id": "31",
