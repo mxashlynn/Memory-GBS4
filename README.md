@@ -9,7 +9,7 @@ Memory is a traditional pair-matching card game, also known as Concentration, Ma
 
 This single-player version uses a deck of 20 cards containing 2 or 4 of each card type.  Ten matches are possible.
 
-I developed this version so that I could learn some new features of GB Studio 4.x.  You can even review the source files!
+I developed this version so that I could learn some new features of [GB Studio 4.x](https://github.com/chrismaltby/gb-studio/).
 
 
 ## Controls 🕹
