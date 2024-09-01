@@ -42,7 +42,8 @@ The following cards make up the deck:
 
 ## Contributors ⚗️🍧
 
-- Solely the work of [Paige Ashlynn](https://github.com/mxashlynn/).
+- Solely the work of [Paige Ashlynn](https://github.com/mxashlynn/), with the exception of
+- Music and sound effects by [Emberlynn Bland](https://goodnightgirl.bandcamp.com/).
 
 
 ## Rights 🏳️‍🌈🏳️‍⚧️
