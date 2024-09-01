@@ -2,6 +2,8 @@
 
 
 ## 🚢 Week of the 31st
+- Player can hold Select to review stats
+- Bug Fixing
 - Play Music
     - Title
     - Playfield
@@ -13,7 +15,6 @@
     - Game Won
     - Game Lost
 - Play Testing
-- Bug Fixing
 - Polish
 - Post Finished Game
 
