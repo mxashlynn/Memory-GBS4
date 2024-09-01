@@ -6539,7 +6539,7 @@
         {
             "id": "27",
             "name": "New Revealed Card Index",
-            "symbol": "var_new_revealed_card_index_0"
+            "symbol": "var_new_revealed_card_index"
         },
         {
             "id": "28",
@@ -6577,6 +6577,16 @@
             "symbol": "var_old_revealed_card_y"
         },
         {
+            "id": "35",
+            "name": "Memory Offset",
+            "symbol": "var_memory_offset"
+        },
+        {
+            "id": "36",
+            "name": "Selector Value",
+            "symbol": "var_selector_value"
+        },
+        {
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
             "name": "Player X",
             "symbol": "var_player_x"
@@ -6590,16 +6600,6 @@
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L2",
             "name": "Selector Index",
             "symbol": "var_selector_index"
-        },
-        {
-            "id": "35",
-            "name": "Memory Offset",
-            "symbol": "var_memory_offset"
-        },
-        {
-            "id": "36",
-            "name": "Selector Value",
-            "symbol": "var_selector_value"
         }
     ],
     "engineFieldValues": [
@@ -6619,8 +6619,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1321,
-        "worldScrollY": 407,
+        "worldScrollX": 1241,
+        "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
@@ -6719,7 +6719,7 @@
         "colorMode": "mono",
         "previewAsMono": false,
         "openBuildLogOnWarnings": true,
-        "generateDebugFilesEnabled": true,
+        "generateDebugFilesEnabled": false,
         "defaultFadeStyle": "white",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
     }
