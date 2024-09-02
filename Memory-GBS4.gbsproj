@@ -412,62 +412,52 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_SWITCH",
+                                        "command": "EVENT_IF_INPUT",
                                         "args": {
-                                            "variable": "0",
-                                            "choices": 3,
-                                            "__collapseCase0": false,
-                                            "value0": 1,
-                                            "__collapseCase1": false,
-                                            "value1": 2,
-                                            "__collapseCase2": false,
-                                            "value2": 3,
-                                            "__collapseCase3": false,
-                                            "value3": 4,
-                                            "__collapseCase4": false,
-                                            "value4": 5,
-                                            "__collapseCase5": false,
-                                            "value5": 6,
-                                            "__collapseCase6": false,
-                                            "value6": 7,
-                                            "__collapseCase7": false,
-                                            "value7": 8,
-                                            "__collapseCase8": false,
-                                            "value8": 9,
-                                            "__collapseCase9": false,
-                                            "value9": 10,
-                                            "__collapseCase10": false,
-                                            "value10": 11,
-                                            "__collapseCase11": false,
-                                            "value11": 12,
-                                            "__collapseCase12": false,
-                                            "value12": 13,
-                                            "__collapseCase13": false,
-                                            "value13": 14,
-                                            "__collapseCase14": false,
-                                            "value14": 15,
-                                            "__collapseCase15": false,
-                                            "value15": 16,
-                                            "__collapseElse": false,
-                                            "__label": "Write Appropriate Status",
-                                            "__comment": false,
-                                            "__collapse": false
+                                            "input": [
+                                                "select"
+                                            ],
+                                            "__collapseElse": false
                                         },
                                         "children": {
-                                            "true0": [
+                                            "true": [
+                                                {
+                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                    "args": {
+                                                        "__scriptTabs": "text",
+                                                        "minHeight": 1,
+                                                        "maxHeight": 1,
+                                                        "position": "bottom",
+                                                        "showBorder": false,
+                                                        "clearPrevious": false,
+                                                        "textX": 1,
+                                                        "textY": 1,
+                                                        "textHeight": 1,
+                                                        "closeWhen": "notModal",
+                                                        "closeButton": "a",
+                                                        "text": [
+                                                            "\\003\\001\\001\\275\\274 Flips Made %D3$02$ \\274\\275"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__label": "Write Game Status"
+                                                    },
+                                                    "id": "4d16ee0e-7320-4180-90f9-35bd5852787d"
+                                                }
+                                            ],
+                                            "false": [
                                                 {
                                                     "command": "EVENT_SWITCH",
                                                     "args": {
-                                                        "variable": "3",
-                                                        "choices": 4,
+                                                        "variable": "0",
+                                                        "choices": 3,
                                                         "__collapseCase0": false,
-                                                        "value0": 3,
+                                                        "value0": 1,
                                                         "__collapseCase1": false,
                                                         "value1": 2,
                                                         "__collapseCase2": false,
-                                                        "value2": 1,
+                                                        "value2": 3,
                                                         "__collapseCase3": false,
-                                                        "value3": 0,
+                                                        "value3": 4,
                                                         "__collapseCase4": false,
                                                         "value4": 5,
                                                         "__collapseCase5": false,
@@ -493,32 +483,188 @@
                                                         "__collapseCase15": false,
                                                         "value15": 16,
                                                         "__collapseElse": false,
-                                                        "__label": "In Play",
+                                                        "__label": "Write Appropriate Status",
+                                                        "__comment": false,
                                                         "__collapse": true
                                                     },
                                                     "children": {
                                                         "true0": [
                                                             {
-                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                "command": "EVENT_SWITCH",
                                                                 "args": {
-                                                                    "__scriptTabs": "text",
-                                                                    "minHeight": 1,
-                                                                    "maxHeight": 1,
-                                                                    "position": "bottom",
-                                                                    "showBorder": false,
-                                                                    "clearPrevious": false,
-                                                                    "textX": 1,
-                                                                    "textY": 1,
-                                                                    "textHeight": 1,
-                                                                    "closeWhen": "notModal",
-                                                                    "closeButton": "a",
-                                                                    "text": [
-                                                                        "\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275"
-                                                                    ],
-                                                                    "avatarId": "",
-                                                                    "__label": "Write 3 Flips Left"
+                                                                    "variable": "3",
+                                                                    "choices": 4,
+                                                                    "__collapseCase0": false,
+                                                                    "value0": 3,
+                                                                    "__collapseCase1": false,
+                                                                    "value1": 2,
+                                                                    "__collapseCase2": false,
+                                                                    "value2": 1,
+                                                                    "__collapseCase3": false,
+                                                                    "value3": 0,
+                                                                    "__collapseCase4": false,
+                                                                    "value4": 5,
+                                                                    "__collapseCase5": false,
+                                                                    "value5": 6,
+                                                                    "__collapseCase6": false,
+                                                                    "value6": 7,
+                                                                    "__collapseCase7": false,
+                                                                    "value7": 8,
+                                                                    "__collapseCase8": false,
+                                                                    "value8": 9,
+                                                                    "__collapseCase9": false,
+                                                                    "value9": 10,
+                                                                    "__collapseCase10": false,
+                                                                    "value10": 11,
+                                                                    "__collapseCase11": false,
+                                                                    "value11": 12,
+                                                                    "__collapseCase12": false,
+                                                                    "value12": 13,
+                                                                    "__collapseCase13": false,
+                                                                    "value13": 14,
+                                                                    "__collapseCase14": false,
+                                                                    "value14": 15,
+                                                                    "__collapseCase15": false,
+                                                                    "value15": 16,
+                                                                    "__collapseElse": false,
+                                                                    "__label": "In Play",
+                                                                    "__collapse": true
                                                                 },
-                                                                "id": "94f1fb30-87e6-497c-a3ef-14e4fa5035f1"
+                                                                "children": {
+                                                                    "true0": [
+                                                                        {
+                                                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                            "args": {
+                                                                                "__scriptTabs": "text",
+                                                                                "minHeight": 1,
+                                                                                "maxHeight": 1,
+                                                                                "position": "bottom",
+                                                                                "showBorder": false,
+                                                                                "clearPrevious": false,
+                                                                                "textX": 1,
+                                                                                "textY": 1,
+                                                                                "textHeight": 1,
+                                                                                "closeWhen": "notModal",
+                                                                                "closeButton": "a",
+                                                                                "text": [
+                                                                                    "\\003\\001\\001\\275\\274 Flips Left @@@ \\274\\275"
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__label": "Write 3 Flips Left"
+                                                                            },
+                                                                            "id": "94f1fb30-87e6-497c-a3ef-14e4fa5035f1"
+                                                                        }
+                                                                    ],
+                                                                    "true1": [
+                                                                        {
+                                                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                            "args": {
+                                                                                "__scriptTabs": "text",
+                                                                                "minHeight": 1,
+                                                                                "maxHeight": 1,
+                                                                                "position": "bottom",
+                                                                                "showBorder": false,
+                                                                                "clearPrevious": false,
+                                                                                "textX": 1,
+                                                                                "textY": 1,
+                                                                                "textHeight": 1,
+                                                                                "closeWhen": "notModal",
+                                                                                "closeButton": "a",
+                                                                                "text": [
+                                                                                    "\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275"
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__label": "Write 2 Flips Left"
+                                                                            },
+                                                                            "id": "1730d4fb-52b2-4a34-a59a-3498ad665e55"
+                                                                        }
+                                                                    ],
+                                                                    "true2": [
+                                                                        {
+                                                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                            "args": {
+                                                                                "__scriptTabs": "text",
+                                                                                "minHeight": 1,
+                                                                                "maxHeight": 1,
+                                                                                "position": "bottom",
+                                                                                "showBorder": false,
+                                                                                "clearPrevious": false,
+                                                                                "textX": 1,
+                                                                                "textY": 1,
+                                                                                "textHeight": 1,
+                                                                                "closeWhen": "notModal",
+                                                                                "closeButton": "a",
+                                                                                "text": [
+                                                                                    "\\003\\001\\001\\275\\274 Flips Left @   \\274\\275"
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__label": "Write 1 Flip Left"
+                                                                            },
+                                                                            "id": "1a8d80c3-3410-4c7b-9f93-11268c230394"
+                                                                        }
+                                                                    ],
+                                                                    "true3": [
+                                                                        {
+                                                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                            "args": {
+                                                                                "__scriptTabs": "text",
+                                                                                "minHeight": 1,
+                                                                                "maxHeight": 1,
+                                                                                "position": "bottom",
+                                                                                "showBorder": false,
+                                                                                "clearPrevious": false,
+                                                                                "textX": 1,
+                                                                                "textY": 1,
+                                                                                "textHeight": 1,
+                                                                                "closeWhen": "notModal",
+                                                                                "closeButton": "a",
+                                                                                "text": [
+                                                                                    "\\003\\001\\001\\275\\274 Flips Left     \\274\\275"
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__label": "Write 0 Flips Left"
+                                                                            },
+                                                                            "id": "0a8b54ed-0ddc-4d33-b6d6-6d2a449e7750"
+                                                                        }
+                                                                    ],
+                                                                    "true4": [],
+                                                                    "true5": [],
+                                                                    "true6": [],
+                                                                    "true7": [],
+                                                                    "true8": [],
+                                                                    "true9": [],
+                                                                    "true10": [],
+                                                                    "true11": [],
+                                                                    "true12": [],
+                                                                    "true13": [],
+                                                                    "true14": [],
+                                                                    "true15": [],
+                                                                    "false": [
+                                                                        {
+                                                                            "command": "PT_EVENT_ADVANCED_DIALOGUE",
+                                                                            "args": {
+                                                                                "__scriptTabs": "text",
+                                                                                "minHeight": 1,
+                                                                                "maxHeight": 1,
+                                                                                "position": "bottom",
+                                                                                "showBorder": false,
+                                                                                "clearPrevious": false,
+                                                                                "textX": 1,
+                                                                                "textY": 1,
+                                                                                "textHeight": 1,
+                                                                                "closeWhen": "notModal",
+                                                                                "closeButton": "a",
+                                                                                "text": [
+                                                                                    "\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275"
+                                                                                ],
+                                                                                "avatarId": "",
+                                                                                "__label": "Write ERROR"
+                                                                            },
+                                                                            "id": "44b515f1-6447-4b64-8dda-1a397ba755c8"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "id": "4bb68203-9bb7-497f-98f2-0018c22b5520"
                                                             }
                                                         ],
                                                         "true1": [
@@ -537,12 +683,12 @@
                                                                     "closeWhen": "notModal",
                                                                     "closeButton": "a",
                                                                     "text": [
-                                                                        "\\003\\001\\001\\275\\274 Flips Left @@  \\274\\275"
+                                                                        "\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275"
                                                                     ],
                                                                     "avatarId": "",
-                                                                    "__label": "Write 2 Flips Left"
+                                                                    "__label": "Write Game Over"
                                                                 },
-                                                                "id": "1730d4fb-52b2-4a34-a59a-3498ad665e55"
+                                                                "id": "c9c682ba-8d4c-4bdb-b19c-678b0b7d8ccd"
                                                             }
                                                         ],
                                                         "true2": [
@@ -561,38 +707,15 @@
                                                                     "closeWhen": "notModal",
                                                                     "closeButton": "a",
                                                                     "text": [
-                                                                        "\\003\\001\\001\\275\\274 Flips Left @   \\274\\275"
+                                                                        "\\003\\001\\001\\275\\274Won in %D2$02$ Flips!\\274\\275"
                                                                     ],
                                                                     "avatarId": "",
-                                                                    "__label": "Write 1 Flip Left"
+                                                                    "__label": "Write Game Won"
                                                                 },
-                                                                "id": "1a8d80c3-3410-4c7b-9f93-11268c230394"
+                                                                "id": "554febac-2ce2-4b39-ba39-46f058838bcb"
                                                             }
                                                         ],
-                                                        "true3": [
-                                                            {
-                                                                "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                                "args": {
-                                                                    "__scriptTabs": "text",
-                                                                    "minHeight": 1,
-                                                                    "maxHeight": 1,
-                                                                    "position": "bottom",
-                                                                    "showBorder": false,
-                                                                    "clearPrevious": false,
-                                                                    "textX": 1,
-                                                                    "textY": 1,
-                                                                    "textHeight": 1,
-                                                                    "closeWhen": "notModal",
-                                                                    "closeButton": "a",
-                                                                    "text": [
-                                                                        "\\003\\001\\001\\275\\274 Flips Left     \\274\\275"
-                                                                    ],
-                                                                    "avatarId": "",
-                                                                    "__label": "Write 0 Flips Left"
-                                                                },
-                                                                "id": "0a8b54ed-0ddc-4d33-b6d6-6d2a449e7750"
-                                                            }
-                                                        ],
+                                                        "true3": [],
                                                         "true4": [],
                                                         "true5": [],
                                                         "true6": [],
@@ -621,110 +744,25 @@
                                                                     "closeWhen": "notModal",
                                                                     "closeButton": "a",
                                                                     "text": [
-                                                                        "\\003\\001\\001\\275\\274 Flips Left ERR \\274\\275"
+                                                                        "\\003\\001\\001\\275\\274                \\274\\275"
                                                                     ],
                                                                     "avatarId": "",
-                                                                    "__label": "Write ERROR"
+                                                                    "__label": "Write Blank"
                                                                 },
-                                                                "id": "44b515f1-6447-4b64-8dda-1a397ba755c8"
+                                                                "id": "f1b35162-f66f-4396-a2be-0a59c3457979"
                                                             }
                                                         ]
                                                     },
-                                                    "id": "4bb68203-9bb7-497f-98f2-0018c22b5520"
-                                                }
-                                            ],
-                                            "true1": [
-                                                {
-                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                    "args": {
-                                                        "__scriptTabs": "text",
-                                                        "minHeight": 1,
-                                                        "maxHeight": 1,
-                                                        "position": "bottom",
-                                                        "showBorder": false,
-                                                        "clearPrevious": false,
-                                                        "textX": 1,
-                                                        "textY": 1,
-                                                        "textHeight": 1,
-                                                        "closeWhen": "notModal",
-                                                        "closeButton": "a",
-                                                        "text": [
-                                                            "\\003\\001\\001\\275\\274  -Game  Over-  \\274\\275"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__label": "Write Game Over"
-                                                    },
-                                                    "id": "c9c682ba-8d4c-4bdb-b19c-678b0b7d8ccd"
-                                                }
-                                            ],
-                                            "true2": [
-                                                {
-                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                    "args": {
-                                                        "__scriptTabs": "text",
-                                                        "minHeight": 1,
-                                                        "maxHeight": 1,
-                                                        "position": "bottom",
-                                                        "showBorder": false,
-                                                        "clearPrevious": false,
-                                                        "textX": 1,
-                                                        "textY": 1,
-                                                        "textHeight": 1,
-                                                        "closeWhen": "notModal",
-                                                        "closeButton": "a",
-                                                        "text": [
-                                                            "\\003\\001\\001\\275\\274Won in %D2$02$ Flips!\\274\\275"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__label": "Write Game Won"
-                                                    },
-                                                    "id": "554febac-2ce2-4b39-ba39-46f058838bcb"
-                                                }
-                                            ],
-                                            "true3": [],
-                                            "true4": [],
-                                            "true5": [],
-                                            "true6": [],
-                                            "true7": [],
-                                            "true8": [],
-                                            "true9": [],
-                                            "true10": [],
-                                            "true11": [],
-                                            "true12": [],
-                                            "true13": [],
-                                            "true14": [],
-                                            "true15": [],
-                                            "false": [
-                                                {
-                                                    "command": "PT_EVENT_ADVANCED_DIALOGUE",
-                                                    "args": {
-                                                        "__scriptTabs": "text",
-                                                        "minHeight": 1,
-                                                        "maxHeight": 1,
-                                                        "position": "bottom",
-                                                        "showBorder": false,
-                                                        "clearPrevious": false,
-                                                        "textX": 1,
-                                                        "textY": 1,
-                                                        "textHeight": 1,
-                                                        "closeWhen": "notModal",
-                                                        "closeButton": "a",
-                                                        "text": [
-                                                            "\\003\\001\\001\\275\\274                \\274\\275"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__label": "Write Blank"
-                                                    },
-                                                    "id": "f1b35162-f66f-4396-a2be-0a59c3457979"
+                                                    "id": "fce37df0-ada1-4434-9fa6-3772f98ab1b6"
                                                 }
                                             ]
                                         },
-                                        "id": "fce37df0-ada1-4434-9fa6-3772f98ab1b6"
+                                        "id": "9670ce2e-e613-40a7-913d-76ccc2df3559"
                                     },
                                     {
                                         "command": "EVENT_WAIT",
                                         "args": {
-                                            "time": 1,
+                                            "time": 0.8,
                                             "frames": 30,
                                             "__comment": false
                                         },

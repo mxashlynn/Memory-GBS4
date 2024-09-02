@@ -2,7 +2,6 @@
 
 
 ## 🚢 Week of the 31st
-- Player can hold Select to review stats
 - Play Music
     - Title
     - Playfield
@@ -20,6 +19,7 @@
 
 
 ## ✓ Done
+- Player can hold Select to review total flips made
 - Create a scene stating the rules
 - Sets up fonts.
 - Wait on Title Screen till Button Pressed
