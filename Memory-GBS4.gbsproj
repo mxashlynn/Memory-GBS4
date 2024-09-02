@@ -2347,7 +2347,7 @@
                                         }
                                     },
                                     "__collapseElse": true,
-                                    "__label": "If No Flips Left (Loss)",
+                                    "__label": "If No Flips Left (Lose)",
                                     "__collapse": false,
                                     "__disableElse": true
                                 },
