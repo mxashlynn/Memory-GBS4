@@ -6314,14 +6314,6 @@
     "avatars": [],
     "emotes": [
         {
-            "id": "9df5f63f-ea47-447e-9b14-cb2dbafb697d",
-            "name": "anger",
-            "symbol": "emote_anger",
-            "width": 16,
-            "height": 16,
-            "filename": "anger.png"
-        },
-        {
             "id": "edf96d29-9a08-4813-b2d3-46e0996f89f2",
             "name": "love",
             "symbol": "emote_love",
@@ -6336,46 +6328,6 @@
             "width": 16,
             "height": 16,
             "filename": "music.png"
-        },
-        {
-            "id": "d508e529-57eb-458b-9782-66f318243c32",
-            "name": "pause",
-            "symbol": "emote_pause",
-            "width": 16,
-            "height": 16,
-            "filename": "pause.png"
-        },
-        {
-            "id": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76",
-            "name": "question",
-            "symbol": "emote_question",
-            "width": 16,
-            "height": 16,
-            "filename": "question.png"
-        },
-        {
-            "id": "56423c9c-dca0-4f5b-ad92-28e9660d50f1",
-            "name": "shock",
-            "symbol": "emote_shock",
-            "width": 16,
-            "height": 16,
-            "filename": "shock.png"
-        },
-        {
-            "id": "2d4b251d-0241-40eb-98e1-e396b236772c",
-            "name": "sleep",
-            "symbol": "emote_sleep",
-            "width": 16,
-            "height": 16,
-            "filename": "sleep.png"
-        },
-        {
-            "id": "3c769dca-51f3-426c-942f-71c4d3af6202",
-            "name": "sweat",
-            "symbol": "emote_sweat",
-            "width": 16,
-            "height": 16,
-            "filename": "sweat.png"
         }
     ],
     "tilesets": [
