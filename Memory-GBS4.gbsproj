@@ -406,7 +406,8 @@
                                 },
                                 "__collapseElse": true,
                                 "__label": "If Initialized",
-                                "__disableElse": true
+                                "__disableElse": true,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -724,7 +725,8 @@
                                         "command": "EVENT_WAIT",
                                         "args": {
                                             "time": 1,
-                                            "frames": 30
+                                            "frames": 30,
+                                            "__comment": false
                                         },
                                         "id": "fcd3be25-26ab-4356-83b1-a2b95a88cb07"
                                     }
@@ -744,6 +746,18 @@
             ],
             "triggers": [],
             "script": [
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "37",
+                        "value": {
+                            "type": "true"
+                        },
+                        "__label": "Flag Busy",
+                        "__collapse": true
+                    },
+                    "id": "cfe1a7eb-90ba-40d6-bff7-7c3a0d74cf1b"
+                },
                 {
                     "command": "PT_EVENT_ADVANCED_DIALOGUE",
                     "args": {
@@ -779,7 +793,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Set Up Movement",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -792,10 +806,46 @@
                                     "override": true,
                                     "__scriptTabs": "press",
                                     "__label": "Move Right On Grid",
-                                    "__collapse": true
+                                    "__collapse": false
                                 },
                                 "children": {
                                     "true": [
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
+                                                    "type": "variable",
+                                                    "value": "37"
+                                                },
+                                                "__collapseElse": true,
+                                                "__label": "Ignore If Busy",
+                                                "__collapse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_STOP",
+                                                        "args": {},
+                                                        "id": "fa3784b5-a77a-428d-b1f3-d4b1069bbc2b"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "c7326c02-0c6e-44a8-9ef4-b991f51d19ca"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__label": "Flag Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "0ef9af07-4ba5-4ec4-a9db-d274706457f8"
+                                        },
                                         {
                                             "command": "EVENT_IF",
                                             "args": {
@@ -817,18 +867,6 @@
                                             "children": {
                                                 "true": [
                                                     {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "true"
-                                                            },
-                                                            "__label": "Flag Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "0ef9af07-4ba5-4ec4-a9db-d274706457f8"
-                                                    },
-                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -844,23 +882,23 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "02591a1b-0ce7-4673-acb5-b75d6edd437a"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "false"
-                                                            },
-                                                            "__label": "Clear Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "bf5b8642-7ce7-4798-920b-4eb652a3b0c5"
                                                     }
                                                 ],
                                                 "false": []
                                             },
                                             "id": "39879085-7c0b-4e46-bf74-0a0ce0cdf12a"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "false"
+                                                },
+                                                "__label": "Clear Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "bf5b8642-7ce7-4798-920b-4eb652a3b0c5"
                                         }
                                     ]
                                 },
@@ -883,6 +921,42 @@
                                             "command": "EVENT_IF",
                                             "args": {
                                                 "condition": {
+                                                    "type": "variable",
+                                                    "value": "37"
+                                                },
+                                                "__collapseElse": true,
+                                                "__label": "Ignore If Busy",
+                                                "__collapse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_STOP",
+                                                        "args": {},
+                                                        "id": "3f5078ec-5a49-443c-b5b5-b032358f8a16"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "c3bb333b-c24a-42f5-97df-4e484371757f"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__label": "Flag Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "33047e35-2825-47ff-b0ee-1e3420c489b7"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
                                                     "type": "gt",
                                                     "valueA": {
                                                         "type": "property",
@@ -900,18 +974,6 @@
                                             "children": {
                                                 "true": [
                                                     {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "true"
-                                                            },
-                                                            "__label": "Flag Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "33047e35-2825-47ff-b0ee-1e3420c489b7"
-                                                    },
-                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -927,23 +989,23 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "7f512481-006e-4f1f-b1c6-41d057ea351b"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "false"
-                                                            },
-                                                            "__label": "Clear Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "170a7ea5-b663-4535-ac18-b19b2f00e58b"
                                                     }
                                                 ],
                                                 "false": []
                                             },
                                             "id": "ab5e8d2e-1ce9-4429-8aea-e8e3fe6fecc4"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "false"
+                                                },
+                                                "__label": "Clear Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "170a7ea5-b663-4535-ac18-b19b2f00e58b"
                                         }
                                     ]
                                 },
@@ -966,6 +1028,42 @@
                                             "command": "EVENT_IF",
                                             "args": {
                                                 "condition": {
+                                                    "type": "variable",
+                                                    "value": "37"
+                                                },
+                                                "__collapseElse": true,
+                                                "__label": "Ignore If Busy",
+                                                "__collapse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_STOP",
+                                                        "args": {},
+                                                        "id": "e25415bd-5bcc-4274-9c4f-6538a08a4be1"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "6f1a6010-e6bd-4c22-9994-b13e0b67675c"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__label": "Flag Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "8b3a2c87-6add-4357-aa67-e11a59fa825d"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
                                                     "type": "gt",
                                                     "valueA": {
                                                         "type": "property",
@@ -983,18 +1081,6 @@
                                             "children": {
                                                 "true": [
                                                     {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "true"
-                                                            },
-                                                            "__label": "Flag Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "8b3a2c87-6add-4357-aa67-e11a59fa825d"
-                                                    },
-                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -1010,23 +1096,23 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "c3787492-ad7a-494d-a999-433128aa932a"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "false"
-                                                            },
-                                                            "__label": "Clear Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "b3dd50f8-ff2c-4dab-bb3e-fd18b5e988eb"
                                                     }
                                                 ],
                                                 "false": []
                                             },
                                             "id": "47bd12d0-ec72-42c8-b0e3-2879c760d8d5"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "false"
+                                                },
+                                                "__label": "Clear Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "b3dd50f8-ff2c-4dab-bb3e-fd18b5e988eb"
                                         }
                                     ]
                                 },
@@ -1049,6 +1135,42 @@
                                             "command": "EVENT_IF",
                                             "args": {
                                                 "condition": {
+                                                    "type": "variable",
+                                                    "value": "37"
+                                                },
+                                                "__collapseElse": true,
+                                                "__label": "Ignore If Busy",
+                                                "__collapse": true,
+                                                "__disableElse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_STOP",
+                                                        "args": {},
+                                                        "id": "e61eb309-3238-462b-81d3-0919156aca71"
+                                                    }
+                                                ],
+                                                "false": []
+                                            },
+                                            "id": "a465cbda-f750-4b70-9f05-8d99a3790157"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__label": "Flag Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "8f9472cc-96c2-4e6b-b430-b0a5dac9b574"
+                                        },
+                                        {
+                                            "command": "EVENT_IF",
+                                            "args": {
+                                                "condition": {
                                                     "type": "lt",
                                                     "valueA": {
                                                         "type": "property",
@@ -1066,18 +1188,6 @@
                                             "children": {
                                                 "true": [
                                                     {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "true"
-                                                            },
-                                                            "__label": "Flag Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "8f9472cc-96c2-4e6b-b430-b0a5dac9b574"
-                                                    },
-                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -1093,23 +1203,23 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "3da60380-fe70-40b1-8278-12ce1b22370d"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SET_VALUE",
-                                                        "args": {
-                                                            "variable": "37",
-                                                            "value": {
-                                                                "type": "false"
-                                                            },
-                                                            "__label": "Clear Moving",
-                                                            "__collapse": true
-                                                        },
-                                                        "id": "02d73b1d-df6c-46f5-9768-5157b1e9eeea"
                                                     }
                                                 ],
                                                 "false": []
                                             },
                                             "id": "471b2d45-3b00-43f6-a29c-fac285fb4e89"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "false"
+                                                },
+                                                "__label": "Clear Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "02d73b1d-df6c-46f5-9768-5157b1e9eeea"
                                         }
                                     ]
                                 },
@@ -1176,6 +1286,42 @@
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_IF",
+                                "args": {
+                                    "condition": {
+                                        "type": "variable",
+                                        "value": "37"
+                                    },
+                                    "__collapseElse": true,
+                                    "__label": "Ignore If Busy",
+                                    "__collapse": true,
+                                    "__disableElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_STOP",
+                                            "args": {},
+                                            "id": "bd9f4256-0ab4-4936-b4fa-8d66b149cda4"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "85517e15-293e-49ee-baa3-9956afc6d5e2"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "37",
+                                    "value": {
+                                        "type": "true"
+                                    },
+                                    "__label": "Flag Busy",
+                                    "__collapse": true
+                                },
+                                "id": "1dc3b00b-3bd6-4825-a629-15795ecd1000"
+                            },
                             {
                                 "command": "EVENT_GROUP",
                                 "args": {
@@ -1545,6 +1691,18 @@
                                 "children": {
                                     "true": [
                                         {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "false"
+                                                },
+                                                "__label": "Clear Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "07e3031d-954a-4195-926b-48500f381a2d"
+                                        },
+                                        {
                                             "command": "EVENT_STOP",
                                             "args": {},
                                             "id": "9fdab2b0-d293-45be-9081-59dd2bb20e2e"
@@ -1757,6 +1915,18 @@
                                                 ]
                                             },
                                             "id": "6669307d-2f16-4d5c-b73b-d839548243f1"
+                                        },
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "false"
+                                                },
+                                                "__label": "Clear Busy",
+                                                "__collapse": true
+                                            },
+                                            "id": "23f0cd25-412e-46c9-91a8-9c7ab8713750"
                                         },
                                         {
                                             "command": "EVENT_STOP",
@@ -2276,11 +2446,23 @@
                                     },
                                     "__collapseElse": true,
                                     "__label": "If All Cards Matched (Win)",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__disableElse": true
                                 },
                                 "children": {
                                     "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "37",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__label": "Flag Flipping",
+                                                "__collapse": true
+                                            },
+                                            "id": "d67c7a89-6d5d-440f-a284-56d071d64466"
+                                        },
                                         {
                                             "command": "EVENT_SET_VALUE",
                                             "args": {
@@ -2444,7 +2626,7 @@
                                     },
                                     "__collapseElse": true,
                                     "__label": "If No Flips Left (Lose)",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__disableElse": true
                                 },
                                 "children": {
@@ -2590,6 +2772,18 @@
                                     "false": []
                                 },
                                 "id": "d08debca-26c5-4ec9-b574-4565c19c127f"
+                            },
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "37",
+                                    "value": {
+                                        "type": "false"
+                                    },
+                                    "__label": "Clear Busy",
+                                    "__collapse": true
+                                },
+                                "id": "26440b26-30a1-42a2-a5d1-cf2d4dcc9cca"
                             }
                         ]
                     },
@@ -2607,6 +2801,18 @@
                         "__collapse": true
                     },
                     "id": "a0f7b763-2b4b-4a1e-bae7-238a54cd14f8"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "37",
+                        "value": {
+                            "type": "false"
+                        },
+                        "__label": "Clear Busy",
+                        "__collapse": true
+                    },
+                    "id": "111023a6-acca-4a90-9905-7431edbbe444"
                 },
                 {
                     "command": "EVENT_GROUP",
@@ -6651,8 +6857,8 @@
         },
         {
             "id": "37",
-            "name": "Moving",
-            "symbol": "var_moving"
+            "name": "Busy",
+            "symbol": "var_busy"
         }
     ],
     "engineFieldValues": [
