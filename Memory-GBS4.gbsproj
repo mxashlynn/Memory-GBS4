@@ -817,6 +817,18 @@
                                             "children": {
                                                 "true": [
                                                     {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "true"
+                                                            },
+                                                            "__label": "Flag Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "0ef9af07-4ba5-4ec4-a9db-d274706457f8"
+                                                    },
+                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -832,6 +844,18 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "02591a1b-0ce7-4673-acb5-b75d6edd437a"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "false"
+                                                            },
+                                                            "__label": "Clear Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "bf5b8642-7ce7-4798-920b-4eb652a3b0c5"
                                                     }
                                                 ],
                                                 "false": []
@@ -876,6 +900,18 @@
                                             "children": {
                                                 "true": [
                                                     {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "true"
+                                                            },
+                                                            "__label": "Flag Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "33047e35-2825-47ff-b0ee-1e3420c489b7"
+                                                    },
+                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -891,6 +927,18 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "7f512481-006e-4f1f-b1c6-41d057ea351b"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "false"
+                                                            },
+                                                            "__label": "Clear Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "170a7ea5-b663-4535-ac18-b19b2f00e58b"
                                                     }
                                                 ],
                                                 "false": []
@@ -935,6 +983,18 @@
                                             "children": {
                                                 "true": [
                                                     {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "true"
+                                                            },
+                                                            "__label": "Flag Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "8b3a2c87-6add-4357-aa67-e11a59fa825d"
+                                                    },
+                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -950,6 +1010,18 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "c3787492-ad7a-494d-a999-433128aa932a"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "false"
+                                                            },
+                                                            "__label": "Clear Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "b3dd50f8-ff2c-4dab-bb3e-fd18b5e988eb"
                                                     }
                                                 ],
                                                 "false": []
@@ -994,6 +1066,18 @@
                                             "children": {
                                                 "true": [
                                                     {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "true"
+                                                            },
+                                                            "__label": "Flag Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "8f9472cc-96c2-4e6b-b430-b0a5dac9b574"
+                                                    },
+                                                    {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
                                                             "actorId": "$self$",
@@ -1009,6 +1093,18 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "3da60380-fe70-40b1-8278-12ce1b22370d"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "37",
+                                                            "value": {
+                                                                "type": "false"
+                                                            },
+                                                            "__label": "Clear Moving",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "02d73b1d-df6c-46f5-9768-5157b1e9eeea"
                                                     }
                                                 ],
                                                 "false": []
@@ -6552,6 +6648,11 @@
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L2",
             "name": "Selector Index",
             "symbol": "var_selector_index"
+        },
+        {
+            "id": "37",
+            "name": "Moving",
+            "symbol": "var_moving"
         }
     ],
     "engineFieldValues": [
@@ -6571,7 +6672,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1541,
+        "worldScrollX": 1441,
         "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,
