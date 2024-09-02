@@ -820,6 +820,21 @@
                     "id": "849c8eb8-e7a0-48a8-ba04-041700469338"
                 },
                 {
+                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "args": {
+                        "type": "tone",
+                        "priority": "medium",
+                        "pitch": 4,
+                        "frequency": 600,
+                        "duration": 0.1,
+                        "wait": false,
+                        "effect": 0,
+                        "__label": "PLAY TEMP MUSIC",
+                        "__collapse": true
+                    },
+                    "id": "bb1c7974-0f31-4282-acdb-225c2987133c"
+                },
+                {
                     "command": "EVENT_FADE_IN",
                     "args": {
                         "speed": 1,
@@ -844,7 +859,7 @@
                                     "override": true,
                                     "__scriptTabs": "press",
                                     "__label": "Move Right On Grid",
-                                    "__collapse": false
+                                    "__collapse": true
                                 },
                                 "children": {
                                     "true": [
@@ -900,7 +915,8 @@
                                                     }
                                                 },
                                                 "__collapseElse": true,
-                                                "__disableElse": true
+                                                "__disableElse": true,
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -2062,7 +2078,7 @@
                                                 },
                                                 "__collapseElse": false,
                                                 "__label": "If Cards Match Or Not",
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -2086,6 +2102,21 @@
                                                             "__label": "Reset Flips Left"
                                                         },
                                                         "id": "a7e94add-5032-4302-ade5-15772ee1e54c"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "tone",
+                                                            "priority": "medium",
+                                                            "pitch": 4,
+                                                            "frequency": 800,
+                                                            "duration": 0.1,
+                                                            "wait": false,
+                                                            "effect": 0,
+                                                            "__label": "PLAY TEMP SOUND",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "6adc3bab-b7f3-4cdd-b739-f630f810ead6"
                                                     }
                                                 ],
                                                 "false": [
@@ -2104,6 +2135,21 @@
                                                             "__label": "Decrement Flips Left"
                                                         },
                                                         "id": "325de6c6-dcc1-4446-9fe1-e6db5b3b962d"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "beep",
+                                                            "priority": "medium",
+                                                            "pitch": 1,
+                                                            "frequency": 800,
+                                                            "duration": 0.01,
+                                                            "wait": false,
+                                                            "effect": 0,
+                                                            "__label": "PLAY TEMP SOUND",
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "fb4e4da2-aa86-40ab-9902-13754454f91f"
                                                     },
                                                     {
                                                         "command": "EVENT_GROUP",
@@ -2484,7 +2530,7 @@
                                     },
                                     "__collapseElse": true,
                                     "__label": "If All Cards Matched (Win)",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__disableElse": true
                                 },
                                 "children": {
@@ -2518,13 +2564,44 @@
                                                 "type": "tone",
                                                 "priority": "medium",
                                                 "pitch": 4,
+                                                "frequency": 700,
+                                                "duration": 0.1,
+                                                "wait": true,
+                                                "effect": 0,
+                                                "__label": "PLAY TEMP SOUND",
+                                                "__collapse": true
+                                            },
+                                            "id": "c73dd396-e10d-4a43-b895-48c4bbcaf63f"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "tone",
+                                                "priority": "medium",
+                                                "pitch": 4,
                                                 "frequency": 800,
                                                 "duration": 0.1,
                                                 "wait": true,
                                                 "effect": 0,
-                                                "__label": "PLAY TEMP SOUND"
+                                                "__label": "PLAY TEMP SOUND",
+                                                "__collapse": true
                                             },
-                                            "id": "c73dd396-e10d-4a43-b895-48c4bbcaf63f"
+                                            "id": "5f3771d0-0e41-4e95-9f72-14460fa074ed"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "tone",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 900,
+                                                "duration": 0.1,
+                                                "wait": true,
+                                                "effect": 0,
+                                                "__label": "PLAY TEMP SOUND",
+                                                "__collapse": true
+                                            },
+                                            "id": "e7082b0d-0df5-4533-bea2-fd9857348816"
                                         },
                                         {
                                             "command": "EVENT_AWAIT_INPUT",
@@ -2693,6 +2770,34 @@
                                                 "__label": "PLAY TEMP SOUND"
                                             },
                                             "id": "94944ac2-90c7-4067-a7ac-e382c71adeba"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "beep",
+                                                "priority": "medium",
+                                                "pitch": 3,
+                                                "frequency": 800,
+                                                "duration": 0.01,
+                                                "wait": true,
+                                                "effect": 0,
+                                                "__label": "PLAY TEMP SOUND"
+                                            },
+                                            "id": "556da8ac-c426-442c-a740-0ccf8548218e"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "beep",
+                                                "priority": "medium",
+                                                "pitch": 1,
+                                                "frequency": 800,
+                                                "duration": 0.01,
+                                                "wait": true,
+                                                "effect": 0,
+                                                "__label": "PLAY TEMP SOUND"
+                                            },
+                                            "id": "fcf82448-eea4-4142-8287-cdb02a06f9b4"
                                         },
                                         {
                                             "command": "EVENT_AWAIT_INPUT",
@@ -3089,11 +3194,11 @@
                         "type": "tone",
                         "priority": "medium",
                         "pitch": 4,
-                        "frequency": 800,
+                        "frequency": 600,
                         "duration": 0.1,
                         "wait": false,
                         "effect": 0,
-                        "__label": "PLAY TEMP SOUND"
+                        "__label": "PLAY TEMP MUSIC"
                     },
                     "id": "38694073-a036-43a5-a735-1d869fe6b909"
                 },
