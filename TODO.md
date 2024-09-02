@@ -2,6 +2,7 @@
 
 
 ## 🚢 Week of the 31st
+- Fix error causing subsequent games to fail
 - Play Music
     - Title
     - Playfield
