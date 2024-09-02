@@ -779,7 +779,7 @@
                     "command": "EVENT_GROUP",
                     "args": {
                         "__label": "Set Up Movement",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -6571,7 +6571,7 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1241,
+        "worldScrollX": 1541,
         "worldScrollY": 385,
         "zoom": 300,
         "sgbEnabled": false,

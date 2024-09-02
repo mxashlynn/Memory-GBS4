@@ -4,6 +4,8 @@
 ## 🚢 Week of the 31st
 - Player can hold Select to review stats
 - Bug Fixing
+    - ADD FLAG TO MOVEMENT TO PREVENT FURTHER MOVEMENT
+    - CHECK MOVEMENT FLAG TO PREVENT CARD SELECTION
 - Play Music
     - Title
     - Playfield
