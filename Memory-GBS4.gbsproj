@@ -2530,7 +2530,7 @@
                                     },
                                     "__collapseElse": true,
                                     "__label": "If All Cards Matched (Win)",
-                                    "__collapse": false,
+                                    "__collapse": true,
                                     "__disableElse": true
                                 },
                                 "children": {
@@ -2610,11 +2610,7 @@
                                                     "a",
                                                     "b",
                                                     "start",
-                                                    "select",
-                                                    "right",
-                                                    "down",
-                                                    "up",
-                                                    "left"
+                                                    "select"
                                                 ]
                                             },
                                             "id": "fd3fe400-194a-46e0-831f-9d4045f8b36a"
@@ -2767,7 +2763,8 @@
                                                 "duration": 0.1,
                                                 "wait": true,
                                                 "effect": 0,
-                                                "__label": "PLAY TEMP SOUND"
+                                                "__label": "PLAY TEMP SOUND",
+                                                "__collapse": true
                                             },
                                             "id": "94944ac2-90c7-4067-a7ac-e382c71adeba"
                                         },
@@ -2781,7 +2778,8 @@
                                                 "duration": 0.01,
                                                 "wait": true,
                                                 "effect": 0,
-                                                "__label": "PLAY TEMP SOUND"
+                                                "__label": "PLAY TEMP SOUND",
+                                                "__collapse": true
                                             },
                                             "id": "556da8ac-c426-442c-a740-0ccf8548218e"
                                         },
@@ -2795,7 +2793,8 @@
                                                 "duration": 0.01,
                                                 "wait": true,
                                                 "effect": 0,
-                                                "__label": "PLAY TEMP SOUND"
+                                                "__label": "PLAY TEMP SOUND",
+                                                "__collapse": true
                                             },
                                             "id": "fcf82448-eea4-4142-8287-cdb02a06f9b4"
                                         },
@@ -2805,7 +2804,8 @@
                                                 "input": [
                                                     "a",
                                                     "b",
-                                                    "start"
+                                                    "start",
+                                                    "select"
                                                 ]
                                             },
                                             "id": "fd654aef-2cb3-4acc-9193-af294808aa26"
@@ -6620,7 +6620,7 @@
                         "comparison": ">",
                         "to": {
                             "type": "number",
-                            "value": 4
+                            "value": 3
                         },
                         "operation": "-=",
                         "value": {
@@ -6644,16 +6644,16 @@
                                             "type": "variable",
                                             "id": "36"
                                         }
-                                    ]
+                                    ],
+                                    "__collapse": true
                                 },
                                 "id": "6896fa11-b7d3-419c-a25f-54356fa8d34e"
                             },
                             {
-                                "command": "EVENT_SET_VALUE",
+                                "command": "EVENT_IF",
                                 "args": {
-                                    "variable": "V1",
-                                    "value": {
-                                        "type": "add",
+                                    "condition": {
+                                        "type": "lt",
                                         "valueA": {
                                             "type": "variable",
                                             "value": "V1"
@@ -6663,10 +6663,37 @@
                                             "value": 10
                                         }
                                     },
-                                    "__collapse": false,
-                                    "__label": "Change Value to Hidden"
+                                    "__collapseElse": true,
+                                    "__label": "If Revealed",
+                                    "__disableElse": true,
+                                    "__collapse": true
                                 },
-                                "id": "1cdfb342-f93a-433b-b816-90d310c76b11"
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "V1",
+                                                "value": {
+                                                    "type": "add",
+                                                    "valueA": {
+                                                        "type": "variable",
+                                                        "value": "V1"
+                                                    },
+                                                    "valueB": {
+                                                        "type": "number",
+                                                        "value": 10
+                                                    }
+                                                },
+                                                "__collapse": false,
+                                                "__label": "Change Value to Hidden"
+                                            },
+                                            "id": "1cdfb342-f93a-433b-b816-90d310c76b11"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "3140f65c-da69-4923-ae19-cc0318a3acb2"
                             },
                             {
                                 "command": "EVENT_GBVM_SCRIPT",
@@ -6682,7 +6709,8 @@
                                             "type": "variable",
                                             "id": "36"
                                         }
-                                    ]
+                                    ],
+                                    "__collapse": true
                                 },
                                 "id": "7a0cb422-f2ce-4752-afff-58002d2e6b2c"
                             }

@@ -2,7 +2,6 @@
 
 
 ## 🚢 Week of the 31st
-- Fix error causing subsequent games to fail
 - Play Music
     - Title
     - Playfield
@@ -13,8 +12,8 @@
     - Flip Card, No Match!
     - Game Won
     - Game Lost
-- Bug Fixing
 - Play Testing
+- Bug Fixing
 - Polish
 - Post Finished Game
 
