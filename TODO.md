@@ -14,7 +14,9 @@
     - Game Lost
 - Play Testing
 - Bug Fixing
+    - Why does restarting a game take so long?
 - Polish
+    - Use checkmark to indicate which cards are already matched 
 - Post Finished Game
 
 
