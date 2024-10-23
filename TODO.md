@@ -15,6 +15,7 @@
 - Play Testing
 - Bug Fixing
     - Why does restarting a game take so long?
+        - Mint says shuffling takes longer and longer each time.
 - Polish
     - Use checkmark to indicate which cards are already matched 
 - Post Finished Game
