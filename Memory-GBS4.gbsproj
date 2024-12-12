@@ -1327,7 +1327,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false,
+                        "__collapse": true,
                         "__comment": false
                     },
                     "children": {
@@ -3644,7 +3644,8 @@
                             "select"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -3676,7 +3677,8 @@
                             "start"
                         ],
                         "override": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -7005,6 +7007,11 @@
             "symbol": "var_selector_value"
         },
         {
+            "id": "37",
+            "name": "Busy",
+            "symbol": "var_busy"
+        },
+        {
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L0",
             "name": "Player X",
             "symbol": "var_player_x"
@@ -7018,11 +7025,6 @@
             "id": "026b699b-c1d3-4f2c-a9d9-a306d7906818__L2",
             "name": "Selector Index",
             "symbol": "var_selector_index"
-        },
-        {
-            "id": "37",
-            "name": "Busy",
-            "symbol": "var_busy"
         }
     ],
     "engineFieldValues": [
@@ -7042,8 +7044,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1441,
-        "worldScrollY": 385,
+        "worldScrollX": 1475,
+        "worldScrollY": 400,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
