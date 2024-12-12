@@ -2,9 +2,6 @@
 
 
 ## 🚢 Week of the 31st
-- Play Music
-    - Title
-    - Playfield
 - Play Sound Effects
     - Move Cursor
     - Flip Card
@@ -41,3 +38,4 @@
 - Matches are counted
 - The game can be won
 - The game can be lost
+- Background music plays
