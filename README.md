@@ -30,7 +30,7 @@ The following cards make up the deck:
 - 2 🪐
 - 2 🌌
 - 2 🌈
-- 2 ⚡ 
+- 2 ⚡
 
 
 ## Goals 🦐🀄📓
