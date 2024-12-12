@@ -820,19 +820,11 @@
                     "id": "849c8eb8-e7a0-48a8-ba04-041700469338"
                 },
                 {
-                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "type": "tone",
-                        "priority": "medium",
-                        "pitch": 4,
-                        "frequency": 600,
-                        "duration": 0.1,
-                        "wait": false,
-                        "effect": 0,
-                        "__label": "PLAY TEMP MUSIC",
-                        "__collapse": true
+                        "musicId": "8db99a13-7e52-4161-a933-41f852742bf3"
                     },
-                    "id": "bb1c7974-0f31-4282-acdb-225c2987133c"
+                    "id": "b716cb57-6d2b-4039-81d4-4b9e96cb7e3b"
                 },
                 {
                     "command": "EVENT_FADE_IN",
@@ -3189,18 +3181,11 @@
                     "id": "63121860-aafc-4739-bbe3-c9f28dd88263"
                 },
                 {
-                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                    "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "type": "tone",
-                        "priority": "medium",
-                        "pitch": 4,
-                        "frequency": 600,
-                        "duration": 0.1,
-                        "wait": false,
-                        "effect": 0,
-                        "__label": "PLAY TEMP MUSIC"
+                        "musicId": "5abded12-879a-42e2-9949-f85ada2feeac"
                     },
-                    "id": "38694073-a036-43a5-a735-1d869fe6b909"
+                    "id": "fef597b4-d248-44ca-8fb0-562161daf33e"
                 },
                 {
                     "command": "EVENT_SET_VALUE",
@@ -6757,21 +6742,29 @@
     ],
     "music": [
         {
-            "id": "43afca87-c9e7-43c5-8012-4d77b0b9fa46",
-            "name": "commission",
-            "symbol": "song_commission",
-            "filename": "commission.uge",
+            "id": "8db99a13-7e52-4161-a933-41f852742bf3",
+            "name": "game_loop",
+            "symbol": "song_game_loop",
+            "filename": "game_loop.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "5abded12-879a-42e2-9949-f85ada2feeac",
+            "name": "menu_loop",
+            "symbol": "song_menu_loop",
+            "filename": "menu_loop.uge",
             "settings": {},
             "type": "uge"
         }
     ],
     "sounds": [
         {
-            "id": "7475eed2-26f6-430e-b57b-65c189a5503c",
-            "name": "commission.wav",
-            "symbol": "sound_commission_wav",
-            "filename": "commission.wav",
-            "type": "wav"
+            "id": "7684d8fa-abdd-4932-a6de-542a64d4118a",
+            "name": "paigepuzzle_sfx.sav",
+            "symbol": "sound_paigepuzzle_sfx_sav",
+            "filename": "paigepuzzle_sfx.sav",
+            "type": "fxhammer"
         }
     ],
     "fonts": [
