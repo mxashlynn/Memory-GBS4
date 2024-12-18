@@ -1873,10 +1873,24 @@
                                             "command": "EVENT_GROUP",
                                             "args": {
                                                 "__label": "Reveal Card On Screen",
-                                                "__collapse": true
+                                                "__collapse": true,
+                                                "__comment": false
                                             },
                                             "children": {
                                                 "true": [
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
+                                                            "priority": "medium",
+                                                            "pitch": 4,
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 3
+                                                        },
+                                                        "id": "e755449f-eaa8-4b87-b866-c0fa21c08823"
+                                                    },
                                                     {
                                                         "command": "EVENT_ACTOR_SET_STATE",
                                                         "args": {
