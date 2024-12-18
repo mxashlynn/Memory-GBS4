@@ -6816,10 +6816,17 @@
     ],
     "sounds": [
         {
-            "id": "7684d8fa-abdd-4932-a6de-542a64d4118a",
-            "name": "paigepuzzle_sfx.sav",
-            "symbol": "sound_paigepuzzle_sfx_sav",
-            "filename": "paigepuzzle_sfx.sav",
+            "id": "9a51de53-33a8-4309-a476-770eb0b96333",
+            "name": "paige_jingles.sav",
+            "symbol": "sound_paige_jingles_sav",
+            "filename": "paige_jingles.sav",
+            "type": "fxhammer"
+        },
+        {
+            "id": "72eec456-020f-497b-b678-811015822674",
+            "name": "paige_short.sav",
+            "symbol": "sound_paige_short_sav",
+            "filename": "paige_short.sav",
             "type": "fxhammer"
         }
     ],
@@ -7098,8 +7105,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1457,
-        "worldScrollY": 351,
+        "worldScrollX": 945,
+        "worldScrollY": 397,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
