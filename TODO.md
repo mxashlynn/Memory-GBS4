@@ -3,11 +3,6 @@
 
 ## 🚢 Week of the 31st
 - Play Testing
-- Bug Fixing
-    - Mint says shuffling takes longer and longer each time.
-        - Seems to not happen on loose?
-- Polish
-    - Mark currently selected card?
 - Post Finished Game
 
 
@@ -33,3 +28,5 @@
 - The game can be lost
 - Background music plays
 - Sound effects play
+- Could not reproduce: shuffling takes longer and longer each time.
+- Mark currently selected card
