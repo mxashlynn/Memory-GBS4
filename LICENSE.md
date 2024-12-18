@@ -17,6 +17,7 @@ to remain under this license does not apply to any game
 or other work created using derivatives of the licensed
 files.
 
+
 DEFINITIONS
 "Software" refers to the set of files released by Paige
 Ashlynn under this license in the Memory repository.
@@ -35,6 +36,7 @@ or by porting the Software to a new environment.
 "Author" refers to any designer, engineer, programmer,
 artist, musician, or any other person who contributed to
 the Software.
+
 
 PERMISSION AND CONDITIONS
 Permission is hereby granted, free of charge, to any person
@@ -62,9 +64,21 @@ permission.
 must be distributed entirely under this license, and must not be
 distributed under any other license. 
 
+5) The Software, modified or unmodified, in part or in whole,
+may not be used for the purpose of training or improving machine
+learning algorithms, including but not limited to artificial
+intelligence, natural language processing, data mining, or
+stylometric analysis.
+
+6) The Software may not be included in any dataset used for
+training or improving machine learning algorithms and
+any such usage is a breach of this License.
+
+
 TERMINATION
 This license becomes null and void if any of the above
 conditions are not met.
+
 
 DISCLAIMER
 
