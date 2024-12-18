@@ -1,11 +1,6 @@
 # Memory ✨🎴🌈
 
 
-## 🚢 Week of the 31st
-- Play Testing
-- Post Finished Game
-
-
 ## ✓ Done
 - Player can hold Select to review total flips made
 - Create a scene stating the rules
@@ -30,3 +25,6 @@
 - Sound effects play
 - Could not reproduce: shuffling takes longer and longer each time.
 - Mark currently selected card
+- Play Testing
+- Polish
+- Post Finished Game
