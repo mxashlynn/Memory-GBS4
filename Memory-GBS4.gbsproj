@@ -909,10 +909,23 @@
                                                 },
                                                 "__collapseElse": true,
                                                 "__disableElse": true,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
+                                                            "priority": "medium",
+                                                            "pitch": 4,
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 2
+                                                        },
+                                                        "id": "8755f17e-0622-4e05-9425-a7d1227abe0d"
+                                                    },
                                                     {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
@@ -929,19 +942,6 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "02591a1b-0ce7-4673-acb5-b75d6edd437a"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                        "args": {
-                                                            "type": "7684d8fa-abdd-4932-a6de-542a64d4118a",
-                                                            "priority": "medium",
-                                                            "pitch": 4,
-                                                            "frequency": 200,
-                                                            "duration": 0.5,
-                                                            "wait": true,
-                                                            "effect": 2
-                                                        },
-                                                        "id": "0bc5b4c3-c7d4-4f81-a066-c91432566298"
                                                     }
                                                 ],
                                                 "false": []
@@ -1029,10 +1029,24 @@
                                                     }
                                                 },
                                                 "__collapseElse": true,
-                                                "__disableElse": true
+                                                "__disableElse": true,
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
+                                                            "priority": "medium",
+                                                            "pitch": 4,
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 2
+                                                        },
+                                                        "id": "dea905e4-cfe8-4e0b-85d3-28f40e2f4140"
+                                                    },
                                                     {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
@@ -1049,19 +1063,6 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "7f512481-006e-4f1f-b1c6-41d057ea351b"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                        "args": {
-                                                            "type": "7684d8fa-abdd-4932-a6de-542a64d4118a",
-                                                            "priority": "medium",
-                                                            "pitch": 4,
-                                                            "frequency": 200,
-                                                            "duration": 0.5,
-                                                            "wait": true,
-                                                            "effect": 2
-                                                        },
-                                                        "id": "a936c76e-68e0-4dba-820b-758fee6d01d0"
                                                     }
                                                 ],
                                                 "false": []
@@ -1149,10 +1150,24 @@
                                                     }
                                                 },
                                                 "__collapseElse": true,
-                                                "__disableElse": true
+                                                "__disableElse": true,
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
+                                                            "priority": "medium",
+                                                            "pitch": 4,
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 2
+                                                        },
+                                                        "id": "8f3ed127-dc32-4585-9b62-8a4afa551971"
+                                                    },
                                                     {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
@@ -1169,19 +1184,6 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "c3787492-ad7a-494d-a999-433128aa932a"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                        "args": {
-                                                            "type": "7684d8fa-abdd-4932-a6de-542a64d4118a",
-                                                            "priority": "medium",
-                                                            "pitch": 4,
-                                                            "frequency": 200,
-                                                            "duration": 0.5,
-                                                            "wait": true,
-                                                            "effect": 2
-                                                        },
-                                                        "id": "2b9c4af3-2ee2-4d60-b0e0-97c093890fa0"
                                                     }
                                                 ],
                                                 "false": []
@@ -1269,10 +1271,24 @@
                                                     }
                                                 },
                                                 "__collapseElse": true,
-                                                "__disableElse": true
+                                                "__disableElse": true,
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
+                                                    {
+                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                        "args": {
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
+                                                            "priority": "medium",
+                                                            "pitch": 4,
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 2
+                                                        },
+                                                        "id": "c83f612a-079a-45b5-af6e-db2d8eea0a4f"
+                                                    },
                                                     {
                                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
                                                         "args": {
@@ -1289,19 +1305,6 @@
                                                             "useCollisions": false
                                                         },
                                                         "id": "3da60380-fe70-40b1-8278-12ce1b22370d"
-                                                    },
-                                                    {
-                                                        "command": "EVENT_SOUND_PLAY_EFFECT",
-                                                        "args": {
-                                                            "type": "7684d8fa-abdd-4932-a6de-542a64d4118a",
-                                                            "priority": "medium",
-                                                            "pitch": 4,
-                                                            "frequency": 200,
-                                                            "duration": 0.5,
-                                                            "wait": true,
-                                                            "effect": 2
-                                                        },
-                                                        "id": "19eaf1e3-fd8a-4963-88dd-71c41e41ebfd"
                                                     }
                                                 ],
                                                 "false": []
