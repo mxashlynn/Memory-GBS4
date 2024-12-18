@@ -2168,17 +2168,15 @@
                                                     {
                                                         "command": "EVENT_SOUND_PLAY_EFFECT",
                                                         "args": {
-                                                            "type": "tone",
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
                                                             "priority": "medium",
                                                             "pitch": 4,
-                                                            "frequency": 800,
-                                                            "duration": 0.1,
-                                                            "wait": false,
-                                                            "effect": 0,
-                                                            "__label": "PLAY TEMP SOUND",
-                                                            "__collapse": true
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 0
                                                         },
-                                                        "id": "6adc3bab-b7f3-4cdd-b739-f630f810ead6"
+                                                        "id": "3a4906a1-85aa-4ea0-9bd6-f466108fa431"
                                                     }
                                                 ],
                                                 "false": [
