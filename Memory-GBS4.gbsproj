@@ -823,7 +823,8 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
-                        "__comment": true
+                        "__comment": false,
+                        "__collapse": true
                     },
                     "id": "b716cb57-6d2b-4039-81d4-4b9e96cb7e3b"
                 },
@@ -1976,7 +1977,7 @@
                                             "command": "EVENT_GROUP",
                                             "args": {
                                                 "__label": "Store Revealed Card as Old Card",
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "children": {
                                                 "true": [
@@ -2617,10 +2618,17 @@
                                             "id": "61fe1706-a496-4fab-93cc-f52a44a87f62"
                                         },
                                         {
+                                            "command": "EVENT_MUSIC_STOP",
+                                            "args": {
+                                                "__comment": false
+                                            },
+                                            "id": "6fcb3b9c-b476-443e-95b6-7c73e1817669"
+                                        },
+                                        {
                                             "command": "EVENT_SOUND_PLAY_EFFECT",
                                             "args": {
                                                 "type": "9a51de53-33a8-4309-a476-770eb0b96333",
-                                                "priority": "medium",
+                                                "priority": "high",
                                                 "pitch": 4,
                                                 "frequency": 200,
                                                 "duration": 0.5,
@@ -2731,6 +2739,14 @@
                                             "id": "a9ee6e13-add7-46bf-a2ea-78686a4ad23d"
                                         },
                                         {
+                                            "command": "EVENT_MUSIC_PLAY",
+                                            "args": {
+                                                "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
+                                                "__comment": false
+                                            },
+                                            "id": "b0fd0ec8-7ce7-4acb-8398-ef0ba95de7e9"
+                                        },
+                                        {
                                             "command": "EVENT_SET_VALUE",
                                             "args": {
                                                 "variable": "26",
@@ -2781,19 +2797,11 @@
                                             "id": "a177446b-9dde-4ec5-9d46-4efc458cf780"
                                         },
                                         {
-                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "command": "EVENT_MUSIC_STOP",
                                             "args": {
-                                                "type": "beep",
-                                                "priority": "medium",
-                                                "pitch": 4,
-                                                "frequency": 800,
-                                                "duration": 0.1,
-                                                "wait": true,
-                                                "effect": 0,
-                                                "__label": "PLAY TEMP SOUND",
-                                                "__collapse": true
+                                                "__comment": false
                                             },
-                                            "id": "94944ac2-90c7-4067-a7ac-e382c71adeba"
+                                            "id": "17259cd9-d30f-47e8-a20f-c74595bae681"
                                         },
                                         {
                                             "command": "EVENT_SOUND_PLAY_EFFECT",
@@ -2908,6 +2916,14 @@
                                                 }
                                             },
                                             "id": "3550149a-8ada-4cce-a38e-1bc80894c697"
+                                        },
+                                        {
+                                            "command": "EVENT_MUSIC_PLAY",
+                                            "args": {
+                                                "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
+                                                "__comment": false
+                                            },
+                                            "id": "a1d928f2-2af0-41dc-8336-aa28bb0eab36"
                                         },
                                         {
                                             "command": "EVENT_SET_VALUE",
@@ -3203,7 +3219,8 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "5abded12-879a-42e2-9949-f85ada2feeac",
-                        "__comment": true
+                        "__comment": false,
+                        "__collapse": true
                     },
                     "id": "fef597b4-d248-44ca-8fb0-562161daf33e"
                 },
@@ -7085,8 +7102,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1522,
-        "worldScrollY": 400,
+        "worldScrollX": 1418,
+        "worldScrollY": 379,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",

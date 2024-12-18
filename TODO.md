@@ -2,19 +2,12 @@
 
 
 ## 🚢 Week of the 31st
-- Play Sound Effects
-    - Move Cursor
-    - Flip Card
-    - Flip Card, Match!
-    - Flip Card, No Match!
-    - Game Won
-    - Game Lost
 - Play Testing
 - Bug Fixing
     - Why does restarting a game take so long?
         - Mint says shuffling takes longer and longer each time.
 - Polish
-    - Use checkmark to indicate which cards are already matched 
+    - Mark currently selected card?
 - Post Finished Game
 
 
@@ -39,3 +32,4 @@
 - The game can be won
 - The game can be lost
 - Background music plays
+- Sound effects play
