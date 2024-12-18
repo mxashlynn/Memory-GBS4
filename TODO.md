@@ -6,7 +6,6 @@
 - Bug Fixing
     - Mint says shuffling takes longer and longer each time.
         - Seems to not happen on loose?
-    - "Shuffling" text does not show up on restart
 - Polish
     - Mark currently selected card?
 - Post Finished Game

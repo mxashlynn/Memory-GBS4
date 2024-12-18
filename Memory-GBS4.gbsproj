@@ -1384,7 +1384,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true,
+                        "__collapse": false,
                         "__comment": false
                     },
                     "children": {
@@ -2589,7 +2589,7 @@
                                     },
                                     "__collapseElse": true,
                                     "__label": "If All Cards Matched (Win)",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__disableElse": true
                                 },
                                 "children": {
@@ -2613,14 +2613,16 @@
                                                 "value": {
                                                     "type": "number",
                                                     "value": 3
-                                                }
+                                                },
+                                                "__collapse": true
                                             },
                                             "id": "61fe1706-a496-4fab-93cc-f52a44a87f62"
                                         },
                                         {
                                             "command": "EVENT_MUSIC_STOP",
                                             "args": {
-                                                "__comment": false
+                                                "__comment": false,
+                                                "__collapse": true
                                             },
                                             "id": "6fcb3b9c-b476-443e-95b6-7c73e1817669"
                                         },
@@ -2634,7 +2636,7 @@
                                                 "duration": 0.5,
                                                 "wait": true,
                                                 "effect": 5,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "id": "7e822ce3-f365-418e-afd0-b8b268468e99"
                                         },
@@ -2646,7 +2648,8 @@
                                                     "b",
                                                     "start",
                                                     "select"
-                                                ]
+                                                ],
+                                                "__collapse": true
                                             },
                                             "id": "fd3fe400-194a-46e0-831f-9d4045f8b36a"
                                         },
@@ -2685,6 +2688,16 @@
                                                 "__label": "Show \"Shuffling\" Overlay"
                                             },
                                             "id": "48ec58f5-deab-4ba0-a3a3-0b1960c4f346"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.2,
+                                                "frames": 30,
+                                                "__label": "Pause to Flush Test Buffer",
+                                                "__collapse": true
+                                            },
+                                            "id": "04a298a1-88f9-4a0e-9d89-7ab23dc0273f"
                                         },
                                         {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -2742,7 +2755,8 @@
                                             "command": "EVENT_MUSIC_PLAY",
                                             "args": {
                                                 "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
-                                                "__comment": false
+                                                "__comment": false,
+                                                "__collapse": true
                                             },
                                             "id": "b0fd0ec8-7ce7-4acb-8398-ef0ba95de7e9"
                                         },
@@ -2780,7 +2794,7 @@
                                     },
                                     "__collapseElse": true,
                                     "__label": "If No Flips Left (Lose)",
-                                    "__collapse": true,
+                                    "__collapse": false,
                                     "__disableElse": true
                                 },
                                 "children": {
@@ -2792,14 +2806,16 @@
                                                 "value": {
                                                     "type": "number",
                                                     "value": 2
-                                                }
+                                                },
+                                                "__collapse": true
                                             },
                                             "id": "a177446b-9dde-4ec5-9d46-4efc458cf780"
                                         },
                                         {
                                             "command": "EVENT_MUSIC_STOP",
                                             "args": {
-                                                "__comment": false
+                                                "__comment": false,
+                                                "__collapse": true
                                             },
                                             "id": "17259cd9-d30f-47e8-a20f-c74595bae681"
                                         },
@@ -2813,7 +2829,7 @@
                                                 "duration": 0.5,
                                                 "wait": true,
                                                 "effect": 4,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "id": "1ea0ecd0-1f66-4e46-a77c-1a0b019479f8"
                                         },
@@ -2825,7 +2841,8 @@
                                                     "b",
                                                     "start",
                                                     "select"
-                                                ]
+                                                ],
+                                                "__collapse": true
                                             },
                                             "id": "fd654aef-2cb3-4acc-9193-af294808aa26"
                                         },
@@ -2864,6 +2881,16 @@
                                                 "__label": "Show \"Shuffling\" Overlay"
                                             },
                                             "id": "e8edebed-c0bc-4ad3-b08d-194b5b71096a"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.2,
+                                                "frames": 30,
+                                                "__label": "Pause to Flush Test Buffer",
+                                                "__collapse": true
+                                            },
+                                            "id": "f6bb4d4c-e914-41ae-8383-9c47de75d524"
                                         },
                                         {
                                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -7102,8 +7129,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1418,
-        "worldScrollY": 379,
+        "worldScrollX": 1433,
+        "worldScrollY": 378,
         "zoom": 300,
         "sgbEnabled": false,
         "customHead": "",
