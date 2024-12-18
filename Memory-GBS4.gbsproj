@@ -3261,10 +3261,23 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "72eec456-020f-497b-b678-811015822674",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 200,
+                                    "duration": 0.5,
+                                    "wait": true,
+                                    "effect": 3
+                                },
+                                "id": "301b7bc6-a303-401f-94ab-207020324e18"
+                            },
                             {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
