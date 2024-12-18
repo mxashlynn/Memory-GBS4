@@ -2619,47 +2619,16 @@
                                         {
                                             "command": "EVENT_SOUND_PLAY_EFFECT",
                                             "args": {
-                                                "type": "tone",
+                                                "type": "9a51de53-33a8-4309-a476-770eb0b96333",
                                                 "priority": "medium",
                                                 "pitch": 4,
-                                                "frequency": 700,
-                                                "duration": 0.1,
+                                                "frequency": 200,
+                                                "duration": 0.5,
                                                 "wait": true,
-                                                "effect": 0,
-                                                "__label": "PLAY TEMP SOUND",
-                                                "__collapse": true
+                                                "effect": 5,
+                                                "__collapse": false
                                             },
-                                            "id": "c73dd396-e10d-4a43-b895-48c4bbcaf63f"
-                                        },
-                                        {
-                                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                                            "args": {
-                                                "type": "tone",
-                                                "priority": "medium",
-                                                "pitch": 4,
-                                                "frequency": 800,
-                                                "duration": 0.1,
-                                                "wait": true,
-                                                "effect": 0,
-                                                "__label": "PLAY TEMP SOUND",
-                                                "__collapse": true
-                                            },
-                                            "id": "5f3771d0-0e41-4e95-9f72-14460fa074ed"
-                                        },
-                                        {
-                                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                                            "args": {
-                                                "type": "tone",
-                                                "priority": "medium",
-                                                "pitch": 4,
-                                                "frequency": 900,
-                                                "duration": 0.1,
-                                                "wait": true,
-                                                "effect": 0,
-                                                "__label": "PLAY TEMP SOUND",
-                                                "__collapse": true
-                                            },
-                                            "id": "e7082b0d-0df5-4533-bea2-fd9857348816"
+                                            "id": "7e822ce3-f365-418e-afd0-b8b268468e99"
                                         },
                                         {
                                             "command": "EVENT_AWAIT_INPUT",
