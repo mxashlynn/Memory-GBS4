@@ -2199,17 +2199,15 @@
                                                     {
                                                         "command": "EVENT_SOUND_PLAY_EFFECT",
                                                         "args": {
-                                                            "type": "beep",
+                                                            "type": "72eec456-020f-497b-b678-811015822674",
                                                             "priority": "medium",
-                                                            "pitch": 1,
-                                                            "frequency": 800,
-                                                            "duration": 0.01,
-                                                            "wait": false,
-                                                            "effect": 0,
-                                                            "__label": "PLAY TEMP SOUND",
-                                                            "__collapse": true
+                                                            "pitch": 4,
+                                                            "frequency": 200,
+                                                            "duration": 0.5,
+                                                            "wait": true,
+                                                            "effect": 1
                                                         },
-                                                        "id": "fb4e4da2-aa86-40ab-9902-13754454f91f"
+                                                        "id": "11cc6d88-971b-4b1f-9cf3-6f3cf074971b"
                                                     },
                                                     {
                                                         "command": "EVENT_GROUP",
