@@ -3295,7 +3295,7 @@
                         ],
                         "override": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -3312,9 +3312,154 @@
                                         "value": 4
                                     },
                                     "direction": "",
-                                    "fadeSpeed": 1
+                                    "fadeSpeed": 1,
+                                    "__comment": true
                                 },
                                 "id": "ac769582-d42d-4992-9b83-fa41c8109151"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "TEST SOUND FX",
+                                    "__collapse": false,
+                                    "__comment": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "72eec456-020f-497b-b678-811015822674",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
+                                                "wait": true,
+                                                "effect": 0
+                                            },
+                                            "id": "9d538f89-aab3-4204-9513-c28298b0dc2f"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 30
+                                            },
+                                            "id": "128151ee-840d-4702-96cc-e0f93c2d1b05"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "72eec456-020f-497b-b678-811015822674",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
+                                                "wait": true,
+                                                "effect": 1
+                                            },
+                                            "id": "074d2baf-6c2b-4e57-8fac-cd3691b2ddc1"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 30
+                                            },
+                                            "id": "be13ba17-9066-4d30-97f8-1dfe0ac672b8"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "72eec456-020f-497b-b678-811015822674",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
+                                                "wait": true,
+                                                "effect": 2
+                                            },
+                                            "id": "f7d91ba3-9e84-428c-8d24-92c71664178b"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 30
+                                            },
+                                            "id": "052af2fd-dd3e-49ea-92a4-cd26b6a352e6"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "72eec456-020f-497b-b678-811015822674",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
+                                                "wait": true,
+                                                "effect": 3
+                                            },
+                                            "id": "301b7bc6-a303-401f-94ab-207020324e18"
+                                        }
+                                    ]
+                                },
+                                "id": "9de736d5-c44b-4139-9cfb-f54b1e0074eb"
+                            },
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "TEST SOUND FX",
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 30,
+                                                "__comment": false
+                                            },
+                                            "id": "e086d7ec-17e5-4efe-9542-deec0dd232a6"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "9a51de53-33a8-4309-a476-770eb0b96333",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
+                                                "wait": true,
+                                                "effect": 4
+                                            },
+                                            "id": "c1136d9e-268c-4ff6-93c7-459e994f1243"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 2.5,
+                                                "frames": 30
+                                            },
+                                            "id": "a2a30482-1599-403f-90ae-3c15bc6034ca"
+                                        },
+                                        {
+                                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                                            "args": {
+                                                "type": "9a51de53-33a8-4309-a476-770eb0b96333",
+                                                "priority": "medium",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
+                                                "wait": true,
+                                                "effect": 5
+                                            },
+                                            "id": "742e73bb-1aaf-495c-8eba-b29ec0362191"
+                                        }
+                                    ]
+                                },
+                                "id": "9403fb27-cdf5-4693-ab09-b37258b8384e"
                             }
                         ]
                     },
