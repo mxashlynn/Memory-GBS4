@@ -2798,32 +2798,16 @@
                                         {
                                             "command": "EVENT_SOUND_PLAY_EFFECT",
                                             "args": {
-                                                "type": "beep",
-                                                "priority": "medium",
-                                                "pitch": 3,
-                                                "frequency": 800,
-                                                "duration": 0.01,
+                                                "type": "9a51de53-33a8-4309-a476-770eb0b96333",
+                                                "priority": "high",
+                                                "pitch": 4,
+                                                "frequency": 200,
+                                                "duration": 0.5,
                                                 "wait": true,
-                                                "effect": 0,
-                                                "__label": "PLAY TEMP SOUND",
-                                                "__collapse": true
+                                                "effect": 4,
+                                                "__collapse": false
                                             },
-                                            "id": "556da8ac-c426-442c-a740-0ccf8548218e"
-                                        },
-                                        {
-                                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                                            "args": {
-                                                "type": "beep",
-                                                "priority": "medium",
-                                                "pitch": 1,
-                                                "frequency": 800,
-                                                "duration": 0.01,
-                                                "wait": true,
-                                                "effect": 0,
-                                                "__label": "PLAY TEMP SOUND",
-                                                "__collapse": true
-                                            },
-                                            "id": "fcf82448-eea4-4142-8287-cdb02a06f9b4"
+                                            "id": "1ea0ecd0-1f66-4e46-a77c-1a0b019479f8"
                                         },
                                         {
                                             "command": "EVENT_AWAIT_INPUT",
