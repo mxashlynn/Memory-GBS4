@@ -1,6 +1,10 @@
 # Memory ✨🎴🌈
 
 
+## Bug:
+- Cannot press any button to restart after winning or loosing.
+
+
 ## ✓ Done
 - Player can hold Select to review total flips made
 - Create a scene stating the rules
