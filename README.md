@@ -33,6 +33,11 @@ The following cards make up the deck:
 - 2 ⚡
 
 
+## Known Issues 🐜
+
+Please see [TODO.md](TODO.md).
+
+
 ## Goals 🦐🀄📓
 
 - To produce a very small game fast.
