@@ -854,7 +854,7 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
-                        "__comment": false,
+                        "__comment": true,
                         "__collapse": true
                     },
                     "id": "b716cb57-6d2b-4039-81d4-4b9e96cb7e3b"
@@ -954,7 +954,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 2
+                                                            "effect": 2,
+                                                            "__comment": true
                                                         },
                                                         "id": "8755f17e-0622-4e05-9425-a7d1227abe0d"
                                                     },
@@ -1075,7 +1076,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 2
+                                                            "effect": 2,
+                                                            "__comment": true
                                                         },
                                                         "id": "dea905e4-cfe8-4e0b-85d3-28f40e2f4140"
                                                     },
@@ -1196,7 +1198,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 2
+                                                            "effect": 2,
+                                                            "__comment": true
                                                         },
                                                         "id": "8f3ed127-dc32-4585-9b62-8a4afa551971"
                                                     },
@@ -1317,7 +1320,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 2
+                                                            "effect": 2,
+                                                            "__comment": true
                                                         },
                                                         "id": "c83f612a-079a-45b5-af6e-db2d8eea0a4f"
                                                     },
@@ -1838,7 +1842,9 @@
                                         },
                                         {
                                             "command": "EVENT_STOP",
-                                            "args": {},
+                                            "args": {
+                                                "__collapse": true
+                                            },
                                             "id": "9fdab2b0-d293-45be-9081-59dd2bb20e2e"
                                         }
                                     ],
@@ -1919,7 +1925,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 3
+                                                            "effect": 3,
+                                                            "__comment": true
                                                         },
                                                         "id": "e755449f-eaa8-4b87-b866-c0fa21c08823"
                                                     },
@@ -1928,7 +1935,8 @@
                                                         "args": {
                                                             "actorId": "$self$",
                                                             "spriteStateId": "Flip",
-                                                            "loopAnim": false
+                                                            "loopAnim": false,
+                                                            "__collapse": true
                                                         },
                                                         "id": "4f4f5f51-e0d7-4287-8594-1aa1a4b9f1c9"
                                                     },
@@ -1936,7 +1944,8 @@
                                                         "command": "EVENT_WAIT",
                                                         "args": {
                                                             "time": 0.4,
-                                                            "frames": 30
+                                                            "frames": 30,
+                                                            "__collapse": true
                                                         },
                                                         "id": "e7aee69f-6ebe-456f-b0d5-ec1465cb3025"
                                                     },
@@ -1962,7 +1971,8 @@
                                                             "$variable[V2]$": {
                                                                 "type": "variable",
                                                                 "value": "36"
-                                                            }
+                                                            },
+                                                            "__collapse": true
                                                         },
                                                         "id": "2b1452a3-55fc-4582-a1b4-934dbc930fa4"
                                                     },
@@ -1971,7 +1981,8 @@
                                                         "args": {
                                                             "actorId": "$self$",
                                                             "spriteStateId": "",
-                                                            "loopAnim": false
+                                                            "loopAnim": false,
+                                                            "__collapse": true
                                                         },
                                                         "id": "01c6d4bf-3a29-4ba3-b186-1ad8c978559a"
                                                     }
@@ -2240,7 +2251,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 0
+                                                            "effect": 0,
+                                                            "__comment": true
                                                         },
                                                         "id": "3a4906a1-85aa-4ea0-9bd6-f466108fa431"
                                                     }
@@ -2271,7 +2283,8 @@
                                                             "frequency": 200,
                                                             "duration": 0.5,
                                                             "wait": true,
-                                                            "effect": 1
+                                                            "effect": 1,
+                                                            "__comment": true
                                                         },
                                                         "id": "11cc6d88-971b-4b1f-9cf3-6f3cf074971b"
                                                     },
@@ -2686,7 +2699,7 @@
                                         {
                                             "command": "EVENT_MUSIC_STOP",
                                             "args": {
-                                                "__comment": false,
+                                                "__comment": true,
                                                 "__collapse": true
                                             },
                                             "id": "6fcb3b9c-b476-443e-95b6-7c73e1817669"
@@ -2701,7 +2714,8 @@
                                                 "duration": 0.5,
                                                 "wait": true,
                                                 "effect": 5,
-                                                "__collapse": true
+                                                "__collapse": true,
+                                                "__comment": true
                                             },
                                             "id": "7e822ce3-f365-418e-afd0-b8b268468e99"
                                         },
@@ -2820,7 +2834,7 @@
                                             "command": "EVENT_MUSIC_PLAY",
                                             "args": {
                                                 "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
-                                                "__comment": false,
+                                                "__comment": true,
                                                 "__collapse": true
                                             },
                                             "id": "b0fd0ec8-7ce7-4acb-8398-ef0ba95de7e9"
@@ -2879,7 +2893,7 @@
                                         {
                                             "command": "EVENT_MUSIC_STOP",
                                             "args": {
-                                                "__comment": false,
+                                                "__comment": true,
                                                 "__collapse": true
                                             },
                                             "id": "17259cd9-d30f-47e8-a20f-c74595bae681"
@@ -2894,7 +2908,8 @@
                                                 "duration": 0.5,
                                                 "wait": true,
                                                 "effect": 4,
-                                                "__collapse": true
+                                                "__collapse": true,
+                                                "__comment": true
                                             },
                                             "id": "1ea0ecd0-1f66-4e46-a77c-1a0b019479f8"
                                         },
@@ -3013,7 +3028,7 @@
                                             "command": "EVENT_MUSIC_PLAY",
                                             "args": {
                                                 "musicId": "8db99a13-7e52-4161-a933-41f852742bf3",
-                                                "__comment": false,
+                                                "__comment": true,
                                                 "__collapse": true
                                             },
                                             "id": "a1d928f2-2af0-41dc-8336-aa28bb0eab36"
@@ -3498,7 +3513,7 @@
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
                         "musicId": "5abded12-879a-42e2-9949-f85ada2feeac",
-                        "__comment": false,
+                        "__comment": true,
                         "__collapse": true
                     },
                     "id": "fef597b4-d248-44ca-8fb0-562161daf33e"
@@ -3570,7 +3585,8 @@
                                     "frequency": 200,
                                     "duration": 0.5,
                                     "wait": true,
-                                    "effect": 3
+                                    "effect": 3,
+                                    "__comment": true
                                 },
                                 "id": "301b7bc6-a303-401f-94ab-207020324e18"
                             },
@@ -7199,40 +7215,8 @@
             ]
         }
     ],
-    "music": [
-        {
-            "id": "8db99a13-7e52-4161-a933-41f852742bf3",
-            "name": "game_loop",
-            "symbol": "song_game_loop",
-            "filename": "game_loop.uge",
-            "settings": {},
-            "type": "uge"
-        },
-        {
-            "id": "5abded12-879a-42e2-9949-f85ada2feeac",
-            "name": "menu_loop",
-            "symbol": "song_menu_loop",
-            "filename": "menu_loop.uge",
-            "settings": {},
-            "type": "uge"
-        }
-    ],
-    "sounds": [
-        {
-            "id": "9a51de53-33a8-4309-a476-770eb0b96333",
-            "name": "paige_jingles.sav",
-            "symbol": "sound_paige_jingles_sav",
-            "filename": "paige_jingles.sav",
-            "type": "fxhammer"
-        },
-        {
-            "id": "72eec456-020f-497b-b678-811015822674",
-            "name": "paige_short.sav",
-            "symbol": "sound_paige_short_sav",
-            "filename": "paige_short.sav",
-            "type": "fxhammer"
-        }
-    ],
+    "music": [],
+    "sounds": [],
     "fonts": [
         {
             "id": "1d0829f3-f97d-4c14-9d3f-26abeaa195bb",
