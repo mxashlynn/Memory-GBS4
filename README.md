@@ -2,7 +2,7 @@
 
 A card matching game for Game Boy.
 
-![very simple](https://img.shields.io/badge/very-simple-FFEACE?style=plastic)
+![GB Studio 4.x](https://img.shields.io/badge/GBStudio-4.x-00EDB3?style=plastic) ![code VisualScript](https://img.shields.io/badge/code-VisualScript-01CDFC?style=plastic)
 
 
 Memory is a traditional pair-matching card game, also known as Concentration, Match Match, N-Spade, and Pexeso, among many other names.  I liked this game a lot as a little kid!
